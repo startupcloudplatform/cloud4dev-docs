@@ -1,7 +1,5 @@
 # Summary
 
-# Summary
-
 - [개발지원플랫폼 이용 가이드](README.md)
 - [오픈데이터 API 활용 가이드](posts/2017-09-28-nucleo_f103rb_start.markdown)
 - [마이크로서비스 아키텍처 개요](posts/2017-10-25-nucleo_f103rb_digital_input.markdown)
