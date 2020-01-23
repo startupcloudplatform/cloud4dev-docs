@@ -26,7 +26,7 @@
 마이크로서비스 스튜디오는 Spring Cloud와 Cloud Foundry를 적용하였고 사용자 편의성을 고려하여 비주얼 편집기 기능을 개발하였다. Spring Cloud는 마이크로서비스 아키텍처 개발을 지원하는 다양한 컴포넌트를 갖고 있으며 이 서비스들을 Cloud Foundry의 모듈 및 서비스로 연동되어 있다. 
 
 마이크로서비스 스튜디오는 Cloud Foundry의 모듈 및 서비스와 맵핑을 위해 서비스 브로커 기술을 적용하였다. 마이크로서비스 스튜디오 아키텍처는 다음과 같다.
-
+<img src="./images/MSA_Architecture.png">
 ![](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/MSA_Architecture.png)
 
 - 마이크로서비스 스튜디오는 가시화 도구(비주얼 편집기)를 이용하여 애플리케이션과 서비스의 관계를 구성할 수 있으며 Cloud Foundry에 푸시된 애플리케이션과 마켓에 등록된 서비스를 기본으로 사용할 수 있다. 
