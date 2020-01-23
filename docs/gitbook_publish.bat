@@ -11,4 +11,4 @@ git clean -fx _book
 
 git add .
 git commit -a -m "Update docs"
-git push -u origin master
+git push -u origin1 master
