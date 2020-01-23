@@ -64,15 +64,15 @@
 
 - #### [1. 애플리케이션 개요](#애플리케이션-개요)
 
-- #### [백엔드앱 개발](#백엔드앱-개발)
+- #### [2. 백엔드앱 개발](#백엔드앱-개발)
 
-- #### [프론트엔드 앱 개발](#프론트엔드-앱-개발)
+- #### [3. 프론트엔드 앱 개발](#프론트엔드-앱-개발)
 
-- #### [PaaS-TA에 앱 배포하기](#PaaS-TA에-앱-배포하기)
+- #### [4. PaaS-TA에 앱 배포하기](#PaaS-TA에-앱-배포하기)
 
-- #### [마이크로서비스 앱 구성](#마이크로서비스-앱-구성)
+- #### [5. 마이크로서비스 앱 구성](#마이크로서비스-앱-구성)
 
-- #### [API 관리](#API-관리)
+- #### 6. [API 관리](#API-관리)
 
  
 
@@ -148,8 +148,7 @@
 
 사용자 UI제공을 위한 프론트앤드 앱과 창업지역 찾기 정보를 제공하는 백엔드 앱을 우선 개발영역으로 본다.
 
-![](https://github.com/startupcloudplatform/Sample-App-Tutorial/tree/master/images/apigateway.png)
-
+<img src="./images/apigateway.png" width=300 height=400 >
 
 
 ## 백엔드앱 개발
@@ -163,6 +162,8 @@
 #### 오픈데이터 API 게이트웨이 포털 사용 방법 
 
 1)     메인 페이지
+
+<img src="./images/opendataapi.png" width=300 height=400 >
 
 ​    ![1558421260238](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/opendataapi.png)  
 
@@ -188,17 +189,15 @@
 
 2)     로그인
 
-   ![1558421452765](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/openlogin.png) 
-
-
-
+<img src="./images/openlogin.png" width=300 height=400 >
+ 
 \-       1. ID 입력창
 
 \-       2. Password 입력창 
 
 3)     오픈데이터 API 검색(서울시 문화공간 현황)
 
-​       ![1558572796563](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/searchseoulspace.png)                  
+<img src="./images/searchseoulspace.png" width=300 height=400 >                  
 
 \-       1. 오픈데이터 검색 창
 
@@ -208,7 +207,8 @@
 
 4)     서울시 문화공간 현황 API 상세 정보
 
-​     ![1558572943817](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/seoulspacedetail.png)     
+<img src="./images/seoulspacedetail.png" width=300 height=400 >
+
 
 \-       1. 서울시 문화공간 현황 조회 API 상세 정보
 
@@ -218,8 +218,7 @@
 
 5)      예제 코드 조회
 
-​      ![1558573046560](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/readcode.png)                                      
-
+<img src="./images/readcode.png" width=300 height=400 >
 
 
 \-       1. 사용자 인증키
@@ -234,7 +233,7 @@
 
 1)     서울시 문화공간 현황 조회 코드 입력 화면
 
-​     ![1558573133977](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/storecode.png)                                                         
+<img src="./images/storecode.png" width=300 height=400 >
 
 \-       1. 예제로 제공된 코드를 개발자가 필요한 부분에 입력 및 파싱한 화면
 
@@ -242,7 +241,8 @@
 
 2)     API 실행 결과 화면
 
-![1558573244893](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/runapi.png)
+<img src="./images/runapi.png" width=300 height=400 >
+
 
    \-       1. 개발자가 입력 및 파싱 수행 한 결과 화면
 
@@ -451,7 +451,7 @@ Netflix는 Circuit Breaker 패턴을 구현을 위한 Hystrix라는 라이브러
 
 ex) Hystrix Stream 샘플 예제
 
-![Hystrix](https://raw.githubusercontent.com/spring-cloud/spring-cloud-netflix/master/docs/src/main/asciidoc/images/Hystrix.png)
+<img src="./images/Hystrix.png" width=300 height=400 >
 
 [출처:<https://cloud.spring.io/spring-cloud-netflix/multi/multi__circuit_breaker_hystrix_clients.html>]
 
@@ -692,11 +692,11 @@ PaaS-TA에 push된 앱은 마이크로서비스 스튜디오를 이용하여 마
 
 2. 추가 버튼을 이용하여 마이크로서비스를 생성하여 구성한다.
 
-   ![1557810254136](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/msamain_new.png)
-
+<img src="./images/msamain_new.png" width=300 height=400 >
+ 
 3. 생성 화면에서 필수 입력값을 채워서 생성한다. 이때 PaaS-TA에 자신이 권한을 갖고 있는 조직과 영역을 지정해야 한다. 
 
-![1557810443245](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/msaadd.png)
+<img src="./images/msamain_new.png" width=300 height=400 >
 
 1. 초기 화면에는 Gateway 아이콘만 화면에 보일 것이다.
 
