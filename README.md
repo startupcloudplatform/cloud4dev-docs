@@ -10,7 +10,7 @@
 
 - ##### [마이크로서비스 기본 개요](msaoverview.md)
 
-- ##### [마이크로서비스 개발을 위한 Spring Cloud 활용 가이드](msaspringcloud.md)
+- ##### [마이크로서비스 아키텍처 개발 가이드](msaspringcloud.md)
 
 - ##### [마이크로서비스 스튜디오 활용 개발 가이드](MicroserviceGuide.md)
 
