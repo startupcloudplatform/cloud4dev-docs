@@ -20,13 +20,14 @@
 - 클라우드 상에서 개발부터 운영까지 전 라이프사이클 관리
 
 
+
 ## 마이크로서비스 스튜디오 아키텍처 
 
 마이크로서비스 스튜디오는 Spring Cloud와 Cloud Foundry를 적용하였고 사용자 편의성을 고려하여 비주얼 편집기 기능을 개발하였다. Spring Cloud는 마이크로서비스 아키텍처 개발을 지원하는 다양한 컴포넌트를 갖고 있으며 이 서비스들을 Cloud Foundry의 모듈 및 서비스로 연동되어 있다. 
 
 마이크로서비스 스튜디오는 Cloud Foundry의 모듈 및 서비스와 맵핑을 위해 서비스 브로커 기술을 적용하였다. 마이크로서비스 스튜디오 아키텍처는 다음과 같다.
 
-<img src="./images/MSA_Architecture.png" width=640 height=500 >
+<img src="./images/MSA_Architecture.png" width=750 height=400 >
 
 - 마이크로서비스 스튜디오는 가시화 도구(비주얼 편집기)를 이용하여 애플리케이션과 서비스의 관계를 구성할 수 있으며 Cloud Foundry에 푸시된 애플리케이션과 마켓에 등록된 서비스를 기본으로 사용할 수 있다. 
 - 마이크로서비스 스튜디오는 마이크로서비스 구성 시 API Gateway Server, Registry Service, Config Service 가 앱으로 자동 생성하고 화면상에서는 Gateway만 노출된다.
@@ -72,7 +73,7 @@
 
 - #### [5. 마이크로서비스 앱 구성](#마이크로서비스-앱-구성)
 
-- #### 6. [API 관리](#API-관리)
+- #### [6. API 관리](#API-관리)
 
  
 
@@ -148,7 +149,7 @@
 
 사용자 UI제공을 위한 프론트앤드 앱과 창업지역 찾기 정보를 제공하는 백엔드 앱을 우선 개발영역으로 본다.
 
-<img src="./images/apigateway.png" width=300 height=400 >
+<img src="./images/apigateway.png" width=450 height=300 >
 
 
 ## 백엔드앱 개발
@@ -163,7 +164,7 @@
 
 1)     메인 페이지
 
-<img src="./images/opendataapi.png" width=300 height=400 >
+<img src="./images/opendataapi.png" width=700 height=600 >
 
 ​    ![1558421260238](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/opendataapi.png)  
 
@@ -189,15 +190,15 @@
 
 2)     로그인
 
-<img src="./images/openlogin.png" width=300 height=400 >
- 
+<img src="./images/openlogin.png" width=400 height=200 >
+
 \-       1. ID 입력창
 
 \-       2. Password 입력창 
 
 3)     오픈데이터 API 검색(서울시 문화공간 현황)
 
-<img src="./images/searchseoulspace.png" width=300 height=400 >                  
+<img src="./images/searchseoulspace.png" width=700 height=500 >                  
 
 \-       1. 오픈데이터 검색 창
 
@@ -207,7 +208,7 @@
 
 4)     서울시 문화공간 현황 API 상세 정보
 
-<img src="./images/seoulspacedetail.png" width=300 height=400 >
+<img src="./images/seoulspacedetail.png" width=600 height=500 >
 
 
 \-       1. 서울시 문화공간 현황 조회 API 상세 정보
@@ -218,7 +219,7 @@
 
 5)      예제 코드 조회
 
-<img src="./images/readcode.png" width=300 height=400 >
+<img src="./images/readcode.png" width=600 height=500 >
 
 
 \-       1. 사용자 인증키
@@ -692,20 +693,21 @@ PaaS-TA에 push된 앱은 마이크로서비스 스튜디오를 이용하여 마
 
 2. 추가 버튼을 이용하여 마이크로서비스를 생성하여 구성한다.
 
-<img src="./images/msamain_new.png" width=300 height=400 >
- 
+<img src="./images/msamain_new.png" width=800 height=500 >
+
 3. 생성 화면에서 필수 입력값을 채워서 생성한다. 이때 PaaS-TA에 자신이 권한을 갖고 있는 조직과 영역을 지정해야 한다. 
 
-<img src="./images/msamain_new.png" width=300 height=400 >
-
 1. 초기 화면에는 Gateway 아이콘만 화면에 보일 것이다.
+
+
 
 #### 드래그 앤 드롭 기능 사용하기(앱 배치)
 
 1. 등록된 앱목록에서 앱을 디자인 영역으로 드래그 앤 드롭 기능을 이용하여 배치한다.
+
 2. App List을 클릭하면 PaaS-TA를 이용하여 푸시한 앱 목록이 보일 것이다. 프론트엔드 앱과 백엔드 앱이 보일 것이다.
 
-![1557810643268](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/msaapplist_new.png)
+   <img src="./images/msaapplist_new.png" width=800 height=500 >
 
 1. 둘 다 화면에 배치한 후 앱 간의 네트워크 정보는 선으로 연결한다. 선을 연결할 때는 시작하는 앱을 **Shift키**를 누른 상태로 다른 앱으로 마우스를 이동한다.
 2. 네트워크 연결 시에는 반드시 순서를 지켜야 하는데 Gateway를 통해 Registry에 등록되기 때문에 프론트앤드 앱과 Gateway를 연결해야 하고 Gateway와 백엔드 앱을 연결해야 한다. 
@@ -722,9 +724,9 @@ PaaS-TA에 배포된 서비스 브로커는 모두 사용할 수 있다. 창업 
 
 4. 위의 과정을 통하면 마이크로서비스 구성이 완료된다.
 
-   ![](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/msa_design.png)
-
-
+   <img src="./images/msa_design.png" width=800 height=500 >
+   
+   
 
 ### 마이크로서비스 조회 및 수정
 
@@ -736,7 +738,9 @@ PaaS-TA에 배포된 서비스 브로커는 모두 사용할 수 있다. 창업 
 
   App 목록을 통해 접근 가능한 URL을 확인할 수 있다. 
 
-  ![](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/appdesc.png)
+  <img src="./images/appdesc.png" width=700 height=300 >
+
+  
 
 - Service 
 
@@ -750,7 +754,9 @@ PaaS-TA에 배포된 서비스 브로커는 모두 사용할 수 있다. 창업 
 
   API 호출 테스트를 실행할 수 있다. 
 
-  ![apitest](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/apitest_new.png)
+  
+
+  ![apitest]<img src="./images/apitest_new.png" width=500 height=300 >
 
 - Gateway
 
@@ -762,9 +768,7 @@ PaaS-TA에 배포된 서비스 브로커는 모두 사용할 수 있다. 창업 
 
 ​      마이크로서비스로 구성된 앱의 로그 정보를 뷰어롤 통해 제공한다. 동시에 여러개의 앱의 로그를 볼 수도 있다.
 
-![](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/applog.png)
-
-
+<img src="./images/applog.png" width=500 height=250 >
 
 #### 마이크로서비스 수정하기
 
@@ -772,7 +776,9 @@ PaaS-TA에 배포된 서비스 브로커는 모두 사용할 수 있다. 창업 
 
 조회화면에서 연필모양 아이콘을 클릭하면 수정화면으로 변경된다.
 
-![1557811325022](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/msaupdate_new.png)
+<img src="./images/msaupdate_new.png" width=600 height=400 >
+
+
 
 수정화면에서 앱을 시작, 종료 상태를 변경할 수 있고 현재 페이지의 결과를 완전히 삭제할 수도 있다. 드로잉 영역의 이미지를 확대하거 축소하는 경우(+,-) 아이콘을 이용한다. 
 
@@ -794,7 +800,7 @@ PaaS-TA에 배포된 서비스 브로커는 모두 사용할 수 있다. 창업 
 4. 사용할 API 오른쪽 옆에 + 버튼을 누르면 API를 사용할 수 있는데 접속할 계정을 등록해야 한다. 
 5. 여기에서의 계정은 사용자가 추가한 API를 접속할 때 이용하는 계정 정보이다. 유출되지 않도록 해야 하고 잊어버리지 않도록 주의하자.
 
-![1557812323113](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/bauth.png)
+<img src="./images/bauth.png" width=400 height=200 >
 
 6. 아이콘을 누르면 API 목록과 상세 정보를 조회할 수 있다.
 
@@ -808,7 +814,9 @@ PaaS-TA에 배포된 서비스 브로커는 모두 사용할 수 있다. 창업 
 
 API 공개 구조는 다음과 같다. 
 
-![](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/apisystem.png)
+<img src="./images/apisystem.png" width=500 height=250 >
+
+
 
 ### 다른 앱에 정의된 API 호출
 
@@ -841,15 +849,29 @@ public @ResponseBody
 자신이 등록한 마이크로서비스에 위에서 설명한 API 공개를 위한 조건에 부합이 된다면 API 등록을 통해 다른 사용자에게도 API를 공개할 수 있다. 아래 과정을 통해 API를 등록하면 다른 사용자에게 API목록이 조회된다. 
 
 1. 마이크로서비스 상단 메뉴의 오른쪽에 환경설정 아이콘을 클릭하면 마이크로서비스 API관리 메뉴가 있다. 
+
 2. 이 메뉴을 선택하면 등록된 API 목록 화면이 나오고 등록버튼을 볼 수 있다. 
+
 3. 등록 버튼을 눌러서 등록할 API가 있는 앱이 배포된 조직을 선택한다. 
+
 4. 다음 버튼을 누르면 공개할 API의 세부 정보를 등록할 수 있다. 
-   ![1557813404373](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/addapi.png)
+   
+   <img src="./images/addapi.png" width=700 height=500 >
+   
+   
+   
 5. 필수입력값을 잘 확인하여 값을 입력한다. 
+
 6. 마이크로서비스 Frontend 부분에서 URL 부분의 리스트를 선택한다. 이 리스트에 나오는 값은 마이크로서비스 구성 시 Frontend App 의 URL을 자동으로 가져온다. 
-   ![1557813500584](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/fronturl.png)
+
+   <img src="./images/fronturl.png" width=600 height=300 >
+
+   
+
 7. 해당 URL을 선택한다.
+
 8. 등록 버튼이 활성화되면 클릭한다.
+
 9. 등록된 결과는 상단 메뉴의 API을 통해 확인할 수 있다.
 
 
@@ -859,6 +881,8 @@ public @ResponseBody
 샘플앱을 기준으로는 프론트엔드 앱과 백엔드 앱 두개의 앱을 실제 배포된 서비스의 운영은 PaaS-TA 상에서 가능하다. PaaS-TA에서 제공하는 운영 서버의 앱 상태를 관리하는 것이다. 마이크로서비스 스튜디오에서는 운영서버에 배포된 각각의 앱과 앱 간의 관계를 정의한 게이트웨이, 서비스 디스커버리를 위한 레지스트리 등의 정보에 장애가 발생하면 앱 상태를 정상과 다른 색상의 앱으로 표시된다. 
 
 앱 상태에 따라 서비스를 재시작하거나 중지는 마이크로서비스에서 운영이 가능하다. 앱이 변경되어 재배포를 실행하려면 PaaS-TA에서 제공하는 기존 앱의 재배포 기능을 사용하거나 CF CLI을 이용하여 앱을 변경된 파일을 재배포할 수 있다. 마찬가지로, eclipse를 이용하는 경우에도 변경된 소스 기반으로 Open PaaS 서버에 재배포를 실행한다. 
+
+
 
 ### 앱 재배포
 
@@ -870,9 +894,9 @@ public @ResponseBody
 
   eclipse의 Servers탭을 선택하고 Open PaaS라고 되어 있는 서버를 선택한다. Open PaaS 서버에서 실행되는 앱 목록을 확인할 수 있다. 소스코드 변경이 완료되었다면 해당 앱을 선택하고 마우스 우클릭하면 배포라는 메뉴가 보일 것이다. 이 메뉴를 실행한다. 
 
-  ![1557896286937](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/eclipse_deploy.png)
-
-
+  <img src="./images/eclipse_deploy.png" width=600 height=300 >
+  
+  
 
 ### PaaS-TA 포털을 이용한 운영
 
