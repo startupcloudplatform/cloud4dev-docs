@@ -15,7 +15,7 @@
 - [모놀리식 아키텍처](#모놀리식-아키텍처)
 - [마이크로서비스 아키텍처](#마이크로서비스-아키텍처)
 - [Spring Cloud의 마이크로서비스 패턴](#Spring-Cloud의-마이크로서비스-패턴)
-- [API 정의](#Application Programming Interface-정의)
+- [API 정의](#Application-Programming-Interface-정의)
 - [PaaS & 마이크로서비스 아키텍처](#PaaS와-마이크로서비스-아키텍처)
 
 
