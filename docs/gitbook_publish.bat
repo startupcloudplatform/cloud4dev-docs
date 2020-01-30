@@ -1,4 +1,4 @@
-rd /s /q \docs\gitbook
+rd /s /q docs\gitbook
 rd /s /q docs
 
 call gitbook install

@@ -12,9 +12,7 @@
 
 [3. Service Discovery and Registry](#Service-Discovery-and-Registry)
 
-1. API Gateway
-2. Hystrix
-3. Open PaaS - Cloud Foundry
+[4. API Gateway](#API-Gateway)
 
 
 
@@ -351,3 +349,101 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 4) Eureka 클라이언트 측 애플리케이션 실행
 
 <img src="./images/eurekaclient.png" width=700 height=200>
+
+
+
+## API Gateway
+
+마이크로서비스 환경에서 API Gateway는 프론트엔드 인스턴스에서 수백개의 백엔드 인스턴스 IP들을 관리해야 g한다. 서버를 내렸다가 올렸을 경우 IP가 바뀌게 되는 경우의 해결 방법으로 API Gateway를 사용한다.
+
+API Gateway 및 각각의 백엔드 애플리케이션을 등록하고, API Gateway는 Eureka에 해당 백엔드 애플리케이션을 조회환다. 외부 클라이언트인 프론트엔드 애플리케이션은 해당 API Gateway 주소만 인지하여 백엔드 애플리케이션을 호출할 수 있다. 
+
+<img src="./images/springapigateway.png" width=700 height=400>
+
+
+
+### API Gateway 특징
+
+마이크로서비스는 각 서비스가 다른 서버에 배포되기 때문에 API의 엔드포인트의 변경이 발생될 때 관리 효율성을 위해 도메인을 하나로 통합할 수 있는 API Gateway가 필요하다. 오픈소스 Zuul과 Spring Cloud가 결합하여 API Gateway를 지원하는데 인증, 라우팅, 메디에이션, Aggregation, 로깅, 미터링 등을 이용할 수 있다. 
+
+- 인증 및 보안(Authentication and Security) : 클라이언트 요청 시, 각 리소스에 대한 인증 요구 사항을 식별하고 이를 만족시키지 않는 요청은 거부
+- 통찰력 및 모니터링(Insights and Monitoring) : 의미 있는 데이터 및 통계 제공 
+- 동적 라우팅(Dynamic Routing) : 필요에 따라 요청을 다른 클러스터로 동적으로 라우팅 
+- 부하 테스트(Stress Testing) : 성능 측정을 위해 점차적으로 클러스터 트래픽을 증가 
+- 트래픽 드랍(Load shedding) : 각 유형의 요청에 대해 용량을 할당하고, 초과하는 요청은 제한
+- 정적 응답 처리(Static Response handling) : 클러스터에서 오는 응답을 대신하여 API GATEWAY에서 응답 처리 
+
+#### 마이크로서비스에서 서버 TO 서버 호출
+
+마이크로서비스 플랫폼 외부의 호출은 API Gateway을 단일 창구로 사용한다. 
+
+- GATEWAY를 경유하는 경우 모든 API호출을 한곳에서 통제
+- 각 API 서버가 다른 API 서버의 주소를 알 필요가 없다.
+- 불필요한 네트워크 HOP/부하가 생김
+- API Gateway 가 SPOF가 될 수 있다.
+
+
+
+#### Peer to Peer 호출
+
+- 서버간의 호출이 별도의 HOP/부하가 없다.
+- API Server간의 호출이 많아질수록 유리
+- API 호출을 한곳에서 모두 통제할 수 없다.
+- 모든 API 서버가 다른 API 서버의 주소를 알아야 하지만 Eureka 가 해결 가능
+
+
+
+#### Ribbon
+
+Spring Cloud는 Eureka 기반 로드 밸런싱을 쉽게 사용할 수 있게 Ribbon 방식 구현체(RibbonClient)와 Feign 방식 구현체를 지원하는 방식으로 나뉜다. Ribbon은 Spring Cloud의 HTTP 통신이 필요한 요소에 내장되어 있다. 
+
+- Zuul API Gateway
+- Spring 'RestTemplat'
+  - @LoadBalanced RestTemplate
+  - Ribbon + Eureka 기반의 HTTP 호출 방법을 제공
+
+- Spring Cloud Feign
+  - 선언적 Http Client
+  - Ribbon 이 내장되어 있음
+
+
+
+### Zuul 애플리케이션 개발
+
+1) Gateway Zuul 의존성 추가
+
+Gateway 애플리케이션 pom.xml에 spring-cloud-starter-zuul 의존성을 포함
+
+| Dependency                   | 목적                                   |
+| ---------------------------- | -------------------------------------- |
+| spring-cloud-starter-config  | Spring Cloud Config Client 서버 의존성 |
+| spring-cloud-starter-eureka  | Netflix eureka Client 서버 의존성      |
+| spring-boot-starter-actuator | Spring Actuator 의존성                 |
+
+2) API Gateway 기본 보안
+
+API Gateway 애플리케이션에 기본 보안을 설정
+
+pom.xml
+
+```
+<dependency>
+	<groupId>org.springframework.cloud</groupId>
+	<artifact>spring-cloud-starter-security</artifactId>
+</dependency>
+```
+
+appplication.properties
+
+```
+security.basic.enabled=true
+security.user.name=user
+security.user.password=secret
+
+monitoring.security.user.password=secret
+```
+
+3) 메인 클래스에 Gateway Zuul 및 Eureka Client 활성화
+
+- @EnableZuulProxy 추가하여 Gateway Zuul 활성화
+- EnableDiscoveryClient 추가하여 Eureka Client 활성화
