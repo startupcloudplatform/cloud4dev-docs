@@ -166,7 +166,7 @@
 
 <img src="./images/opendataapi.png" width=700 height=600 >
 
-​    ![1558421260238](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/opendataapi.png)  
+​    
 
 \-       1. 로그인 및 회원가입
 
