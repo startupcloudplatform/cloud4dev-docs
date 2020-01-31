@@ -13,7 +13,7 @@
 - [모놀리식 아키텍처](#모놀리식-아키텍처)
 - [마이크로서비스 아키텍처](#마이크로서비스-아키텍처)
 - [스프링클라우드의 마이크로서비스패턴](#스프링클라우드의-마이크로서비스패턴)
-- [Application Programming Interface정의](#Application-Programming-Interface정의)
+- [Application Programming Interface](#Application-Programming-Interface)
 - [클라우드플랫폼과 마이크로서비스](#클라우드플랫폼과-마이크로서비스)
 
 
