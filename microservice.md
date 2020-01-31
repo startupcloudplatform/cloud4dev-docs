@@ -231,7 +231,7 @@
 
   
 
-### Application Programming Interface정의
+### Application Programming Interface
 
 마이크로서비스 아키텍처에서 가장 많이 등장하는 API는 애플리케이션 간의 표준화된 통신 방식 중의 하나이다. REST API는 다음과 같이 정의할 수 있다.
 
