@@ -4,15 +4,15 @@
 
 
 
-[Microservice & Spring Cloud](#Spring-Cloud-Overview)
+##### [Microservice & Spring Cloud](#spring-cloud-overview)
 
-[Spring Cloud Config Server](#Spring-Cloud-Config-Server)
+##### [Spring Cloud Config Server](#spring-cloud-config-server)
 
-- [마이크로서비스 스튜디오의 Config Server](#마이크로서비스-스튜디오의-Config-Server)
+- ##### [마이크로서비스 스튜디오의 Config Server](#마이크로서비스-스튜디오의-config-server)
 
-[Service Discovery and Registry](#Service-Discovery-and-Registry)
+##### [Service Discovery and Registry](#service-discovery-and-registry)
 
-[API Gateway](#API-Gateway)
+##### [API Gateway](#api-gateway)
 
 
 
