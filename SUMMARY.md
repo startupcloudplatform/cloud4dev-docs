@@ -6,8 +6,13 @@
   - [마이크로서비스 아키텍처](microservice.md#마이크로서비스-아키텍처)
   - [마이크로서비스 아키텍처 구성요소](microservice.md#마이크로서비스-아키텍처-구성-요소)
   - [스프링클라우드의 마이크로서비스 패턴](microservice.md#스프링클라우드의-마이크로서비스패턴)
-  - [API정의](part1/microservice.md#Application-Programming-Interface)
+  - [API정의](microservice.md#Application-Programming-Interface)
   - [클라우드플랫폼과 마이크로서비스](microservice.md#클라우드플랫폼과-마이크로서비스)
+- [마이크로서비스 아키텍처 개발 가이드](msaspringcloud.md)
+  - [Microservice & Spring Cloud](msaspringcloud.md#Spring-Cloud-Overview)
+  - [Spring Cloud Config Server](msaspringcloud.md#Spring-Cloud-Config-Server)
+  - [Service Discovery and Registry](msaspringcloud.md#Service-Discovery-and-Registry)
+  - [API Gateway](msaspringcloud.md#API-Gateway)
 - [마이크로서비스 스튜디오 활용 가이드](MicroserviceGuide.md)
   - [마이크로서비스 스튜디오 개요](MicroserviceGuide.md#마이크로서비스-스튜디오-개요)
   - [마이크로서비스 스튜디오 주요 기능](MicroserviceGuide.md#마이크로서비스-스튜디오-주요-기능)
@@ -18,6 +23,12 @@
   - [마이크로서비스 스튜디오 기본 사용 방법](msastudio.md)
 - 개발지원 플랫폼 메뉴얼
   - [마이크로서비스 스튜디오 사용자 메뉴얼](msamanual_v2.md)
+    - [마이크로서비스 스튜디오 아키텍처](msamanual_v2.md#마이크로서비스-스튜디오-아키텍처)
+    - [마이크로서비스 스튜디오 시작하기](msamanual_v2.md#마이크로서비스-스튜디오-시작하기)
+    - [마이크로서비스 생성](msamanual_v2.md#마이크로서비스-생성하기)
+    - [마이크로서비스 조회 및 수정](msamanual_v2.md#마이크로서비스-조회-및-수정)
+    - [REST API 테스트 기능](msamanual_v2.md#REST-API-테스트-기능)
+    - [API 관리](msamanual_v2.md#API-관리)
   - 오픈데이터API 사용자 메뉴얼
 - [오픈데이터 API 활용 가이드](posts/2017-09-28-nucleo_f103rb_start.markdown)
 
