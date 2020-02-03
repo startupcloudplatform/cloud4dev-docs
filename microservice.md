@@ -13,7 +13,8 @@
 - [모놀리식 아키텍처](#모놀리식-아키텍처)
 - [마이크로서비스 아키텍처](#마이크로서비스-아키텍처)
 - [스프링클라우드의 마이크로서비스패턴](#스프링클라우드의-마이크로서비스패턴)
-- [Application Programming Interface](#Application-Programming-Interface)
+- [마이크로서비스 아키텍처 구성요소](microservice.md#마이크로서비스-아키텍처-구성요소)
+- [API 정의](#'API-정의')
 - [클라우드플랫폼과 마이크로서비스](#클라우드플랫폼과-마이크로서비스)
 
 
@@ -231,7 +232,7 @@
 
   
 
-### Application Programming Interface
+### API 정의
 
 마이크로서비스 아키텍처에서 가장 많이 등장하는 API는 애플리케이션 간의 표준화된 통신 방식 중의 하나이다. REST API는 다음과 같이 정의할 수 있다.
 
