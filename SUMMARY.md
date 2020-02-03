@@ -20,7 +20,6 @@
   - [프론트엔드 앱 개발](MicroserviceGuide.md#프론트엔드-앱-개발)
   - [PaaS-TA에 앱 배포하기](MicroserviceGuide.md#paas-ta에-앱-배포하기)
   - [마이크로서비스 앱 구성](MicroserviceGuide.md#마이크로서비스-앱-구성)
-  - [마이크로서비스 스튜디오 기본 사용 방법](msastudio.md)
 - 개발지원 플랫폼 메뉴얼
   - [마이크로서비스 스튜디오 사용자 메뉴얼](msamanual_v2.md)
     - [마이크로서비스 스튜디오 아키텍처](msamanual_v2.md#마이크로서비스-스튜디오-아키텍처)
