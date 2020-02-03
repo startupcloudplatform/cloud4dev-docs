@@ -4,18 +4,6 @@
 
 
 
-##### [Microservice & Spring Cloud](#spring-cloud-overview)
-
-##### [Spring Cloud Config Server](#spring-cloud-config-server)
-
-- ##### [마이크로서비스 스튜디오의 Config Server](#마이크로서비스-스튜디오의-config-server)
-
-##### [Service Discovery and Registry](#service-discovery-and-registry)
-
-##### [API Gateway](#api-gateway)
-
-
-
 ## Spring Cloud Oeverview
 
 클라우드 환경에서 애플리케이션은 크게 세가지 유형으로 나눌 수 있다.  
