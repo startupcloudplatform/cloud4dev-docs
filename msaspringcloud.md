@@ -67,7 +67,7 @@
 
 #### 마이크로서비스 아키텍처 요소와 Spring Cloud 기술
 
-Spring Cloud는 Netflix의 유명한 오픈 소스 기능인 유레카(Eureka), 히스트릭스(Hystrix), 리본(Ribbon), 주울(Zuul)등과 통합
+Spring Cloud는 유명한 오픈 소스 Netflix 기능인 유레카(Eureka), 히스트릭스(Hystrix), 리본(Ribbon), 주울(Zuul)등과 통합
 
 | Microservice Concern        | Spring Cloud&Neflix OSS           |
 | --------------------------- | --------------------------------- |
@@ -88,7 +88,7 @@ Spring Cloud는 Netflix의 유명한 오픈 소스 기능인 유레카(Eureka), 
 
 - 자주 변경되거나 확정되지 않는 동적인 데이터들의 모임
 - 같은 용도이지만 개발, 테스트, 운영 등 다양한 조건 마다 다른 데이터
-- 다양한 곳에서 사용하는 공통 데이터가 존재 안함
+- 다양한 곳에서 사용하는 공통 데이터가 존재하지 않음
 
 **기존 Java 환경 변수 설정**
 
@@ -109,7 +109,7 @@ Spring Cloud는 Netflix의 유명한 오픈 소스 기능인 유레카(Eureka), 
 
 ### 마이크로서비스 아키텍처 기반 애플리케이션의 환경 변수
 
-스프링 클라우드를 사용하기 이전에는 로컬, 개발, 스텡징, 운영 마다 DB, 파일업로드 경로, 특정 URL 같은 Configuration 값이 다르므로 배포할 때마다 주석처리 혹은 파일 바꿔 치기 등으로 각 서버마다 별도로 packaging 하여 배포하였다. Spring profiles를 활용함으로써, 이러한 문제들을 많이 해결했지만 완벽하지 않은 문제가 있다. 바로 환경설정 값을 변경하려면 반드시 애플리케이션이 구동중인 서버를 재시작해야 한다는 점이다. 아무리 이중화가 되어 있어도 서버 재시작은 부담스러운 작업이 아닐 수 없다. 이런 문제를 해결해 주는 것이 Spring Cloud Config 이다.
+스프링 클라우드를 사용하기 이전에는 로컬, 개발, 스테이징, 운영 마다 DB, 파일업로드 경로, 특정 URL 같은 Configuration 값이 다르므로 배포할 때마다 주석처리 혹은 파일 바꿔 치기 등으로 각 서버마다 별도로 packaging 하여 배포하였다. Spring profiles를 활용함으로써, 이러한 문제들을 많이 해결했지만 완벽하지 않은 문제가 있다. 바로 환경설정 값을 변경하려면 반드시 애플리케이션이 구동중인 서버를 재시작해야 한다는 점이다. 아무리 이중화가 되어 있어도 서버 재시작은 부담스러운 작업이 아닐 수 없다. 이런 문제를 해결해 주는 것이 Spring Cloud Config 이다.
 
 <img src="./images/msaconfig.png" width=700 height=450>
 
@@ -225,7 +225,7 @@ spring.cloud.config.uri=http://localhost:${PORT:8080}
 
 ### Service Discovery - Eureka
 
-Eureka 같은 서버를 사용하지 않는다면 개발자는 수동으로 전부 다 등록해야 하고 추가된 인스턴스만 배포하는 것이 아니라 관련된 다른 인스턴스까지 추가로 재배포가 필요할 수도 있을 것이다.
+Eureka 같은 서버를 사용하지 않는다면 개발자는 수동으로 등록해야 하고 추가된 인스턴스만 배포하는 것이 아니라 관련된 다른 인스턴스까지 추가로 재배포가 필요할 수도 있을 것이다.
 
 - Eureka를 사용할 모든 Server에 Eureka Client 탑재
 - 서버 가동 시 자신의 정보(IP/Port/서비스명)을 Eureka Server에 등록(반대로 종료시 삭제)
@@ -242,7 +242,7 @@ Eureka 같은 서버를 사용하지 않는다면 개발자는 수동으로 전�
 
 - 서버와 클라이언트로 구성
 
-- RESTful API 기반이라 다양한 언어에서 사용이 가능
+- RESTful API 기반으로 다양한 언어에서 사용 가능
 
 - 대중적인 JSON 포맷과 RESTful API를 지원한다는 점에서 Spring Cloud는 매우 유연한 플랫폼
 
@@ -250,15 +250,17 @@ Eureka 같은 서버를 사용하지 않는다면 개발자는 수동으로 전�
 
 - 또 다른 eureka-client들에게 자신이 가지고 있는 다른 eureka-client 들의 공유. eureka-client들은 공유된 정보들을 이용. 예를 들어, zuul, ribbon, spring-boot-admin, zipkin 등에서 이정보를 활용한다.
 
-  Eureka Server Processing
+  
 
-  1) Eureka Client의 서비스가 시작될 때 Eureka Server에 자신의 정보를 등록한다.
+#### Eureka Server Processing
 
-  2) 등록된 후에는 30초마다 레지스트리에 ping을 전송하여 자신이 가용상태임을 알리는데 일정 횟수 이상 ping이 확인되지 않으면 Eureka Server에서 해당 서비스를 레지스트리에서 제외시킨다.
+1) Eureka Client의 서비스가 시작될 때 Eureka Server에 자신의 정보를 등록한다.
 
-  3) 레지스트리의 정보는 모든 Eureka Client에서 복제되어 있어 필요할때마다 가용 상태인 모든 서비스들의 목록을 확인할 수 있고 이 목록은 30초마다 갱신된다.
+2) 등록된 후에는 30초마다 레지스트리에 ping을 전송하여 자신이 가용상태임을 알리는데 일정 횟수 이상 ping이 확인되지 않으면 Eureka Server에서 해당 서비스를 레지스트리에서 제외시킨다.
 
-  4) 가용 상태의 서비스 목록을 확인할 경우에는 서비스의 이름을 기준으로 탐색하며 로드밸런싱을 위해 내부적으로 ribbon(클라이언트 측의 로드밸런서)을 사용한다.
+3) 레지스트리의 정보는 모든 Eureka Client에서 복제되어 있어 필요할때마다 가용 상태인 모든 서비스들의 목록을 확인할 수 있고 이 목록은 30초마다 갱신된다.
+
+4) 가용 상태의 서비스 목록을 확인할 경우에는 서비스의 이름을 기준으로 탐색하며 로드밸런싱을 위해 내부적으로 ribbon(클라이언트 측의 로드밸런서)을 사용한다.
 
 
 
@@ -342,7 +344,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 ## API Gateway
 
-마이크로서비스 환경에서 API Gateway는 프론트엔드 인스턴스에서 수백개의 백엔드 인스턴스 IP들을 관리해야 g한다. 서버를 내렸다가 올렸을 경우 IP가 바뀌게 되는 경우의 해결 방법으로 API Gateway를 사용한다.
+마이크로서비스 환경에서 API Gateway는 프론트엔드 인스턴스에서 수백개의 백엔드 인스턴스 IP들을 관리해야 한다. 서버를 내렸다가 올렸을 경우 IP가 바뀌게 되는 경우의 해결 방법으로 API Gateway를 사용한다.
 
 API Gateway 및 각각의 백엔드 애플리케이션을 등록하고, API Gateway는 Eureka에 해당 백엔드 애플리케이션을 조회환다. 외부 클라이언트인 프론트엔드 애플리케이션은 해당 API Gateway 주소만 인지하여 백엔드 애플리케이션을 호출할 수 있다. 
 
@@ -358,7 +360,7 @@ API Gateway 및 각각의 백엔드 애플리케이션을 등록하고, API Gate
 - 통찰력 및 모니터링(Insights and Monitoring) : 의미 있는 데이터 및 통계 제공 
 - 동적 라우팅(Dynamic Routing) : 필요에 따라 요청을 다른 클러스터로 동적으로 라우팅 
 - 부하 테스트(Stress Testing) : 성능 측정을 위해 점차적으로 클러스터 트래픽을 증가 
-- 트래픽 드랍(Load shedding) : 각 유형의 요청에 대해 용량을 할당하고, 초과하는 요청은 제한
+- 부하 차단(Load shedding) : 각 유형의 요청에 대해 용량을 할당하고, 초과하는 요청은 제한
 - 정적 응답 처리(Static Response handling) : 클러스터에서 오는 응답을 대신하여 API GATEWAY에서 응답 처리 
 
 #### 마이크로서비스에서 서버 TO 서버 호출
@@ -405,7 +407,7 @@ Gateway 애플리케이션 pom.xml에 spring-cloud-starter-zuul 의존성을 포
 | Dependency                   | 목적                                   |
 | ---------------------------- | -------------------------------------- |
 | spring-cloud-starter-config  | Spring Cloud Config Client 서버 의존성 |
-| spring-cloud-starter-eureka  | Netflix eureka Client 서버 의존성      |
+| spring-cloud-starter-zuul    | Netflix Zuul 서버 의존성               |
 | spring-boot-starter-actuator | Spring Actuator 의존성                 |
 
 2) API Gateway 기본 보안
