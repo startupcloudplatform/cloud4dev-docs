@@ -17,7 +17,7 @@
   - [마이크로서비스 아키텍처 설계 지침](swprocess.md#마이크로서비스-아키텍처-설계-지침)
   - [마이크로서비스 아키텍처 패턴](swprocess.md#마이크로서비스-아키텍처-패턴)
   - [데이터 분산을 위한 데이터베이스 패턴](swprocess.md#데이터-분산을-위한-데이터베이스-패턴)
-  - [구현 방법](swprocess.md#구현-방법)
+  - [구현 방법](swprocess.md#마이크로서비스-아키텍처-구현-방법)
   - [12 Factor 방법](swprocess.md#12-factor-방법)
   - [Microservice & Spring Cloud](msaspringcloud.md#스프링클라우드-적용-가이드)
   
