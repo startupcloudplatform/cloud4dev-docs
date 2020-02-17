@@ -6,7 +6,7 @@
 
 
 
-![guide_diagram.e766b3bf](.\guide_diagram.png)
+![guide_diagram.e766b3bf](./images/guide_diagram.png)
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-![OpenData-API-Gateway-system](.\OpenData-API-Gateway-system.png)
+![OpenData-API-Gateway-system](./images/OpenData-API-Gateway-system.png)
 
 
 
@@ -38,20 +38,18 @@
 
 오픈 데이터 마켓(OPEN DATA MARKET)은 http://203.245.1.104:3000/를 통해 접속이 가능합니다.
 
-![odm_main](.\odm_main.png)
+![odm_main](./images/odm_main.png)
 
 <center><오픈 데이터 마켓 메인 화면></center>
-
 
 
 #### 회원가입
 
 오픈 데이터 마켓을 이용하시려면 간단한 회원가입 후, 모든 컨텐츠를 이용하실 수 있습니다.
 
-![odm_signup](.\odm_signup.png)
+![odm_signup](./images/odm_signup.png)
 
 <center><오픈 데이터 마켓 회원가입 화면></center>
-
 
 
 #### 회원가입 (개발자 화면)
@@ -73,25 +71,21 @@
 
 
 
-![odm_signup2](.\odm_signup2.png)
+![odm_signup2](./images/odm_signup2.png)
 
 <center><오픈 데이터 마켓 개발자 회원가입 화면></center>
-
 
 
 #### 로그인
 
 회원가입이 완료되었다면, 오픈 데이터 마켓의 로그인 화면을 통해 포털 로그인을 진행합니다.
 
-![odm_signin](.\odm_signin.png)
+![odm_signin](./images/odm_signin.png)
 
 <center><오픈 데이터 마켓 개발자 로그인 화면></center>
-
-![odm_signin](.\odm_signin2.png)
+![odm_signin](./images/odm_signin2.png)
 
 <center><오픈 데이터 마켓 개발자 로그인 화면 (2)></center>
-
-
 
 ---
 
@@ -105,10 +99,9 @@
 
 활용할 데이터를 찾기 위해 오픈 데이터 마켓 상단 메뉴 '**오픈데이터**'를 클릭하여 이동합니다.
 
-![odm_datamenu](.\odm_datamenu.png)
+![odm_datamenu](./images/odm_datamenu.png)
 
 <center><오픈 데이터 마켓 메뉴 안내 화면></center>
-
 
 
 #### 오픈데이터 API 찾기
@@ -121,34 +114,30 @@
 
 
 
-![odm_data](.\odm_data.png)
+![odm_data](./images/odm_data.png)
 
 <center><오픈 데이터 마켓 데이터 화면></center>
 
 
-
 활용하고자 하는 검색어를 입력한 후, 검색 결과에서 공간정보 '개별주택가격WFS조회' 데이터를 클릭합니다.
 
-![odm_data](.\odm_data2.png)
+![odm_data](./images/odm_data2.png)
 
 <center><오픈 데이터 마켓 데이터 검색 화면></center>
 
 
-
 활용 정보(목적)을 클릭 후, 신청 버튼을 클릭하여 활용 신청을 진행합니다.
 
-![odm_data](.\odm_data3.png)
+![odm_data](./images/odm_data3.png)
 
 <center><오픈 데이터 마켓 데이터 활용 신청 화면></center>
 
 
-
 정상적으로 신청이 완료되면, 자동으로 마이페이지의 '나의 오픈 API' 화면으로 이동이 되며,  신청한 오픈 데이터 API 목록과 인증키를 확인 할 수 있는 공간이 표시됩니다.
 
-![odm_mypage](.\odm_mypage.png)
+![odm_mypage](./images/odm_mypage.png)
 
 <center><오픈 데이터 마켓 마이페이지 → '나의 오픈 API' 화면></center>
-
 
 
 #### 오픈데이터 API 모니터링
@@ -167,11 +156,9 @@
 
 일일 사용량은 마이 페이지 > 나의 사용이력 화면에서 확인하실 수 있습니다. 
 
-![odm_mypage_traffic](.\odm_mypage_traffic.png)
+![odm_mypage_traffic](./images/odm_mypage_traffic.png)
 
 <center><오픈 데이터 마켓 마이페이지 → '나의 사용이력' 화면></center>
-
-
 
 ---
 
@@ -181,18 +168,16 @@
 
 마이페이지 > **나의 오픈 API** 화면에서 신청한 오픈 데이터 API를 확인합니다.
 
-![odm_data_use_example](.\odm_data_use_example.png)
+![odm_data_use_example](./images/odm_data_use_example.png)
 
 <center><오픈 데이터 API 예제 코드 화면 (1)></center>
 
 
-
 신청한 오픈 데이터 API 를 확인 후, 사용하고자 하는 API 의 예제 code 에 마우스를 올리면 **예제 코드**가 레이어 팝업 형식으로 표시됩니다.
 
-![odm_data_use_example_mouseover](.\odm_data_use_example_mouseover.png)
+![odm_data_use_example_mouseover](./images/odm_data_use_example_mouseover.png)
 
 <center><오픈 데이터 API 예제 코드 화면 (2)></center>
-
 
 
 예제 'code'를 클릭하면, 클립보드로 코드가 자동으로 복사됩니다.
@@ -270,40 +255,35 @@ A 가 B에게 특정 아이스크림의 정보를 알고 싶다면, qs(parammete
 
 https://repl.it/languages/nodejs
 
-![replit](.\replit.png)
+![replit](./images/replit.png)
 
 <center><온라인 IDE 서비스 repl.it 화면></center>
 
 
-
 마이페이지 > 나의 오픈 API 에서 테스트 및 활용하고자 하는 오픈 데이터 API 의 예제 code를 복사합니다.
 
-![odm_data_use_example_mouseover](.\odm_data_use_example_mouseover.png)
+![odm_data_use_example_mouseover](./images/odm_data_use_example_mouseover.png)
 
 <center><오픈 데이터 API 예제 코드 화면></center>
-
 
 
 repl.it 사이트에 예제 코드를 입력합니다.
 
 그리고, 마이페이지 > 나의 오픈 API 에서 인증키를 복사하여 다음 auth_key 를 수정합니다. (API 사용을 위한 인증키 입력)
 
-![odm_mypage_secretkey](.\odm_mypage_secretkey.png)
+![odm_mypage_secretkey](./images/odm_mypage_secretkey.png)
 
 <center><오픈 데이터 마켓 마이페이지 → '나의 오픈 API 인증키' 화면></center>
-
-![replit2](.\replit2.png)
+![replit2](./images/replit2.png)
 
 <center><온라인 IDE 서비스 repl.it 예제 코드 입력></center>
 
 
-
 run 버튼을 눌러 예제를 실행합니다.
 
-![replit2](.\replit.gif)
+![replit2](./images/replit.gif)
 
 <center><온라인 IDE 서비스 repl.it 예제 실행 화면></center>
-
 
 
 초기에는 node.js 의 실행에 필요한 파일을 다운로드를 받고, 예제 코드를 실행합니다.
