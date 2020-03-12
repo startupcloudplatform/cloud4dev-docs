@@ -786,38 +786,38 @@
 #### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차) Database 구조
   - DB 테이블 reference
 
-  ![](./technicalReportImages/db_reference.png)
+  >>![](./technicalReportImages/db_reference.png)
 
   - micro_app: MsXpert에서 생성한 마이크로서비스
 
-  ![](./technicalReportImages/db_micro_app.png)
+  >>![](./technicalReportImages/db_micro_app.png)
 
   - micro_app_service: 각각의 마이크로서비스에서 사용하고 있는 cf상의 service (config-service, registry-service)
 
-  ![](./technicalReportImages/db_micro_app_service.png)
+  >>![](./technicalReportImages/db_micro_app_service.png)
 
   - micro_app_app: 각각의 마이크로서비스를 구성하고 있는 cf상의 application
 
-  ![](./technicalReportImages/db_micro_app_app.png)
+  >>![](./technicalReportImages/db_micro_app_app.png)
 
   - micro_api: MsXpert에 공개되어 있는 API
 
-  ![](./technicalReportImages/db_micro_app_api.png)
+  >>![](./technicalReportImages/db_micro_app_api.png)
 
   - micro_api_frontend: micro_app과 micro_api의 관계 확인 가능, 마이크로서비스 API 생성시 Update
 
-  ![](./technicalReportImages/db_micro_api_frontend.png)
+  >>![](./technicalReportImages/db_micro_api_frontend.png)
 
   - micro_app_api: 각각의 마이크로서비스에서 사용하고 있는 micro_api
 
-  ![](./technicalReportImages/db_micro_app_api.png)
+  >>![](./technicalReportImages/db_micro_app_api.png)
 
   - micro_api_rule: traefik서버에서 저장하고 있는 micro_api들의 정보, micro_app_api에 관한 내용도 확인 가능
 
-  ![](./technicalReportImages/db_micro_api_rule.png)
+  >>![](./technicalReportImages/db_micro_api_rule.png)
 
   - migration_version: Database-migration 정보,  Database Connection 생성시 사용
-  
-  ![](./technicalReportImages/db_migration_version.png)
+
+  >>![](./technicalReportImages/db_migration_version.png)
   
 
