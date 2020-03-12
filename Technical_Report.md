@@ -615,7 +615,7 @@
   >##### [1-6. msxpert-nipa의 각 instance에 접근하는 방법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-6-msxpert-nipa의-각-instance에-접근하는-방법-1)
   >##### [1-7. 등록해둔 API가 정상적으로 호출되지 않는 상황에서 대처법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-7-등록해둔-api가-정상적으로-호출되지-않는-상황에서-대처법-1)
 
- ##### 1-1. MsXpert 의 DB에 접근하기
+ ##### [1-1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting) MsXpert 의 DB에 접근하기
   ```shell
       # bosh Inception에서 아래의 과정을 실행
       $ bosh envs
@@ -636,7 +636,7 @@
       $ sudo -u vcap /var/vcap/packages/postgres-9.6.4/bin/psql microservice-nipa
   ```
 
- ##### 1-2.  MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우
+ ##### [1-2.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting)  MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우
   - backendApp은 보안을 위해서 url이 공개 되지 않는 것이 기본 Setting
     ![](./technicalReportImages/msxpert_url_check.png)
       ```shell
@@ -649,7 +649,7 @@
       $ cf map-route crs-front-lkop bosh-lite.com --hostname crs-front-lkop
       ```
 
- ##### 1-3.  API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법 
+ ##### [1-3.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting)  API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법 
   - 우선적으로 swagger페이지가 정상 동작하는지 확인
     ![](./technicalReportImages/api_registry_NoAPI.png)
       ```shell
@@ -662,7 +662,7 @@
       ```
  ![](./technicalReportImages/swagger-api-check.png)
 
- ##### 1-4.  cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)
+ ##### [1-4.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting)  cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)
   ```shell
       # cf env [ Application 이름 ]
       $ cf env configapp508a6971-870b-45a7-a4df-ac94f5d54987
@@ -710,7 +710,7 @@
       # config application refresh
       $ curl -d {} -u 508a6971-870b-45a7-a4df-ac94f5d54987:76e0a~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   configapp508a6971-870b-45a7-a4df-ac94f5d54987.bosh-lite.com/refresh
   ```
- ##### 1-5. Spring-cloud-Eureka  에러
+ ##### [1-5.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting) Spring-cloud-Eureka  에러
   ```shell
       # EMERGENCY! EUREKA MAY BE INCORRECTLY CLAIMING INSTANCES ARE UP WHEN THEY'RE NOT. RENEWALS ARE LESSER THAN THRESHOLD AND HENCE THE INSTANCES ARE NOT BEING EXPIRED JUST TO BE SAFE.
       
@@ -719,7 +719,7 @@
 
  ![](./technicalReportImages/spring-cloud-eureka-error.png)
 
- ##### 1-6. msxpert-nipa의 각 instance에 접근하는 방법
+ ##### [1-6.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting) msxpert-nipa의 각 instance에 접근하는 방법
   ```shell
       # msxpert-nipa의 deploy 상황이 아래와 같을때 각 instance에 접근하는 방법
       # Deployment 'msxpert-nipa'
@@ -763,7 +763,7 @@
     < 접속 화면 >
     ![](./technicalReportImages/Traefik-haproxy.png)
 
- ##### 1-7. 등록해둔 API가 정상적으로 호출되지 않는 상황에서 대처법
+ ##### [1-7.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting) 등록해둔 API가 정상적으로 호출되지 않는 상황에서 대처법
  ![](./technicalReportImages/API_page_not_found.png)
 
 
