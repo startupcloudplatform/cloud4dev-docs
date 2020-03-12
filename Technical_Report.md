@@ -1,20 +1,20 @@
 # Technical Report
-## 목차
- #### [MsXpert 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#msxpert-설치-1)
-  >##### [IaaS 구성 ( Azure )](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-iaas-구성-azure-)
-  >##### [Bosh 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#2-bosh-설치)
-  >##### [CloudFoundry 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#3-cloudfoundry-설치)
-  >##### [MsXpert 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#4-msxpert-설치)
- #### [MsXpert 운영](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#msxpert-운영-1)
-  >##### [Trouble Shooting](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting)
- #### [MsXpert Reference](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#msxpert-reference-1)
-  >##### [Database 구조](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-database-구조)
+## 
+ #### [MsXpert 설치](#msxpert-설치-1)
+  >##### [IaaS 구성 ( Azure )](#iaas-구성-azure-)
+  >##### [Bosh 설치](#bosh-설치)
+  >##### [CloudFoundry 설치](#cloudfoundry-설치)
+  >##### [MsXpert 설치](#msxpert-설치)
+ #### [MsXpert 운영](#msxpert-운영-1)
+  >##### [Trouble Shooting](#trouble-shooting)
+ #### [MsXpert Reference](#msxpert-reference-1)
+  >##### [Database 구조](#database-구조)
 
 ***
 
 ### MsXpert 설치
 
-#### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차) IaaS 구성( Azure )
+#### IaaS 구성( Azure )
 
 ##### 1-1 .  리소스 그룹 생성
  ![](./technicalReportImages/Azure_resouceGroup_Create.png)
@@ -68,9 +68,9 @@
 
 ##### 1-5 . vm 생성 (bosh-inception)
    ![](./technicalReportImages/Azure_vm_create.png)
- 
 
-#### [2.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차) Bosh 설치
+
+#### Bosh 설치
 ##### 2-1 . bosh-cli 설치
   ```shell
     # 다운 받은 바이너리 파일을 /usr/local/bin폴더 아래에 위치시키는 것으로 설치 완료
@@ -130,7 +130,7 @@
       $ bosh -e bosh login
   ```
 
-#### [3.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차) CloudFoundry 설치
+#### CloudFoundry 설치
  ##### 3-1. Upload a Cloud-Config
   ```shell
       $ bosh -e [target 설정시 지정한 이름] ucc iaas-support/azure/cloud-config.yml
@@ -156,9 +156,9 @@
         -o cf-deployment/operations/azure.yml \
         -o cf-deployment/operations/use-haproxy.yml \
         -o cf-deployment/operations/use-haproxy-public-network.yml
-  ``` 
+  ```
 
-#### [4.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차) MsXpert 설치
+#### MsXpert 설치
  ##### 4-1. angular/cli 설치
   ```shell
       $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
@@ -605,17 +605,17 @@
 
 ### MsXpert 운영 
 
-#### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차)  Trouble Shooting
+#### Trouble Shooting
  #### Contents
-  >##### [1-1. MsXpert 의 DB에 접근하기](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-1-msxpert-의-db에-접근하기-1)
-  >##### [1-2.  MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-2--msxpert-상에서-앱의-url-주소가-정상적으로-조회되지-않는-경우-1)
-  >##### [1-3.  API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-3--api--등록시-restapi가-조회되지-않을때-restapi-확인-방법-1)
-  >##### [1-4.  cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-4--cf에-deploy-되어-있는-application의-env-확인-방법--application-접근-비밀번호-확인법-1)
-  >##### [1-5. Spring-cloud-Eureka  에러](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-5-spring-cloud-eureka--에러-1)
-  >##### [1-6. msxpert-nipa의 각 instance에 접근하는 방법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-6-msxpert-nipa의-각-instance에-접근하는-방법-1)
-  >##### [1-7. 등록해둔 API가 정상적으로 호출되지 않는 상황에서 대처법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-7-등록해둔-api가-정상적으로-호출되지-않는-상황에서-대처법-1)
+  >##### [MsXpert 의 DB에 접근하기](#msxpert-의-db에-접근하기-1)
+  >##### [MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우](#msxpert-상에서-앱의-url-주소가-정상적으로-조회되지-않는-경우-1)
+  >##### [1-3.  API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법](#api--등록시-restapi가-조회되지-않을때-restapi-확인-방법-1)
+  >##### [1-4.  cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)](#cf에-deploy-되어-있는-application의-env-확인-방법--application-접근-비밀번호-확인법-1)
+  >##### [1-5. Spring-cloud-Eureka  에러](#spring-cloud-eureka--에러-1)
+  >##### [1-6. msxpert-nipa의 각 instance에 접근하는 방법](#sxpert-nipa의-각-instance에-접근하는-방법-1)
+  >##### [1-7. 등록해둔 API가 정상적으로 호출되지 않는 상황에서 대처법](#등록해둔-api가-정상적으로-호출되지-않는-상황에서-대처법-1)
 
- ##### [1-1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting) MsXpert 의 DB에 접근하기
+ #####  MsXpert 의 DB에 접근하기
   ```shell
       # bosh Inception에서 아래의 과정을 실행
       $ bosh envs
@@ -636,7 +636,7 @@
       $ sudo -u vcap /var/vcap/packages/postgres-9.6.4/bin/psql microservice-nipa
   ```
 
- ##### [1-2.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting)  MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우
+ #####  MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우
   - backendApp은 보안을 위해서 url이 공개 되지 않는 것이 기본 Setting
     ![](./technicalReportImages/msxpert_url_check.png)
       ```shell
@@ -649,7 +649,7 @@
       $ cf map-route crs-front-lkop bosh-lite.com --hostname crs-front-lkop
       ```
 
- ##### [1-3.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting)  API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법 
+ #####  API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법 
   - 우선적으로 swagger페이지가 정상 동작하는지 확인
     ![](./technicalReportImages/api_registry_NoAPI.png)
       ```shell
@@ -662,7 +662,7 @@
       ```
  ![](./technicalReportImages/swagger-api-check.png)
 
- ##### [1-4.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting)  cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)
+ #####  cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)
   ```shell
       # cf env [ Application 이름 ]
       $ cf env configapp508a6971-870b-45a7-a4df-ac94f5d54987
@@ -710,7 +710,7 @@
       # config application refresh
       $ curl -d {} -u 508a6971-870b-45a7-a4df-ac94f5d54987:76e0a~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   configapp508a6971-870b-45a7-a4df-ac94f5d54987.bosh-lite.com/refresh
   ```
- ##### [1-5.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting) Spring-cloud-Eureka  에러
+ ##### Spring-cloud-Eureka  에러
   ```shell
       # EMERGENCY! EUREKA MAY BE INCORRECTLY CLAIMING INSTANCES ARE UP WHEN THEY'RE NOT. RENEWALS ARE LESSER THAN THRESHOLD AND HENCE THE INSTANCES ARE NOT BEING EXPIRED JUST TO BE SAFE.
       
@@ -719,7 +719,7 @@
 
  ![](./technicalReportImages/spring-cloud-eureka-error.png)
 
- ##### [1-6.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting) msxpert-nipa의 각 instance에 접근하는 방법
+ ##### msxpert-nipa의 각 instance에 접근하는 방법
   ```shell
       # msxpert-nipa의 deploy 상황이 아래와 같을때 각 instance에 접근하는 방법
       # Deployment 'msxpert-nipa'
@@ -763,7 +763,7 @@
     < 접속 화면 >
     ![](./technicalReportImages/Traefik-haproxy.png)
 
- ##### [1-7.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting) 등록해둔 API가 정상적으로 호출되지 않는 상황에서 대처법
+ ##### 등록해둔 API가 정상적으로 호출되지 않는 상황에서 대처법
  ![](./technicalReportImages/API_page_not_found.png)
 
 
@@ -783,7 +783,7 @@
 
 ### MsXpert Reference
 
-#### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차) Database 구조
+#### Database 구조
   - DB 테이블 reference
     - 파란색: micro_app의 id
     - 빨간색: micro_api의 id
@@ -819,4 +819,4 @@
   - migration_version: Database-migration 정보,  Database Connection 생성시 사용
 
     ![](./technicalReportImages/db_migration_version.png)
-  
+
