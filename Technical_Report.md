@@ -4,7 +4,7 @@
  >##### [IaaS 구성](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-iaas-구성)
  >##### [Bosh 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#2-bosh-설치)
  >##### [CloudFoundry 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#3-cloudfoundry-설치)
- >##### [MsXpert 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#)
+ >##### [MsXpert 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#4-msxpert-설치)
  #### [MsXpert 운영](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#msxpert-운영-1)
  >##### [Trouble Shooting](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting)
  #### [MsXpert Reference](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#msxpert-reference-1)
@@ -14,7 +14,7 @@
 
 ### MsXpert 설치
 
-#### 1. IaaS 구성
+#### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md) IaaS 구성
 
 ##### 1-1 .  리소스 그룹 생성
  ![](./technicalReportImages/Azure_resouceGroup_Create.png)
@@ -70,7 +70,7 @@
    ![](./technicalReportImages/Azure_vm_create.png)
  
 
-#### 2. Bosh 설치
+#### [2.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md) Bosh 설치
 ##### 2-1 . bosh-cli 설치
   ```shell
     # 다운 받은 바이너리 파일을 /usr/local/bin폴더 아래에 위치시키는 것으로 설치 완료
@@ -130,7 +130,7 @@
       $ bosh -e bosh login
   ```
 
-#### 3. CloudFoundry 설치
+#### [3.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md) CloudFoundry 설치
  ##### 3-1. Upload a Cloud-Config
   ```shell
       $ bosh -e [target 설정시 지정한 이름] ucc iaas-support/azure/cloud-config.yml
@@ -158,7 +158,7 @@
         -o cf-deployment/operations/use-haproxy-public-network.yml
   ``` 
 
-#### 4. MsXpert 설치
+#### [4.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md) MsXpert 설치
  ##### 4-1. angular/cli 설치
   ```shell
       $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
@@ -605,7 +605,7 @@
 
 ### MsXpert 운영 
 
-#### 1.  Trouble Shooting
+#### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md)  Trouble Shooting
 
  ##### 1-1. MsXpert 의 DB에 접근하기
   ```shell
@@ -775,7 +775,7 @@
 
 ### MsXpert Reference
 
-#### 1. Database 구조
+#### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md) Database 구조
 
    ![](./technicalReportImages/database-erd.png)
 
