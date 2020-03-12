@@ -14,7 +14,7 @@
 
 ### MsXpert 설치
 
-#### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md) IaaS 구성
+#### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차) IaaS 구성
 
 ##### 1-1 .  리소스 그룹 생성
  ![](./technicalReportImages/Azure_resouceGroup_Create.png)
@@ -70,7 +70,7 @@
    ![](./technicalReportImages/Azure_vm_create.png)
  
 
-#### [2.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md) Bosh 설치
+#### [2.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차) Bosh 설치
 ##### 2-1 . bosh-cli 설치
   ```shell
     # 다운 받은 바이너리 파일을 /usr/local/bin폴더 아래에 위치시키는 것으로 설치 완료
@@ -130,7 +130,7 @@
       $ bosh -e bosh login
   ```
 
-#### [3.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md) CloudFoundry 설치
+#### [3.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차) CloudFoundry 설치
  ##### 3-1. Upload a Cloud-Config
   ```shell
       $ bosh -e [target 설정시 지정한 이름] ucc iaas-support/azure/cloud-config.yml
@@ -158,7 +158,7 @@
         -o cf-deployment/operations/use-haproxy-public-network.yml
   ``` 
 
-#### [4.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md) MsXpert 설치
+#### [4.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차) MsXpert 설치
  ##### 4-1. angular/cli 설치
   ```shell
       $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
@@ -605,7 +605,7 @@
 
 ### MsXpert 운영 
 
-#### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md)  Trouble Shooting
+#### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차)  Trouble Shooting
 
  ##### 1-1. MsXpert 의 DB에 접근하기
   ```shell
@@ -775,7 +775,24 @@
 
 ### MsXpert Reference
 
-#### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md) Database 구조
+#### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차) Database 구조
 
    ![](./technicalReportImages/database-erd.png)
+   ```
+      - micro_api: MsXpert에 공개되어 있는 API
+
+      - micro_app_api: 각각의 마이크로서비스에서 사용하고 있는 micro_api
+
+      - micro_api_frontend: micro_app과 micro_api의 관계 확인 가능, 마이크로서비스 API 생성시 Update
+
+      - micro_app_service: 각각의 마이크로서비스에서 사용하고 있는 cf상의 service (config-service, registry-service)
+
+      - micro_app_app: 각각의 마이크로서비스를 구성하고 있는 cf상의 application
+
+      - micro_app: MsXpert에서 생성한 마이크로서비스
+
+      - micro_api_rule: traefik서버에서 저장하고 있는 micro_api들의 정보, micro_app_api에 관한 내용도 확인 가능
+
+      - migration_version: Database-migration 정보,  Database Connection 생성시 사용
+   ```
 
