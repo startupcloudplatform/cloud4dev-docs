@@ -785,8 +785,8 @@
 
 #### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차) Database 구조
   - DB 테이블 reference
-
-    ![](./technicalReportImages/db_reference.png)
+    파란색: micro_app의 id
+    빨간색: micro_api의 id
 
   - micro_app: MsXpert에서 생성한 마이크로서비스
 
@@ -802,7 +802,7 @@
 
   - micro_api: MsXpert에 공개되어 있는 API
 
-    ![](./technicalReportImages/db_micro_app_api.png)
+    ![](./technicalReportImages/db_micro_api.png)
 
   - micro_api_frontend: micro_app과 micro_api의 관계 확인 가능, 마이크로서비스 API 생성시 Update
 
@@ -820,4 +820,3 @@
 
     ![](./technicalReportImages/db_migration_version.png)
   
-
