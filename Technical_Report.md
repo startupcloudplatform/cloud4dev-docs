@@ -1,14 +1,14 @@
 # Technical Report
 ## 목차
  #### [MsXpert 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#msxpert-설치-1)
- >##### [IaaS 구성 ( Azure )](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-iaas-구성-azure-)
- >##### [Bosh 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#2-bosh-설치)
- >##### [CloudFoundry 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#3-cloudfoundry-설치)
- >##### [MsXpert 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#4-msxpert-설치)
+  ##### [IaaS 구성 ( Azure )](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-iaas-구성-azure-)
+  ##### [Bosh 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#2-bosh-설치)
+  ##### [CloudFoundry 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#3-cloudfoundry-설치)
+  ##### [MsXpert 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#4-msxpert-설치)
  #### [MsXpert 운영](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#msxpert-운영-1)
- >##### [Trouble Shooting](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting)
+  ##### [Trouble Shooting](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting)
  #### [MsXpert Reference](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#msxpert-reference-1)
- >##### [Database 구조](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-database-구조)
+  ##### [Database 구조](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-database-구조)
 
 ***
 
@@ -607,13 +607,13 @@
 
 #### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차)  Trouble Shooting
  #### Contents
- >##### [1-1. MsXpert 의 DB에 접근하기](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-1-msxpert-의-db에-접근하기-1)
- >##### [1-2.  MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-2--msxpert-상에서-앱의-url-주소가-정상적으로-조회되지-않는-경우-1)
- >##### [1-3.  API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-3--api--등록시-restapi가-조회되지-않을때-restapi-확인-방법-1)
- >##### [1-4.  cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-4--cf에-deploy-되어-있는-application의-env-확인-방법--application-접근-비밀번호-확인법-1)
- >##### [1-5. Spring-cloud-Eureka  에러](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-5-spring-cloud-eureka--에러-1)
- >##### [1-6. msxpert-nipa의 각 instance에 접근하는 방법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-6-msxpert-nipa의-각-instance에-접근하는-방법-1)
- >##### [1-7. 등록해둔 API가 정상적으로 호출되지 않는 상황에서 대처법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-7-등록해둔-api가-정상적으로-호출되지-않는-상황에서-대처법-1)
+  ##### [1-1. MsXpert 의 DB에 접근하기](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-1-msxpert-의-db에-접근하기-1)
+  ##### [1-2.  MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-2--msxpert-상에서-앱의-url-주소가-정상적으로-조회되지-않는-경우-1)
+  ##### [1-3.  API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-3--api--등록시-restapi가-조회되지-않을때-restapi-확인-방법-1)
+  ##### [1-4.  cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-4--cf에-deploy-되어-있는-application의-env-확인-방법--application-접근-비밀번호-확인법-1)
+  ##### [1-5. Spring-cloud-Eureka  에러](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-5-spring-cloud-eureka--에러-1)
+  ##### [1-6. msxpert-nipa의 각 instance에 접근하는 방법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-6-msxpert-nipa의-각-instance에-접근하는-방법-1)
+  ##### [1-7. 등록해둔 API가 정상적으로 호출되지 않는 상황에서 대처법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-7-등록해둔-api가-정상적으로-호출되지-않는-상황에서-대처법-1)
 
  ##### 1-1. MsXpert 의 DB에 접근하기
   ```shell
@@ -786,38 +786,38 @@
 #### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차) Database 구조
   - DB 테이블 reference
 
-  >>![](./technicalReportImages/db_reference.png)
+    ![](./technicalReportImages/db_reference.png)
 
   - micro_app: MsXpert에서 생성한 마이크로서비스
 
-  >>![](./technicalReportImages/db_micro_app.png)
+    ![](./technicalReportImages/db_micro_app.png)
 
   - micro_app_service: 각각의 마이크로서비스에서 사용하고 있는 cf상의 service (config-service, registry-service)
 
-  >>![](./technicalReportImages/db_micro_app_service.png)
+    ![](./technicalReportImages/db_micro_app_service.png)
 
   - micro_app_app: 각각의 마이크로서비스를 구성하고 있는 cf상의 application
 
-  >>![](./technicalReportImages/db_micro_app_app.png)
+    ![](./technicalReportImages/db_micro_app_app.png)
 
   - micro_api: MsXpert에 공개되어 있는 API
 
-  >>![](./technicalReportImages/db_micro_app_api.png)
+    ![](./technicalReportImages/db_micro_app_api.png)
 
   - micro_api_frontend: micro_app과 micro_api의 관계 확인 가능, 마이크로서비스 API 생성시 Update
 
-  >>![](./technicalReportImages/db_micro_api_frontend.png)
+    ![](./technicalReportImages/db_micro_api_frontend.png)
 
   - micro_app_api: 각각의 마이크로서비스에서 사용하고 있는 micro_api
 
-  >>![](./technicalReportImages/db_micro_app_api.png)
+    ![](./technicalReportImages/db_micro_app_api.png)
 
   - micro_api_rule: traefik서버에서 저장하고 있는 micro_api들의 정보, micro_app_api에 관한 내용도 확인 가능
 
-  >>![](./technicalReportImages/db_micro_api_rule.png)
+    ![](./technicalReportImages/db_micro_api_rule.png)
 
   - migration_version: Database-migration 정보,  Database Connection 생성시 사용
 
-  >>![](./technicalReportImages/db_migration_version.png)
+    ![](./technicalReportImages/db_migration_version.png)
   
 
