@@ -35,8 +35,8 @@
   - [마이크로서비스 앱 구성](MicroserviceGuide.md#마이크로서비스-앱-구성)
   
 - 개발지원 플랫폼 메뉴얼
-  - [마이크로서비스 스튜디오 사용자 메뉴얼](msamanual_v2.md)
   - [마이크로서비스 스튜디오 설치하기](Technical_Report.md)
+  - [마이크로서비스 스튜디오 사용자 메뉴얼](msamanual_v2.md)
     - [마이크로서비스 스튜디오 아키텍처](msamanual_v2.md#마이크로서비스-스튜디오-아키텍처)
     - [마이크로서비스 스튜디오 시작하기](msamanual_v2.md#마이크로서비스-스튜디오-시작하기)
     - [마이크로서비스 생성](msamanual_v2.md#마이크로서비스-생성하기)
@@ -46,7 +46,6 @@
   - [오픈데이터API 사용자 메뉴얼](openapi.md)
   - [오픈데이터API 제공처 메뉴얼](openapi_manager.md)
   
-
 - 마이크로서비스 스튜디오 Trouble shooting
 
   - ##### [1-1. MsXpert 의 DB에 접근하기](Technical_Report.md#1-1-msxpert-의-db에-접근하기-1)
