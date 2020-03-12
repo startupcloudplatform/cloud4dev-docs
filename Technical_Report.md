@@ -1,12 +1,20 @@
 # Technical Report
 ## 목차
  #### [MsXpert 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#msxpert-설치-1)
- >##### [IaaS 구성](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-iaas-구성)
+ >##### [IaaS 구성 ( Azure )](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-iaas-구성)
  >##### [Bosh 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#2-bosh-설치)
  >##### [CloudFoundry 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#3-cloudfoundry-설치)
  >##### [MsXpert 설치](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#4-msxpert-설치)
  #### [MsXpert 운영](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#msxpert-운영-1)
  >##### [Trouble Shooting](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1--trouble-shooting)
+ >>>##### Contents
+ >>>>>###### [1-1. MsXpert 의 DB에 접근하기](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-1-msxpert-의-db에-접근하기)
+ >>>>>###### [1-2.  MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-2--msxpert-상에서-앱의-url-주소가-정상적으로-조회되지-않는-경우)
+ >>>>>###### [1-3.  API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-3--api--등록시-restapi가-조회되지-않을때-restapi-확인-방법)
+ >>>>>###### [1-4.  cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-4--cf에-deploy-되어-있는-application의-env-확인-방법--application-접근-비밀번호-확인법)
+ >>>>>###### [1-5. Spring-cloud-Eureka  에러](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-5-spring-cloud-eureka--에러)
+ >>>>>###### [1-6. msxpert-nipa의 각 instance에 접근하는 방법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-6-msxpert-nipa의-각-instance에-접근하는-방법)
+ >>>>>###### [1-7. 등록해둔 API가 정상적으로 호출되지 않는 상황에서 대처법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-7-등록해둔-api가-정상적으로-호출되지-않는-상황에서-대처법)
  #### [MsXpert Reference](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#msxpert-reference-1)
  >##### [Database 구조](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-database-구조)
 
@@ -14,7 +22,7 @@
 
 ### MsXpert 설치
 
-#### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차) IaaS 구성
+#### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차) IaaS 구성( Azure )
 
 ##### 1-1 .  리소스 그룹 생성
  ![](./technicalReportImages/Azure_resouceGroup_Create.png)
@@ -606,6 +614,14 @@
 ### MsXpert 운영 
 
 #### [1.](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#목차)  Trouble Shooting
+ #### Contents
+ ##### [1-1. MsXpert 의 DB에 접근하기](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-1-msxpert-의-db에-접근하기)
+ ##### [1-2.  MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-2--msxpert-상에서-앱의-url-주소가-정상적으로-조회되지-않는-경우)
+ ##### [1-3.  API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-3--api--등록시-restapi가-조회되지-않을때-restapi-확인-방법)
+ ##### [1-4.  cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-4--cf에-deploy-되어-있는-application의-env-확인-방법--application-접근-비밀번호-확인법)
+ ##### [1-5. Spring-cloud-Eureka  에러](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-5-spring-cloud-eureka--에러)
+ ##### [1-6. msxpert-nipa의 각 instance에 접근하는 방법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-6-msxpert-nipa의-각-instance에-접근하는-방법)
+ ##### [1-7. 등록해둔 API가 정상적으로 호출되지 않는 상황에서 대처법](https://github.com/startupcloudplatform/cloud4dev-docs/blob/master/Technical_Report.md#1-7-등록해둔-api가-정상적으로-호출되지-않는-상황에서-대처법)
 
  ##### 1-1. MsXpert 의 DB에 접근하기
   ```shell
