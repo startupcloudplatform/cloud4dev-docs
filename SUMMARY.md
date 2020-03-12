@@ -3,7 +3,6 @@
 - [개발지원플랫폼 활용 개요](README.md)
 
 - [마이크로서비스 아키텍처 개요](microservice.md)
-  
   - [모놀리식 아키텍처](microservice.md#모놀리식-아키텍처)
   - [마이크로서비스 아키텍처](microservice.md#마이크로서비스-아키텍처)
   - [마이크로서비스 아키텍처 구성요소](microservice.md#마이크로서비스-아키텍처-구성-요소)
@@ -12,7 +11,6 @@
   - [클라우드플랫폼과 마이크로서비스](microservice.md#클라우드플랫폼과-마이크로서비스)
   
 - [마이크로서비스 아키텍처 기반 SW개발 가이드](swprocess.md)
-  
   - [개요](swprocess.md#마이크로서비스-아키텍처-기반-개발-개요)
   - [마이크로서비스 아키텍처 설계 지침](swprocess.md#마이크로서비스-아키텍처-설계-지침)
   - [마이크로서비스 아키텍처 패턴](swprocess.md#마이크로서비스-아키텍처-패턴)
@@ -26,7 +24,6 @@
   - [API Gateway](msaspringcloud.md#api-gateway)
   
 - [마이크로서비스 스튜디오 활용 가이드](MicroserviceGuide.md)
-  
   - [마이크로서비스 스튜디오 개요](MicroserviceGuide.md#마이크로서비스-스튜디오-개요)
   - [마이크로서비스 스튜디오 주요 기능](MicroserviceGuide.md#마이크로서비스-스튜디오-주요-기능)
   - [백엔드앱 개발](MicroserviceGuide.md#백엔드앱-개발)
@@ -47,17 +44,3 @@
   - [오픈데이터API 제공처 메뉴얼](openapi_manager.md)
   
 - 마이크로서비스 스튜디오 Trouble shooting
-
-  - ##### [1-1. MsXpert 의 DB에 접근하기](Technical_Report.md#1-1-msxpert-의-db에-접근하기-1)
-
-  - [1-2. MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우](Technical_Report.md#1-2--msxpert-상에서-앱의-url-주소가-정상적으로-조회되지-않는-경우-1)
-
-  -  [1-3. API 등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법](Technical_Report.md#1-3--api--등록시-restapi가-조회되지-않을때-restapi-확인-방법-1)
-
-  -  [1-4. cf에 deploy 되어 있는 application의 env 확인 방법](Technical_Report.md#1-4--cf에-deploy-되어-있는-application의-env-확인-방법--application-접근-비밀번호-확인법-1)
-
-  -  [1-5. Spring-cloud-Eureka 에러](Technical_Report.md#1-5-spring-cloud-eureka--에러-1)
-
-  - ##### [1-6. msxpert-nipa의 각 instance에 접근하는 방법](Technical_Report.md#1-6-msxpert-nipa의-각-instance에-접근하는-방법-1)
-
-  - ##### [1-7. 등록해둔 API가 정상적으로 호출되지 않는 상황에서 대처법](Technical_Report.md#1-7-등록해둔-api가-정상적으로-호출되지-않는-상황에서-대처법-1)
