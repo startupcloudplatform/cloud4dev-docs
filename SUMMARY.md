@@ -11,7 +11,7 @@
     - [마이크로서비스 앱 구성](MicroserviceGuide.md#마이크로서비스-앱-구성)
   - [오픈데이터API 사용자 활용 가이드](openapi_v2.md)
     - [회원가입](openapi_v2.md#회원가입)
-    - [오픈 데이터 마켓](openapi_v2.md#오픈-데이터-마켓(open-data-market)-이용하기)
+    - [오픈데이터 API 이용 방법](openapi_v2.md#오픈데이터-api-이용-방법)
     - [오픈데이터 API 사용해보기](openapi_v2.md#오픈데이터-api-사용해보기)
     - [오픈데이터 API 테스트](openapi_v2.md#오픈데이터-api-테스트)
     - [오픈데이터 마켓 활용 실습](openapi_v2.md#오픈-데이터-마켓(OPEN-DATA-MARKET)-API-활용-실습)
