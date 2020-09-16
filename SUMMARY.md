@@ -1,6 +1,15 @@
 # Summary
 
 - [개발지원플랫폼 활용 개요](README.md)
+- 개발지원플랫폼 활용 가이드
+  - [마이크로서비스 스튜디오 활용 가이드](MicroserviceGuide.md)
+    - [마이크로서비스 스튜디오 개요](MicroserviceGuide.md#마이크로서비스-스튜디오-개요)
+    - [마이크로서비스 스튜디오 주요 기능](MicroserviceGuide.md#마이크로서비스-스튜디오-주요-기능)
+    - [백엔드앱 개발](MicroserviceGuide.md#백엔드앱-개발)
+    - [프론트엔드 앱 개발](MicroserviceGuide.md#프론트엔드-앱-개발)
+    - [PaaS-TA에 앱 배포하기](MicroserviceGuide.md#paas-ta에-앱-배포하기)
+    - [마이크로서비스 앱 구성](MicroserviceGuide.md#마이크로서비스-앱-구성)
+  - [오픈데이터API 사용자 활용 가이드](openapi_v2.md)
 - [마이크로서비스 아키텍처 개요](microservice.md)
   - [모놀리식 아키텍처](microservice.md#모놀리식-아키텍처)
   - [마이크로서비스 아키텍처](microservice.md#마이크로서비스-아키텍처)
@@ -20,13 +29,6 @@
   - [Spring Cloud Config Server](msaspringcloud.md#spring-cloud-config-server)
   - [Service Discovery and Registry](msaspringcloud.md#service-discovery-and-registry)
   - [API Gateway](msaspringcloud.md#api-gateway)
-- [마이크로서비스 스튜디오 활용 가이드](MicroserviceGuide.md)
-  - [마이크로서비스 스튜디오 개요](MicroserviceGuide.md#마이크로서비스-스튜디오-개요)
-  - [마이크로서비스 스튜디오 주요 기능](MicroserviceGuide.md#마이크로서비스-스튜디오-주요-기능)
-  - [백엔드앱 개발](MicroserviceGuide.md#백엔드앱-개발)
-  - [프론트엔드 앱 개발](MicroserviceGuide.md#프론트엔드-앱-개발)
-  - [PaaS-TA에 앱 배포하기](MicroserviceGuide.md#paas-ta에-앱-배포하기)
-  - [마이크로서비스 앱 구성](MicroserviceGuide.md#마이크로서비스-앱-구성)
 - 개발지원 플랫폼 메뉴얼
   - [마이크로서비스 스튜디오 기술문서](Technical_Report.md)
   - [마이크로서비스 스튜디오 사용자 메뉴얼](msamanual_v2.md)
@@ -36,5 +38,5 @@
     - [마이크로서비스 조회 및 수정](msamanual_v2.md#마이크로서비스-조회-및-수정)
     - [REST API 테스트 기능](msamanual_v2.md#rest-api-테스트-기능)
     - [API 관리](msamanual_v2.md#api-관리)
-  - [오픈데이터API 사용자 메뉴얼](openapi_v2.md)
+  - [오픈데이터API 사용자 메뉴얼](openapi.md)
   - [오픈데이터API 제공처 메뉴얼](openapi_manager.md)
