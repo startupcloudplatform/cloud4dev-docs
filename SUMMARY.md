@@ -36,5 +36,5 @@
     - [마이크로서비스 조회 및 수정](msamanual_v2.md#마이크로서비스-조회-및-수정)
     - [REST API 테스트 기능](msamanual_v2.md#rest-api-테스트-기능)
     - [API 관리](msamanual_v2.md#api-관리)
-  - [오픈데이터API 사용자 메뉴얼](openapi.md)
+  - [오픈데이터API 사용자 메뉴얼](openapi_v2.md)
   - [오픈데이터API 제공처 메뉴얼](openapi_manager.md)
