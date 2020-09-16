@@ -6,7 +6,7 @@
 
 
 
-![guide_diagram.e766b3bf](.\guide_diagram.png)
+![guide_diagram.e766b3bf](.\images\guide_diagram.png)
 
 
 
