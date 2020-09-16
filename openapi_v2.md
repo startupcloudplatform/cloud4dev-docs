@@ -67,7 +67,7 @@
 > 10. 관심 카테고리
 
 
-<img src="./images/odm_signup2.png" width=500 height=150> 
+<img src="./images/odm_signup2.png"> 
 <center>오픈 데이터 마켓 개발자 회원가입 화면</center>
 
 
