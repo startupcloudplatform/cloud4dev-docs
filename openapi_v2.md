@@ -20,8 +20,7 @@
 
 
 
-![OpenData-API-Gateway-system](.\OpenData-API-Gateway-system.png)
-
+ <img src="./images/OpenData-API-Gateway-system.png" width=500 height=150> 
 
 
 ---
@@ -36,8 +35,7 @@
 
 오픈 데이터 마켓(OPEN DATA MARKET)은 http://203.245.1.104:3000/를 통해 접속이 가능합니다.
 
-![odm_main](.\odm_main.png)
-
+ <img src="./images/odm_main.png" width=500 height=150> 
 <center>오픈 데이터 마켓 메인 화면</center>
 
 
@@ -46,8 +44,7 @@
 
 오픈 데이터 마켓을 이용하시려면 간단한 회원가입 후, 모든 컨텐츠를 이용하실 수 있습니다.
 
-![odm_signup](.\odm_signup.png)
-
+<img src="./images/odm_signup.png" width=500 height=150> 
 <center>오픈 데이터 마켓 회원가입 화면</center>
 
 
@@ -70,9 +67,7 @@
 > 10. 관심 카테고리
 
 
-
-![odm_signup2](.\odm_signup2.png)
-
+<img src="./images/odm_signup2.png" width=500 height=150> 
 <center>오픈 데이터 마켓 개발자 회원가입 화면</center>
 
 
@@ -81,14 +76,12 @@
 
 회원가입이 완료되었다면, 오픈 데이터 마켓의 로그인 화면을 통해 포털 로그인을 진행합니다.
 
-![odm_signin](.\odm_signin.png)
-
+<img src="./images/odm_signin.png" width=500 height=150>
 <center>오픈 데이터 마켓 개발자 로그인 화면</center>
 
 
 
-![odm_signin](.\odm_signin2.png)
-
+<img src="./images/odm_signin2.png" width=500 height=150>
 <center>오픈 데이터 마켓 개발자 로그인 화면 (2)</center>
 
 
@@ -105,8 +98,7 @@
 
 활용할 데이터를 찾기 위해 오픈 데이터 마켓 상단 메뉴 '**오픈데이터**'를 클릭하여 이동합니다.
 
-![odm_datamenu](.\odm_datamenu.png)
-
+<img src="./images/odm_datamenu.png" width=500 height=150>
 <center>오픈 데이터 마켓 메뉴 안내 화면</center>
 
 
@@ -121,7 +113,7 @@
 
 
 
-![odm_data](.\odm_data.png)
+![odm_data](.images\odm_data.png)
 
 <center>오픈 데이터 마켓 데이터 화면</center>
 
