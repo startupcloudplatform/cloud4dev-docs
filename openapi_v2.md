@@ -113,32 +113,30 @@
 
 
 
-![odm_data](.\images\odm_data.png)
-
+<img src="./images/odm_data.png" >
 <center>오픈 데이터 마켓 데이터 화면</center>
 
 
 
 활용하고자 하는 검색어를 입력한 후, 검색 결과에서 공간정보 '개별주택가격WFS조회' 데이터를 클릭합니다.
 
-![odm_data](.\odm_data2.png)
-
+<img src="./images/odm_data2.png" >
 <center><오픈 데이터 마켓 데이터 검색 화면></center>
 
 
 
 활용 정보(목적)을 클릭 후, 신청 버튼을 클릭하여 활용 신청을 진행합니다.
 
-![odm_data](.\odm_data3.png)
 
+<img src="./images/odm_data3.png" >
 <center>오픈 데이터 마켓 데이터 활용 신청 화면</center>
 
 
 
 정상적으로 신청이 완료되면, 자동으로 마이페이지의 '나의 오픈 API' 화면으로 이동이 되며,  신청한 오픈 데이터 API 목록과 인증키를 확인 할 수 있는 공간이 표시됩니다.
 
-![odm_mypage](.\odm_mypage.png)
 
+<img src="./images/odm_mypage.png" >
 <center>오픈 데이터 마켓 마이페이지 → '나의 오픈 API' 화면</center>
 
 
@@ -159,8 +157,7 @@
 
 일일 사용량은 마이 페이지 > 나의 사용이력 화면에서 확인하실 수 있습니다. 
 
-![odm_mypage_traffic](.\odm_mypage_traffic.png)
-
+<img src="./images/odm_mypage_traffic.png" >
 <center>오픈 데이터 마켓 마이페이지 → '나의 사용이력' 화면</center>
 
 
@@ -173,16 +170,16 @@
 
 마이페이지 > **나의 오픈 API** 화면에서 신청한 오픈 데이터 API를 확인합니다.
 
-![odm_data_use_example](.\odm_data_use_example.png)
 
+<img src="./images/odm_data_use_example.png" >
 <center>오픈 데이터 API 예제 코드 화면 (1)</center>
 
 
 
 신청한 오픈 데이터 API 를 확인 후, 사용하고자 하는 API 의 예제 code 에 마우스를 올리면 **예제 코드**가 레이어 팝업 형식으로 표시됩니다.
 
-![odm_data_use_example_mouseover](.\odm_data_use_example_mouseover.png)
 
+<img src="./images/odm_data_use_example_mouseover.png" >
 <center>오픈 데이터 API 예제 코드 화면 (2)</center>
 
 
@@ -262,16 +259,15 @@ A 가 B에게 특정 아이스크림의 정보를 알고 싶다면, qs(parammete
 
 https://repl.it/languages/nodejs
 
-![replit](.\replit.png)
-
+<img src="./images/replit.png" >
 <center>온라인 IDE 서비스 repl.it 화면</center>
 
 
 
 마이페이지 > 나의 오픈 API 에서 테스트 및 활용하고자 하는 오픈 데이터 API 의 예제 code를 복사합니다.
 
-![odm_data_use_example_mouseover](.\odm_data_use_example_mouseover.png)
 
+<img src="./images/odm_data_use_example_mouseover.png" >
 <center>오픈 데이터 API 예제 코드 화면</center>
 
 
@@ -280,22 +276,19 @@ repl.it 사이트에 예제 코드를 입력합니다.
 
 그리고, 마이페이지 > 나의 오픈 API 에서 인증키를 복사하여 다음 auth_key 를 수정합니다. (API 사용을 위한 인증키 입력)
 
-![odm_mypage_secretkey](.\odm_mypage_secretkey.png)
-
+<img src="./imagesodm_mypage_secretkey.png" >
 <center>오픈 데이터 마켓 마이페이지 → '나의 오픈 API 인증키' 화면</center>
 
 
 
-![replit2](.\replit2.png)
-
+<img src="./images/replit2.png" >
 <center>온라인 IDE 서비스 repl.it 예제 코드 입력</center>
 
 
 
 run 버튼을 눌러 예제를 실행합니다.
 
-![replit2](.\replit.gif)
-
+<img src="./images/replit.gif" >
 <center>온라인 IDE 서비스 repl.it 예제 실행 화면</center>
 
 
@@ -376,22 +369,20 @@ run 버튼을 눌러 예제를 실행합니다.
 
 #### 실습 자료
 
-![qa_center1](.\qa_center1.png)
 
+<img src="./images/qa_center1.png" >
 <center>개발지원플랫폼 홈페이지</center>
 
 
 
-![qa_center2](.\qa_center2.png)
-
+<img src="./images/qa_center2.png" >
 <center>Q&A 센터 - 기술지원 서비스 - 자료실 - 오픈데이터 API 사용 관련 실습 자료 > 샘플-앱.zip 다운받기</center>
 
 
 
 다운받은 샘플-앱.zip 은 다음과 같이 2가지 파일로 구성되어있습니다.
 
-![sample-app](.\sample-app.png)
-
+<img src="./images/sample-app.png" >
 
 
 - GoogleMapSample.html
@@ -417,40 +408,37 @@ run 버튼을 눌러 예제를 실행합니다.
 
    - API 및 서비스 사용 설정 클릭
 
-   ![googleAPI_1](.\googleAPI_1.png)
+   
+   <img src="./images/googleAPI_1.png" >
 
    
 
    - Maps JavaScript API 클릭
 
-   ![googleAPI_2](.\googleAPI_2.png)
-
+   <img src="./images/googleAPI_2.png" >
    
 
    - Maps JavaScript API > 사용 클릭
-
-   ![googleAPI_3](.\googleAPI_3.png)
-
    
+   <img src="./images/googleAPI_3.png" >
 
 2. 사용자 인증 정보 생성
 
    - API를 사용하기 위해 사용자 인증 정보 생성을 위해 'API 및 서비스의 사용자 인증 정보' 클릭
 
-   ![googleAPI_4](.\googleAPI_4.png)
-
    
+   <img src="./images/googleAPI_4.png" >
 
    - 사용자 인증 정보 만들기 클릭
 
-   ![googleAPI_5](.\googleAPI_5.png)
-
+   
+  <img src="./images/googleAPI_5.png" >
    
 
    - API 복사
 
-   ![googleAPI_6](.\googleAPI_6.png)
-
+   
+  <img src="./images/googleAPI_6.png" >
    
 
    
@@ -459,16 +447,15 @@ run 버튼을 눌러 예제를 실행합니다.
 
    - GOOGLE_MAP_API 텍스트 부분을 위에 복사한 API 로 교체
 
-   ![googleAPI_7](.\googleAPI_7.png)
+   <img src="./images/googleAPI_7.png" >
+   <img src="./images/googleAPI_8.png" >
 
-   ![googleAPI_8](.\googleAPI_8.png)
-
+   
    
 
 4. 확인
-
-   ![googleAPI_9](.\googleAPI_9.png)
-
+   
+ <img src="./images/googleAPI_9.png" >
 
 
 새로고침하시면, 정상적으로 GoogleMap API를 통해 맵을 불러오는 것을 볼 수 있습니다.
@@ -490,9 +477,7 @@ run 버튼을 눌러 예제를 실행합니다.
 
    - 로그인 후 마이페이지에서 신청한 API의 code에 마우스를 올리시면 다음과 같이 예제가 표시됩니다.
 
-![opendata_api_address](.\opendata_api_address.png)
-
-
+<img src="./images/opendata_api_address.png" >
 
 
 
@@ -501,7 +486,8 @@ run 버튼을 눌러 예제를 실행합니다.
 2. 인증키
 
 
-![opendata_authkey](.\opendata_authkey.png)
+
+<img src="./images/opendata_authkey.png" >
 
 
 
@@ -509,20 +495,20 @@ run 버튼을 눌러 예제를 실행합니다.
 
 1. 주소 변경
 
-   ![opendata_url_change](.\opendata_url_change.png)
+   <img src="./images/opendata_url_change.png" >
    
    
    
 2. 인증키 변경
 
-   ![opendata_auth_change](.\opendata_auth_change.png)
+   <img src="./images/opendata_auth_change.png" >
    
 
 3. 수정사항
 
    - 131 라인을 삭제해주세요.
 
-![opendata_line_remove](.\opendata_line_remove.png)
+  <img src="./images/opendata_line_remove.png" >
 
 
 
@@ -530,8 +516,7 @@ run 버튼을 눌러 예제를 실행합니다.
 
 #### 샘플 최종 결과물
 
-![GoogleMapSample](.\GoogleMapSample.png)
-
+  <img src="./images/GoogleMapSample.png" >
 
 
 이번 실습은 개별 주택 가격 데이터를 불러와 구글 맵에 표시해주는 실습이였습니다.
