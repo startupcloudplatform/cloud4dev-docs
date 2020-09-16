@@ -5,7 +5,7 @@
 **Open Data Market**은 다양한 기관에서 독립적으로 제공하는 오픈데이터 정보를 통합 및 분류하여 서비스를 제공합니다. Open Data Market을 통해 오픈데이터를 찾으면 다수의 사이트를 방문해야 하는 번거로움이 줄어듭니다. 또한 S/W 개발자에 최적화된 분류체계를 제공하면서 오픈데이터 정보의 접근성을 높입니다.
 
 
- <img src="./images/guide_diagram.png" width=500 height=150> 
+ <img src="./images/guide_diagram.png"> 
 
 
 ### 오픈 API란 무엇인가?
