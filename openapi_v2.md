@@ -22,7 +22,6 @@
 
  <img src="./images/OpenData-API-Gateway-system.png" > 
 
-
 ---
 
 ### 오픈 데이터 마켓(OPEN DATA MARKET) 시작하기
@@ -39,14 +38,12 @@
 <center>오픈 데이터 마켓 메인 화면</center>
 
 
-
 #### 회원가입
 
 오픈 데이터 마켓을 이용하시려면 간단한 회원가입 후, 모든 컨텐츠를 이용하실 수 있습니다.
 
 <img src="./images/odm_signup.png" > 
 <center>오픈 데이터 마켓 회원가입 화면</center>
-
 
 
 #### 회원가입 (개발자 화면)
@@ -71,7 +68,6 @@
 <center>오픈 데이터 마켓 개발자 회원가입 화면</center>
 
 
-
 #### 로그인
 
 회원가입이 완료되었다면, 오픈 데이터 마켓의 로그인 화면을 통해 포털 로그인을 진행합니다.
@@ -80,11 +76,8 @@
 <center>오픈 데이터 마켓 개발자 로그인 화면</center>
 
 
-
 <img src="./images/odm_signin2.png" >
 <center>오픈 데이터 마켓 개발자 로그인 화면 (2)</center>
-
-
 
 ---
 
@@ -102,7 +95,6 @@
 <center>오픈 데이터 마켓 메뉴 안내 화면</center>
 
 
-
 #### 오픈데이터 API 찾기
 
 ① 검색 : 자신이 활용하고자 하는 API를 찾으려면 검색 창에 관련 단어를 기입 후 검색 버튼을 누르세요.
@@ -117,12 +109,10 @@
 <center>오픈 데이터 마켓 데이터 화면</center>
 
 
-
 활용하고자 하는 검색어를 입력한 후, 검색 결과에서 공간정보 '개별주택가격WFS조회' 데이터를 클릭합니다.
 
 <img src="./images/odm_data2.png" >
 <center><오픈 데이터 마켓 데이터 검색 화면></center>
-
 
 
 활용 정보(목적)을 클릭 후, 신청 버튼을 클릭하여 활용 신청을 진행합니다.
@@ -132,13 +122,11 @@
 <center>오픈 데이터 마켓 데이터 활용 신청 화면</center>
 
 
-
 정상적으로 신청이 완료되면, 자동으로 마이페이지의 '나의 오픈 API' 화면으로 이동이 되며,  신청한 오픈 데이터 API 목록과 인증키를 확인 할 수 있는 공간이 표시됩니다.
 
 
 <img src="./images/odm_mypage.png" >
 <center>오픈 데이터 마켓 마이페이지 → '나의 오픈 API' 화면</center>
-
 
 
 #### 오픈데이터 API 모니터링
@@ -160,8 +148,6 @@
 <img src="./images/odm_mypage_traffic.png" >
 <center>오픈 데이터 마켓 마이페이지 → '나의 사용이력' 화면</center>
 
-
-
 ---
 
 ### 오픈데이터 API 사용해보기
@@ -175,13 +161,11 @@
 <center>오픈 데이터 API 예제 코드 화면 (1)</center>
 
 
-
 신청한 오픈 데이터 API 를 확인 후, 사용하고자 하는 API 의 예제 code 에 마우스를 올리면 **예제 코드**가 레이어 팝업 형식으로 표시됩니다.
 
 
 <img src="./images/odm_data_use_example_mouseover.png" >
 <center>오픈 데이터 API 예제 코드 화면 (2)</center>
-
 
 
 예제 'code'를 클릭하면, 클립보드로 코드가 자동으로 복사됩니다.
@@ -263,13 +247,11 @@ https://repl.it/languages/nodejs
 <center>온라인 IDE 서비스 repl.it 화면</center>
 
 
-
 마이페이지 > 나의 오픈 API 에서 테스트 및 활용하고자 하는 오픈 데이터 API 의 예제 code를 복사합니다.
 
 
 <img src="./images/odm_data_use_example_mouseover.png" >
 <center>오픈 데이터 API 예제 코드 화면</center>
-
 
 
 repl.it 사이트에 예제 코드를 입력합니다.
@@ -280,17 +262,14 @@ repl.it 사이트에 예제 코드를 입력합니다.
 <center>오픈 데이터 마켓 마이페이지 → '나의 오픈 API 인증키' 화면</center>
 
 
-
 <img src="./images/replit2.png" >
 <center>온라인 IDE 서비스 repl.it 예제 코드 입력</center>
-
 
 
 run 버튼을 눌러 예제를 실행합니다.
 
 <img src="./images/replit.gif" >
 <center>온라인 IDE 서비스 repl.it 예제 실행 화면</center>
-
 
 
 초기에는 node.js 의 실행에 필요한 파일을 다운로드를 받고, 예제 코드를 실행합니다.
@@ -374,10 +353,8 @@ run 버튼을 눌러 예제를 실행합니다.
 <center>개발지원플랫폼 홈페이지</center>
 
 
-
 <img src="./images/qa_center2.png" >
 <center>Q&A 센터 - 기술지원 서비스 - 자료실 - 오픈데이터 API 사용 관련 실습 자료 > 샘플-앱.zip 다운받기</center>
-
 
 
 다운받은 샘플-앱.zip 은 다음과 같이 2가지 파일로 구성되어있습니다.
@@ -432,16 +409,17 @@ run 버튼을 눌러 예제를 실행합니다.
    - 사용자 인증 정보 만들기 클릭
 
    
+
   <img src="./images/googleAPI_5.png" >
-   
+
 
    - API 복사
 
-   
-  <img src="./images/googleAPI_6.png" >
-   
 
-   
+  <img src="./images/googleAPI_6.png" >
+
+
+
 
 3. GoogleMapSample.html 수정
 
@@ -452,9 +430,9 @@ run 버튼을 눌러 예제를 실행합니다.
 
    
    
-
 4. 확인
    
+
  <img src="./images/googleAPI_9.png" >
 
 
@@ -462,7 +440,7 @@ run 버튼을 눌러 예제를 실행합니다.
 
 
 
-#### 오픈데이터 API
+#### 오픈데이터 API 주소 얻기
 
 위 GoogleMap에 찍어줄 데이터를 얻기 위해 오픈 데이터 마켓(OPEN DATA MARKET)에서 데이터를 활용하기 위해 다음 2가지의 준비물이 필요합니다.
 
@@ -503,7 +481,6 @@ run 버튼을 눌러 예제를 실행합니다.
 
    <img src="./images/opendata_auth_change.png" >
    
-
 3. 수정사항
 
    - 131 라인을 삭제해주세요.
