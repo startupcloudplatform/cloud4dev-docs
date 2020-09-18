@@ -417,8 +417,9 @@ run 버튼을 눌러 예제를 실행합니다.
 
 위 GoogleMap에 찍어줄 데이터를 얻기 위해 오픈 데이터 마켓(OPEN DATA MARKET)에서 데이터를 활용하기 위해 다음 2가지의 준비물이 필요합니다.
 
-- [ ] 활용 신청한 오픈 데이터 API 주소 얻기
-- [ ] 인증키
+- 활용 신청한 오픈 데이터 API 주소 얻기
+
+- 인증키
 
 
 
@@ -477,13 +478,13 @@ run 버튼을 눌러 예제를 실행합니다.
 
 #### [실습2] 서울시 문화행사정보 API 호출 실습
 
-- [ ] Postman 프로그램
+Postman 프로그램
 
 
 
 #### 두번째 실습 자료
 
-- Postman(https:/www.postman.com/downloads)
+- Postman 다운로드 사이트 - https:/www.postman.com/downloads
 
 
 
