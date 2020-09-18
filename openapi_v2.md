@@ -36,16 +36,12 @@
 
  <img src="./images/odm_main.png"> 
 <center>오픈 데이터 마켓 메인 화면</center>
-
-
 #### 회원가입
 
 오픈 데이터 마켓을 이용하시려면 간단한 회원가입 후, 모든 컨텐츠를 이용하실 수 있습니다.
 
 <img src="./images/odm_signup.png" > 
 <center>오픈 데이터 마켓 회원가입 화면</center>
-
-
 #### 회원가입 (개발자 화면)
 
 오픈 데이터 마켓의 오픈 데이터 API를 활용하고자 한다면 개발자 회원가입을 진행합니다.
@@ -66,19 +62,14 @@
 
 <img src="./images/odm_signup2.png"> 
 <center>오픈 데이터 마켓 개발자 회원가입 화면</center>
-
-
 #### 로그인
 
 회원가입이 완료되었다면, 오픈 데이터 마켓의 로그인 화면을 통해 포털 로그인을 진행합니다.
 
 <img src="./images/odm_signin.png" >
 <center>오픈 데이터 마켓 개발자 로그인 화면</center>
-
-
 <img src="./images/odm_signin2.png" >
 <center>오픈 데이터 마켓 개발자 로그인 화면 (2)</center>
-
 ---
 
 ### 오픈 데이터 마켓(OPEN DATA MARKET) 이용하기
@@ -93,8 +84,6 @@
 
 <img src="./images/odm_datamenu.png" >
 <center>오픈 데이터 마켓 메뉴 안내 화면</center>
-
-
 #### 오픈데이터 API 찾기
 
 ① 검색 : 자신이 활용하고자 하는 API를 찾으려면 검색 창에 관련 단어를 기입 후 검색 버튼을 누르세요.
@@ -107,28 +96,20 @@
 
 <img src="./images/odm_data.png" >
 <center>오픈 데이터 마켓 데이터 화면</center>
-
-
 활용하고자 하는 검색어를 입력한 후, 검색 결과에서 공간정보 '개별주택가격WFS조회' 데이터를 클릭합니다.
 
 <img src="./images/odm_data2.png" >
 <center><오픈 데이터 마켓 데이터 검색 화면></center>
-
-
 활용 정보(목적)을 클릭 후, 신청 버튼을 클릭하여 활용 신청을 진행합니다.
 
 
 <img src="./images/odm_data3.png" >
 <center>오픈 데이터 마켓 데이터 활용 신청 화면</center>
-
-
 정상적으로 신청이 완료되면, 자동으로 마이페이지의 '나의 오픈 API' 화면으로 이동이 되며,  신청한 오픈 데이터 API 목록과 인증키를 확인 할 수 있는 공간이 표시됩니다.
 
 
 <img src="./images/odm_mypage.png" >
 <center>오픈 데이터 마켓 마이페이지 → '나의 오픈 API' 화면</center>
-
-
 #### 오픈데이터 API 모니터링
 
 오픈 데이터 마켓의 모든 API 데이터는 자유롭게 사용이 가능합니다.
@@ -147,7 +128,6 @@
 
 <img src="./images/odm_mypage_traffic.png" >
 <center>오픈 데이터 마켓 마이페이지 → '나의 사용이력' 화면</center>
-
 ---
 
 ### 오픈데이터 API 사용해보기
@@ -159,15 +139,11 @@
 
 <img src="./images/odm_data_use_example.png" >
 <center>오픈 데이터 API 예제 코드 화면 (1)</center>
-
-
 신청한 오픈 데이터 API 를 확인 후, 사용하고자 하는 API 의 예제 code 에 마우스를 올리면 **예제 코드**가 레이어 팝업 형식으로 표시됩니다.
 
 
 <img src="./images/odm_data_use_example_mouseover.png" >
 <center>오픈 데이터 API 예제 코드 화면 (2)</center>
-
-
 예제 'code'를 클릭하면, 클립보드로 코드가 자동으로 복사됩니다.
 
 ```nodejs
@@ -245,33 +221,23 @@ https://repl.it/languages/nodejs
 
 <img src="./images/replit.png" >
 <center>온라인 IDE 서비스 repl.it 화면</center>
-
-
 마이페이지 > 나의 오픈 API 에서 테스트 및 활용하고자 하는 오픈 데이터 API 의 예제 code를 복사합니다.
 
 
 <img src="./images/odm_data_use_example_mouseover.png" >
 <center>오픈 데이터 API 예제 코드 화면</center>
-
-
 repl.it 사이트에 예제 코드를 입력합니다.
 
 그리고, 마이페이지 > 나의 오픈 API 에서 인증키를 복사하여 다음 auth_key 를 수정합니다. (API 사용을 위한 인증키 입력)
 
 <img src="./imagesodm_mypage_secretkey.png" >
 <center>오픈 데이터 마켓 마이페이지 → '나의 오픈 API 인증키' 화면</center>
-
-
 <img src="./images/replit2.png" >
 <center>온라인 IDE 서비스 repl.it 예제 코드 입력</center>
-
-
 run 버튼을 눌러 예제를 실행합니다.
 
 <img src="./images/replit.gif" >
 <center>온라인 IDE 서비스 repl.it 예제 실행 화면</center>
-
-
 초기에는 node.js 의 실행에 필요한 파일을 다운로드를 받고, 예제 코드를 실행합니다.
 
 예제 코드 실행 시, 다음과 같은 xml 데이터를 리턴 받은 것을 볼 수 있습니다. 
@@ -329,7 +295,7 @@ run 버튼을 눌러 예제를 실행합니다.
 
 
 
-#### 준비사항
+#### [실습1]예제를 통한 API 사용 방법
 
 - [ ] 코드 에디터   `(없다면 메모장도 괜찮습니다)`
 - [ ] 실습 자료 ([샘플-앱.zip 다운로드](http://cloud4dev.kr/자료실/?uid=134&mod=document))
@@ -338,25 +304,28 @@ run 버튼을 눌러 예제를 실행합니다.
 
 
 
-#### 코드 에디터
+##### 실습 자료
 
-별도의 코드 에디터가 없는 경우, 메모장을 사용하여 실습을 따라하셔도 좋습니다.
-
-실습 자료는 개발지원플랫폼 Q&A 센터를 통해 다운로드 받으실 수 있습니다.
+- #### 코드 에디터
 
 
+> 별도의 코드 에디터가 없는 경우, 메모장을 사용하여 실습을 따라하셔도 좋습니다.
+>
 
-#### 실습 자료
+> 실습 자료는 개발지원플랫폼 Q&A 센터를 통해 다운로드 받으실 수 있습니다.
+>
+
+
+
+- #### 실습 자료
+
 
 
 <img src="./images/qa_center1.png" >
 <center>개발지원플랫폼 홈페이지</center>
-
-
 <img src="./images/qa_center2.png" >
+
 <center>Q&A 센터 - 기술지원 서비스 - 자료실 - 오픈데이터 API 사용 관련 실습 자료 > 샘플-앱.zip 다운받기</center>
-
-
 다운받은 샘플-앱.zip 은 다음과 같이 2가지 파일로 구성되어있습니다.
 
 <img src="./images/sample-app.png" >
@@ -373,11 +342,15 @@ run 버튼을 눌러 예제를 실행합니다.
 
 
 
-#### GoogleMap API 권한
+#### 실습 따라하기
 
-구글 맵을 활용하기 위해선 GoogleMap API 를 사용해야합니다.
+##### GoogleMap API 권한
 
-그러기 위해 다음 과정을 통해 GoogleMap API 를 발급받고, 소스에 적용하는 과정을 진행합니다.
+- 구글 맵을 활용하기 위해선 GoogleMap API 를 사용해야합니다.
+
+
+- 그러기 위해 다음 과정을 통해 GoogleMap API 를 발급받고, 소스에 적용하는 과정을 진행합니다.
+
 
 
 
@@ -491,7 +464,7 @@ run 버튼을 눌러 예제를 실행합니다.
 
 
 
-#### 샘플 최종 결과물
+#### 실습 최종 결과물
 
   <img src="./images/GoogleMapSample.png" >
 
@@ -499,3 +472,136 @@ run 버튼을 눌러 예제를 실행합니다.
 이번 실습은 개별 주택 가격 데이터를 불러와 구글 맵에 표시해주는 실습이였습니다.
 
 여기까지 오픈 데이터 마켓(OPEN DATA MARKET) API 활용 실습이였습니다.
+
+
+
+#### [실습2] 서울시 문화행사정보 API 호출 실습
+
+- [ ] Postman 프로그램
+
+
+
+#### 두번째 실습 자료
+
+- Postman(https:/www.postman.com/downloads)
+
+
+
+실습 따라하기
+
+1. Postman 다운로드 
+   - 윈도우, macOS, Linux를 모두 지원합니다.
+   - Download the App을 눌러 다운로드 후 프로그램을 설치합니다.
+   - 웹으로도 실습을 따라하실 수 있으나, 회원가입이 필요합니다.
+
+2. Postman 실행
+
+   - 프로그램 설치 후 진행합니다.
+
+   - 실행하면 다음과 같은 화면이 표시됩니다.
+
+     
+
+   <img src="./images/postman2.jpg" >
+
+3. 요청 탭 생성
+
+   - API 요청을 위해 화면에 표시된 버튼을 눌러 새로운 탭을 생성합니다.
+
+     <img src="./images/postman3.jpg" >
+
+
+
+4. 간단 설명
+
+   - API(Application Proframming Interface)는 응용 프로그램(또는 서비스)에서 제 3자에게 기능 또는 데이터를 사용할 수 있도록 제공해주는 인터페이스
+   - 다음과 같은 HTTP Methods 를 통해 API와 통신을 합니다.
+   - GET - 리소스 조회 / POST - 리소스 생성 / PUT - 리소스 수정 / DELETE - 리소스 삭제
+   - 오픈 데이터 마켓에 올라온 Open Data를 활용 신청하여 데이터를 Get 메소를 사용하여 조회합니다.
+
+   <img src="./images/postman4.jpg" >
+
+   
+
+   
+
+   #### 서울시 문화행사 정보 API 신청
+
+   1. API 신청
+
+   - ''서울시 문화행사 정보" 를 선택하여 요청합니다.
+
+   - 서울시 문화행사 정보를 검색합니다.
+
+   - 서울시 문화행사 정보 활용 신청 페이지에서 '활용 목적'을 선택 후 하단의 '신청' 버튼을 눌러 신청해줍니다.
+
+     <img src="./images/postman5.jpg" >
+
+<img src="./images/postman6.jpg" >
+
+
+
+- 신청 후, 상단 '마이페이지' > '나의 오픈 API' 페이지로 이동하면, 다음과 같이 신청한 오픈 데이터가 표시됩니다.
+
+<img src="./images/postman7.jpg" >
+
+
+
+
+
+2. API 주소 및 인증키 복사
+
+- 예제 탭의 'code'에 마우스를 올리면 다음과 같이 레이어 팝업을 통해 예제 코드를 알려줍니다.
+- 예제는 Node 샘플 코드이지만, HTTP Get Methods 를 통해 데이터를 요청하는 방식익 때문에 종속성없이 인터넷이 가능한 환경이라면 어디서든 활용이 가능합니다.
+- URL(필수), auth_key(필수)
+- 위에 표시된 query string 값은 제공처 또는 데이터마다 달라질 수 있습니다.
+- 필수 값인 인증키를 복사합니다.
+
+<img src="./images/postman8.jpg" >
+
+
+
+- 필수 값인 인증키를 복사합니다.
+
+  <img src="./images/postman9.jpg" >
+
+- 주소에 위에서 복사한 주소를 기입합니다.
+
+  <img src="./images/postman10.jpg" >
+
+
+
+- 그리고, 위 예제코도에서 필요한 값을 복사해서 Params 탭에 넣어줍니다.
+
+  <img src="./images/postman11.jpg" >
+
+
+
+#### 서울시 문화행사정보 API 결과
+
+- Send를 누르시면 다음과 같이 결과가 하단에 표시됩니다.
+
+  <img src="./images/postman11.jpg" >
+
+
+
+<img src="./images/postman12.jpg" >
+
+
+
+- 그 이외에도 우측 Save 밑에 'Code' 버튼을 눌러보면, 다음과 같이 다양한 언어로의 샘플 코드를 확인할 수 있습니다. 
+
+<img src="./images/postman13.jpg" >
+
+
+
+<img src="./images/postman14.jpg" >
+
+
+
+이를 활용하여 언어 또는 플랫폼에 상관없이 데이터 마켓에서 신청한 API를 통해 데이터를 활용할 수 있습니다.
+
+
+
+----------------------  The End -----------------------------------
+
