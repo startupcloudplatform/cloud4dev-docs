@@ -1,5 +1,32 @@
 # Summary
 
+
+
+```html
+<div id="fruit-menu" class="dropdown-menu" aria-haspopup="true">
+
+  <button id="fruit-menu-activator" 
+      class="dropdown-menu-activator"
+      aria-controls="fruit-menu-options">
+      Fruit
+    <i class="fa fa-toggle-down" aria-hidden="true"></i>   
+  </button> 
+
+  <ul id="fruit-menu-options" role="menu" aria-expanded="false"
+    aria-labelledby="fruit-menu-activator">
+      <li role="menuitem">
+         <button>Apples</button>
+      </li>
+      <li role="menuitem">
+         <button>Banana</button>
+      </li>
+      <li role="menuitem">
+         <button>Kiwi</button>
+      </li>
+   </ul>
+</div>
+```
+
 - [개발지원플랫폼 활용 개요](README.md)
 - 개발지원플랫폼 활용 가이드
   - [마이크로서비스 스튜디오 활용 가이드](MicroserviceGuide.md)
@@ -42,7 +69,6 @@
   - [Service Discovery and Registry](msaspringcloud.md#service-discovery-and-registry)
   - [API Gateway](msaspringcloud.md#api-gateway)
 - 개발지원 플랫폼 메뉴얼
-  - [마이크로서비스 스튜디오 기술문서](Technical_Report.md)
   - [마이크로서비스 스튜디오 사용자 메뉴얼](msamanual_v2.md)
     - [마이크로서비스 스튜디오 아키텍처](msamanual_v2.md#마이크로서비스-스튜디오-아키텍처)
     - [마이크로서비스 스튜디오 시작하기](msamanual_v2.md#마이크로서비스-스튜디오-시작하기)
@@ -52,3 +78,5 @@
     - [API 관리](msamanual_v2.md#api-관리)
   - [오픈데이터API 사용자 메뉴얼](openapi.md)
   - [오픈데이터API 제공처 메뉴얼](openapi_manager.md)
+
+[마이크로서비스 스튜디오 기술문서](Technical_Report.md)
