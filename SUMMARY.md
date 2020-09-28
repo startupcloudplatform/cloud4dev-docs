@@ -1,8 +1,8 @@
-# Summary
+# SUMMARY
 
 
 
-#### [개발지원플랫폼 활용 개요](README.md)
+####  [개발지원플랫폼 활용 개요](readme.md)
 
 #### [개발지원플랫폼 활용 가이드](openapi_v2.md)
 
@@ -16,9 +16,9 @@
 
 - [오픈데이터 API 테스트](openapi_v2.md#오픈데이터-api-테스트)
 
-- **[실습1.오픈데이터 마켓 활용 실습](openapi_v2.md#오픈-데이터-마켓(OPEN-DATA-MARKET)-API-활용-실습)**
+- **[실습1.오픈데이터 마켓 활용 실습](openapi_v2.md#오픈-데이터-마켓(open-data-market)api-활용-실습)**
 
-  - ##### [GoogleMap API 권한](openapi_v2.md#googlemap-api-권한)
+  - [GoogleMap API 권한](openapi_v2.md#googlemap-api-권한)
 
   - [오픈데이터 API 주소 얻기](openapi_v2.md#오픈데이터-api-주소-얻기)
 
@@ -29,7 +29,7 @@
   - [서울시문화행사정보 API신청](openapi_v2.md#서울시-문화행사-정보-api-신청)
   - [서울시문화행사정보 API 결과](openapi_v2.md#서울시-문화행사정보-api-결과)
 
-#### [마이크로서비스 스튜디오 활용 가이드](MicroserviceGuide.md)
+#### [마이크로서비스 스튜디오 활용 가이드](mcroserviceguide.md)
 
 - [마이크로서비스 스튜디오 개요](MicroserviceGuide.md#마이크로서비스-스튜디오-개요)
 
@@ -90,5 +90,5 @@
 
 ------
 
-#### [마이크로서비스 스튜디오 기술문서](Technical_Report.md)
+#### [마이크로서비스 스튜디오 기술문서](technical_report.md)
 
