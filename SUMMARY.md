@@ -1,28 +1,17 @@
 # Summary
 
-
-
-```html
-<details>
-   <summary>
-    <strong>테스트-클라우드 기반 개발지원 플랫폼 활용</strong>
-    </summary>
-    <ol>
-        <li>[개발지원플랫폼 활용 개요](README.md)</li>
-    </ol>
-</details>
-```
-
-
-
-<details>
-    <summary>테스트</summary>
-    <ol>
-        <li>[개발지원플랫폼 활용 개요](README.md)</li>
-    </ol>
+<details open>
+    <summary>OVERVIEW</summary>
+    <ul>
+       <a href="README.md" > 개발지원 플랫폼 소개 </a>
+    </ul>
 </details>
 
 
+
+
+
+- [개발지원플랫폼 활용 개요](README.md)
 
 - 개발지원플랫폼 활용 가이드
 
