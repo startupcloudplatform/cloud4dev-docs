@@ -2,7 +2,7 @@
 
 
 
-####  [개발지원플랫폼 활용 개요](readme.md)
+####  [개발지원플랫폼 활용 개요](README.md)
 
 #### [개발지원플랫폼 활용 가이드](openapi_v2.md)
 
@@ -17,19 +17,18 @@
 - [오픈데이터 API 테스트](openapi_v2.md#오픈데이터-api-테스트)
 
 - **[실습1.오픈데이터 마켓 활용 실습](openapi_v2.md#오픈-데이터-마켓(open-data-market)api-활용-실습)**
-
-  - [GoogleMap API 권한](openapi_v2.md#googlemap-api-권한)
-
-  - [오픈데이터 API 주소 얻기](openapi_v2.md#오픈데이터-api-주소-얻기)
-
-  - [최종결과물](openapi_v2.md#실습-최종-결과물)
-
+- [GoogleMap API 권한](openapi_v2.md#googlemap-api-권한)
+  
+- [오픈데이터 API 주소 얻기](openapi_v2.md#오픈데이터-api-주소-얻기)
+  
+- [최종결과물](openapi_v2.md#실습-최종-결과물)
+  
 - **[실습2.서울시 문화행사 API 호출 실습](openapi_v2.md#두번째-실습-자료)**
   - [Postman 실행](openapi_v2.md#두번째-실습-자료)
   - [서울시문화행사정보 API신청](openapi_v2.md#서울시-문화행사-정보-api-신청)
   - [서울시문화행사정보 API 결과](openapi_v2.md#서울시-문화행사정보-api-결과)
 
-#### [마이크로서비스 스튜디오 활용 가이드](mcroserviceguide.md)
+#### [마이크로서비스 스튜디오 활용 가이드](McroserviceGuide.md)
 
 - [마이크로서비스 스튜디오 개요](MicroserviceGuide.md#마이크로서비스-스튜디오-개요)
 
@@ -76,7 +75,7 @@
   - [Service Discovery and Registry](msaspringcloud.md#service-discovery-and-registry)
   - [API Gateway](msaspringcloud.md#api-gateway)
 
-#### [개발지원 플랫폼 메뉴얼]()
+#### 개발지원 플랫폼 메뉴얼
 
 - [마이크로서비스 스튜디오 사용자 메뉴얼](msamanual_v2.md)
   - [마이크로서비스 스튜디오 아키텍처](msamanual_v2.md#마이크로서비스-스튜디오-아키텍처)
@@ -90,5 +89,5 @@
 
 ------
 
-#### [마이크로서비스 스튜디오 기술문서](technical_report.md)
+#### [마이크로서비스 스튜디오 기술문서](Technical_Report.md)
 
