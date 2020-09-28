@@ -2,19 +2,19 @@
 
 
 
-#### [1. 개발지원플랫폼 활용 개요](README.md)
+#### [개발지원플랫폼 활용 개요](README.md)
 
-#### [2. 개발지원플랫폼 활용 가이드](openapi_v2.md)
+#### [개발지원플랫폼 활용 가이드](openapi_v2.md)
 
-#### [2.1 오픈데이터API 사용자 활용 가이드](openapi_v2.md)
+#### [오픈데이터API 사용자 활용 가이드](openapi_v2.md)
 
-​	[회원가입](openapi_v2.md#회원가입)
+- [회원가입](openapi_v2.md#회원가입)
 
-​	[오픈데이터 API 이용 방법](openapi_v2.md#오픈데이터-api-이용-방법)
+- [오픈데이터 API 이용 방법](openapi_v2.md#오픈데이터-api-이용-방법)
 
-​	[오픈데이터 API 사용해보기](openapi_v2.md#오픈데이터-api-사용해보기)
+- [오픈데이터 API 사용해보기](openapi_v2.md#오픈데이터-api-사용해보기)
 
-​	[오픈데이터 API 테스트](openapi_v2.md#오픈데이터-api-테스트)
+- [오픈데이터 API 테스트](openapi_v2.md#오픈데이터-api-테스트)
 
 - **[실습1.오픈데이터 마켓 활용 실습](openapi_v2.md#오픈-데이터-마켓(OPEN-DATA-MARKET)-API-활용-실습)**
 
@@ -29,29 +29,29 @@
   - [서울시문화행사정보 API신청](openapi_v2.md#서울시-문화행사-정보-api-신청)
   - [서울시문화행사정보 API 결과](openapi_v2.md#서울시-문화행사정보-api-결과)
 
-#### [2.2 마이크로서비스 스튜디오 활용 가이드](MicroserviceGuide.md)
+#### [마이크로서비스 스튜디오 활용 가이드](MicroserviceGuide.md)
 
-​	[마이크로서비스 스튜디오 개요](MicroserviceGuide.md#마이크로서비스-스튜디오-개요)
+- [마이크로서비스 스튜디오 개요](MicroserviceGuide.md#마이크로서비스-스튜디오-개요)
 
-​	[마이크로서비스 스튜디오 주요 기능](MicroserviceGuide.md#마이크로서비스-스튜디오-주요-기능)
+- [마이크로서비스 스튜디오 주요 기능](MicroserviceGuide.md#마이크로서비스-스튜디오-주요-기능)
 
-​	[백엔드앱 개발](MicroserviceGuide.md#백엔드앱-개발)
+- [백엔드앱 개발](MicroserviceGuide.md#백엔드앱-개발)
 
-​	[프론트엔드 앱 개발](MicroserviceGuide.md#프론트엔드-앱-개발)
+- [프론트엔드 앱 개발](MicroserviceGuide.md#프론트엔드-앱-개발)
 
-​	[PaaS-TA에 앱 배포하기](MicroserviceGuide.md#paas-ta에-앱-배포하기)
+- [PaaS-TA에 앱 배포하기](MicroserviceGuide.md#paas-ta에-앱-배포하기)
 
-​	[마이크로서비스 앱 구성](MicroserviceGuide.md#마이크로서비스-앱-구성)
+- [마이크로서비스 앱 구성](MicroserviceGuide.md#마이크로서비스-앱-구성)
 
-##### [1) 활용사례1.서울시문화공간검색API](msacasestudy1.md)
+##### [활용사례1.서울시문화공간검색API](msacasestudy1.md)
 
-##### [2) 활용사례2.공동주택공시가격제공API](msacasestudy2.md)
+##### [활용사례2.공동주택공시가격제공API](msacasestudy2.md)
 
-##### [3) 활용사례3.통합대기환경정보제공API](msacasestudy3.md)
+##### [활용사례3.통합대기환경정보제공API](msacasestudy3.md)
 
 ------
 
-#### [3. 마이크로서비스 기반 개발 가이드](microservice.md)
+#### [마이크로서비스 기반 개발 가이드](microservice.md)
 
 - ##### [마이크로서비스 아키텍처 개요](microservice.md)
 
@@ -76,7 +76,7 @@
   - [Service Discovery and Registry](msaspringcloud.md#service-discovery-and-registry)
   - [API Gateway](msaspringcloud.md#api-gateway)
 
-#### [4. 개발지원 플랫폼 메뉴얼]()
+#### [개발지원 플랫폼 메뉴얼]()
 
 - [마이크로서비스 스튜디오 사용자 메뉴얼](msamanual_v2.md)
   - [마이크로서비스 스튜디오 아키텍처](msamanual_v2.md#마이크로서비스-스튜디오-아키텍처)
