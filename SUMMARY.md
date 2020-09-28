@@ -4,17 +4,15 @@
 
 ####  [개발지원플랫폼 활용 개요](README.md)
 
-#### [개발지원플랫폼 활용 가이드](openapi_v2.md)
-
 #### [오픈데이터API 사용자 활용 가이드](openapi_v2.md)
 
-- [회원가입](openapi_v2.md#회원가입)
+​		- [회원가입](openapi_v2.md#회원가입)
 
-- [오픈데이터 API 이용 방법](openapi_v2.md#오픈데이터-api-이용-방법)
+​		- [오픈데이터 API 이용 방법](openapi_v2.md#오픈데이터-api-이용-방법)
 
-- [오픈데이터 API 사용해보기](openapi_v2.md#오픈데이터-api-사용해보기)
+​		- [오픈데이터 API 사용해보기](openapi_v2.md#오픈데이터-api-사용해보기)
 
-- [오픈데이터 API 테스트](openapi_v2.md#오픈데이터-api-테스트)
+​		- [오픈데이터 API 테스트](openapi_v2.md#오픈데이터-api-테스트)
 
 - **[실습1.오픈데이터 마켓 활용 실습](openapi_v2.md#오픈-데이터-마켓(open-data-market)api-활용-실습)**
 - [GoogleMap API 권한](openapi_v2.md#googlemap-api-권한)
