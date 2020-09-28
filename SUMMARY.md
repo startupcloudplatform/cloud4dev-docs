@@ -1,12 +1,12 @@
 # Summary
 
 ## 오픈데이터 API 활용 가이드
-
+* [Introduction](README.md)
 * [회원가입](openapi_v2.md#회원가입)
 * [오픈데이터 API 이용 방법](openapi_v2.md#오픈데이터-api-이용-방법)
 * [오픈데이터 API 사용해보기](openapi_v2.md#오픈데이터-api-사용해보기)
 * [오픈데이터 API 테스트](openapi_v2.md#오픈데이터-api-테스트)
-* [활용실습-오픈데이터마켓 활용 실습](openapi_v2.md#오픈-데이터-마켓(open-data-market)api-활용-실습)
+* [활용실습-오픈데이터마켓 활용 실습](openapi_v2.md#오픈데이터-api-이용-방법)
     * [GoogleMap API 권한](openapi_v2.md#googlemap-api-권한)
     * [오픈데이터 API 주소 얻기](openapi_v2.md#오픈데이터-api-주소-얻기)
     * [최종결과물](openapi_v2.md#실습-최종-결과물)
@@ -23,9 +23,9 @@
 * [PaaS-TA에 앱 배포하기](MicroserviceGuide.md#paas-ta에-앱-배포하기)
 * [마이크로서비스 앱 구성](MicroserviceGuide.md#마이크로서비스-앱-구성)
 * 활용 사례
-  * [사례1-서울시문화공간 통합검색](msacasestudy1.md)
-  * [사례2-지도상에 공동주택공시가격 제공](msacasestudy2.md)
-  * [사례3-통합대기환경정보 제공](msacasestudy3.md)
+    * [사례1-서울시문화공간 통합검색](msacasestudy1.md)
+    * [사례2-지도상에 공동주택공시가격 제공](msacasestudy2.md)
+    * [사례3-통합대기환경정보 제공](msacasestudy3.md)
 
 ## 마이크로서비스 기반 개발 가이드
 * [Microservice & Spring Cloud](msaspringcloud.md#스프링클라우드-적용-가이드)
@@ -51,7 +51,6 @@
 * [오픈데이터API 사용자 메뉴얼](openapi.md)
 * [오픈데이터API 제공처 메뉴얼](openapi_manager.md)
 
-## [마이크로서비스 스튜디오 기술문서](Technical_Report.md)
+## 마이크로서비스 스튜디오 기술문서
 
-
-
+[마이크로서비스 스튜디오 기술문서](Technical_Report.md)
