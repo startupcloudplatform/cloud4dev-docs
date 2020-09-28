@@ -15,6 +15,15 @@
 
 
 
+<details>
+    <summary>테스트</summary>
+    <ol>
+        <li>[개발지원플랫폼 활용 개요](README.md)</li>
+    </ol>
+</details>
+
+
+
 - 개발지원플랫폼 활용 가이드
 
   - [오픈데이터API 사용자 활용 가이드](openapi_v2.md)
