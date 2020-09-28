@@ -4,11 +4,12 @@
 
 ```html
 <details>
-    <title>클라우드 기반 개발지원 플랫폼</title>
-    <summary>
-    [개발지원플랫폼 활용 개요](README.md)
+   <summary>
+    <strong>테스트-클라우드 기반 개발지원 플랫폼 활용</strong>
     </summary>
-    
+    <ol>
+        <li>[개발지원플랫폼 활용 개요](README.md)</li>
+    </ol>
 </details>
 ```
 
