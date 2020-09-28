@@ -1,7 +1,6 @@
 # Summary
 
 ## 오픈데이터 API 활용 가이드
-* [Introduction](README.md)
 * [회원가입](openapi_v2.md#회원가입)
 * [오픈데이터 API 이용 방법](openapi_v2.md#오픈데이터-api-이용-방법)
 * [오픈데이터 API 사용해보기](openapi_v2.md#오픈데이터-api-사용해보기)
@@ -54,3 +53,4 @@
 ## 마이크로서비스 스튜디오 기술문서
 
 [마이크로서비스 스튜디오 기술문서](Technical_Report.md)
+
