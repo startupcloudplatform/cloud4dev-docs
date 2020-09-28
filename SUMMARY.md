@@ -1,9 +1,5 @@
 # Summary
 
-[개발지원플랫폼 소개](README.md)
-
-
-
 ## 오픈데이터 API 활용 가이드
 
 * [회원가입](openapi_v2.md#회원가입)
@@ -55,7 +51,7 @@
 * [오픈데이터API 사용자 메뉴얼](openapi.md)
 * [오픈데이터API 제공처 메뉴얼](openapi_manager.md)
 
-## 마이크로서비스 스튜디오 기술문서
+## [마이크로서비스 스튜디오 기술문서](Technical_Report.md)
 
-- [마이크로서비스 스튜디오 기술문서](Technical_Report.md)
+
 
