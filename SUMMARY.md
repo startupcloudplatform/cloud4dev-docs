@@ -1,6 +1,6 @@
 # Summary
 
-## 오픈데이터 API 활용 가이드
+## 1. 오픈데이터 API 활용 가이드
 * [Introduction](README.md)
 * [회원가입](openapi_v2.md#회원가입)
 * [오픈데이터 API 이용 방법](openapi_v2.md#오픈데이터-api-이용-방법)
@@ -15,18 +15,18 @@
     * [서울시문화행사정보 API신청](openapi_v2.md#서울시-문화행사-정보-api-신청)
     * [서울시문화행사정보 API 결과](openapi_v2.md#서울시-문화행사정보-api-결과)
 
-## 마이크로서비스 스튜디오 활용 가이드
-* [마이크로서비스 스튜디오 개요](MicroserviceGuide.md#마이크로서비스-스튜디오-개요)
-* [마이크로서비스 스튜디오 주요 기능](MicroserviceGuide.md#마이크로서비스-스튜디오-주요-기능)
-* [백엔드앱 개발](MicroserviceGuide.md#백엔드앱-개발)
-* [프론트엔드 앱 개발](MicroserviceGuide.md#프론트엔드-앱-개발)
-* [PaaS-TA에 앱 배포하기](MicroserviceGuide.md#paas-ta에-앱-배포하기)
-* [마이크로서비스 앱 구성](MicroserviceGuide.md#마이크로서비스-앱-구성)
+## 2. 마이크로서비스 스튜디오 활용 가이드
+* [마이크로서비스 스튜디오 개요](microserviceguide.md#마이크로서비스-스튜디오-개요)
+* [마이크로서비스 스튜디오 주요 기능](microserviceguide.md#마이크로서비스-스튜디오-주요-기능)
+* [백엔드앱 개발](microserviceguide.md#백엔드앱-개발)
+* [프론트엔드 앱 개발](microserviceguide.md#프론트엔드-앱-개발)
+* [PaaS-TA에 앱 배포하기](microserviceguide.md#paas-ta에-앱-배포하기)
+* [마이크로서비스 앱 구성](microserviceguide.md#마이크로서비스-앱-구성)
 * 활용 사례
     * [사례1-서울시문화공간 통합검색](msacasestudy1.md)
     * [사례2-지도상에 공동주택공시가격 제공](msa_aptprice.md)
 
-## 마이크로서비스 기반 개발 가이드
+## 3. 마이크로서비스 기반 개발 가이드
 * [Microservice & Spring Cloud](msaspringcloud.md#스프링클라우드-적용-가이드)
     * [개요](swprocess.md#마이크로서비스-아키텍처-기반-개발-개요)
     * [마이크로서비스 아키텍처 설계 지침](swprocess.md#마이크로서비스-아키텍처-설계-지침)
@@ -39,7 +39,7 @@
     * [Service Discovery and Registry](msaspringcloud.md#service-discovery-and-registry)
     * [API Gateway](msaspringcloud.md#api-gateway)
 
-## 개발지원 플랫폼 메뉴얼
+## 4. 개발지원 플랫폼 메뉴얼
 * [마이크로서비스 스튜디오 사용자 메뉴얼](msamanual_v2.md)
     * [마이크로서비스 스튜디오 아키텍처](msamanual_v2.md#마이크로서비스-스튜디오-아키텍처)
     * [마이크로서비스 스튜디오 시작하기](msamanual_v2.md#마이크로서비스-스튜디오-시작하기)
@@ -50,6 +50,6 @@
 * [오픈데이터API 사용자 메뉴얼](openapi.md)
 * [오픈데이터API 제공처 메뉴얼](openapi_manager.md)
 
-## 마이크로서비스 스튜디오 기술문서
+## 5. 마이크로서비스 스튜디오 기술문서
 * [MSA Technical Report](Technical_Report.md)
 
