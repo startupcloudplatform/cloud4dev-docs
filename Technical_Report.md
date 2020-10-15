@@ -2,13 +2,14 @@
  
 
  #### [마이크로서비스 스튜디오 설치하기](#마이크로서비스-스튜디오-설치)
-  >##### [IaaS 구성 ( Azure )](#iaas-구성-azure-)
+  >##### [IaaS 구성 ( Azure )](##iaas-구성-azure-)
   >
   >##### [Bosh 설치하기](#bosh-deploying)
   >
   >##### [CloudFoundry 설치하기](#cloudfoundry-설치)
   >##### [MsXpert 설치하기](#msxpert-설치)
- #### [마이크로서비스 스튜디오 운영](#마이크로서비스-스튜디오-운영)
+#### [MsXPert 운영](#마이크로서비스-스튜디오-운영)
+
   >##### [Trouble Shooting](#trouble-shooting)
  #### [MsXpert Reference](#msxpert-reference)
   >##### [Database 구조](#database-구조)
