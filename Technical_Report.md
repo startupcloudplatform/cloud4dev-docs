@@ -1,16 +1,19 @@
 # Technical Report
 ## 
- #### [MsXpert 설치](#msxpert-설치-1)
+
+ #### [MsXpert 설치](#msxpert-설치)
   >##### [IaaS 구성 ( Azure )](#iaas-구성-azure-)
   >##### [Bosh 설치](#bosh-설치)
   >##### [CloudFoundry 설치](#cloudfoundry-설치)
   >##### [MsXpert 설치](#msxpert-설치)
- #### [MsXpert 운영](#msxpert-운영-1)
+ #### [MsXpert 운영](#msxpert-운영)
   >##### [Trouble Shooting](#trouble-shooting)
- #### [MsXpert Reference](#msxpert-reference-1)
+ #### [MsXpert Reference](#msxpert-reference)
   >##### [Database 구조](#database-구조)
 
 ***
+
+
 
 ### MsXpert 설치
 
@@ -18,6 +21,8 @@
 
 ##### 1-1 .  리소스 그룹 생성
  ![](./technicalReportImages/Azure_resouceGroup_Create.png)
+
+
 
 ##### 1-2 .  Application 등록
  - Active Directory에서 Application 등록
@@ -68,6 +73,8 @@
 
 ##### 1-5 . vm 생성 (bosh-inception)
    ![](./technicalReportImages/Azure_vm_create.png)
+
+
 
 
 #### Bosh 설치
@@ -130,7 +137,10 @@
       $ bosh -e bosh login
   ```
 
+
+
 #### CloudFoundry 설치
+
  ##### 3-1. Upload a Cloud-Config
   ```shell
       $ bosh -e [target 설정시 지정한 이름] ucc iaas-support/azure/cloud-config.yml
@@ -603,19 +613,24 @@
        grafana_admin_password: admin 
   ```
 
+
+
 ### MsXpert 운영 
 
 #### Trouble Shooting
  #### Contents
-  >##### [MsXpert 의 DB에 접근하기](#msxpert-의-db에-접근하기-1)
-  >##### [MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우](#msxpert-상에서-앱의-url-주소가-정상적으로-조회되지-않는-경우-1)
-  >##### [API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법](#api--등록시-restapi가-조회되지-않을때-restapi-확인-방법-1)
-  >##### [cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)](#cf에-deploy-되어-있는-application의-env-확인-방법--application-접근-비밀번호-확인법-1)
-  >##### [Spring-cloud-Eureka  에러](#spring-cloud-eureka--에러-1)
-  >##### [msxpert-nipa의 각 instance에 접근하는 방법](#sxpert-nipa의-각-instance에-접근하는-방법-1)
-  >##### [등록해둔 API가 정상적으로 호출되지 않는 상황에서 대처법](#등록해둔-api가-정상적으로-호출되지-않는-상황에서-대처법-1)
+  >##### [MsXpert 의 DB에 접근하기](#msxpert-의-db에-접근하기)
+  >##### [MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우](#msxpert-상에서-앱의-url-주소가-정상적으로-조회되지-않는-경우)
+  >##### [API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법](#api--등록시-restapi가-조회되지-않을때-restapi-확인-방법)
+  >##### [cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)](#cf에-deploy-되어-있는-application의-env-확인-방법--application-접근-비밀번호-확인법)
+  >##### [Spring-cloud-Eureka  에러](#spring-cloud-eureka--에러)
+  >##### [msxpert-nipa의 각 instance에 접근하는 방법](#sxpert-nipa의-각-instance에-접근하는-방법)
+  >##### [등록해둔 API가 정상적으로 호출되지 않는 상황에서 대처법](#등록해둔-api가-정상적으로-호출되지-않는-상황에서-대처법)
+
+
 
  #####  MsXpert 의 DB에 접근하기
+
   ```shell
       # bosh Inception에서 아래의 과정을 실행
       $ bosh envs
@@ -636,7 +651,10 @@
       $ sudo -u vcap /var/vcap/packages/postgres-9.6.4/bin/psql microservice-nipa
   ```
 
+
+
  #####  MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우
+
   - backendApp은 보안을 위해서 url이 공개 되지 않는 것이 기본 Setting
     ![](./technicalReportImages/msxpert_url_check.png)
       ```shell
@@ -649,7 +667,10 @@
       $ cf map-route crs-front-lkop bosh-lite.com --hostname crs-front-lkop
       ```
 
+
+
  #####  API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법 
+
   - 우선적으로 swagger페이지가 정상 동작하는지 확인
     ![](./technicalReportImages/api_registry_NoAPI.png)
       ```shell
@@ -661,6 +682,8 @@
       # 해당 작업 이후에도 문제가 발생한다면 Application 쪽에서 swagger부분 코드를 확인해야함.
       ```
  ![](./technicalReportImages/swagger-api-check.png)
+    
+    
 
  #####  cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)
   ```shell
@@ -710,7 +733,10 @@
       # config application refresh
       $ curl -d {} -u 508a6971-870b-45a7-a4df-ac94f5d54987:76e0a~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   configapp508a6971-870b-45a7-a4df-ac94f5d54987.bosh-lite.com/refresh
   ```
+
+
  ##### Spring-cloud-Eureka  에러
+
   ```shell
       # EMERGENCY! EUREKA MAY BE INCORRECTLY CLAIMING INSTANCES ARE UP WHEN THEY'RE NOT. RENEWALS ARE LESSER THAN THRESHOLD AND HENCE THE INSTANCES ARE NOT BEING EXPIRED JUST TO BE SAFE.
       
@@ -719,7 +745,10 @@
 
  ![](./technicalReportImages/spring-cloud-eureka-error.png)
 
+
+
  ##### msxpert-nipa의 각 instance에 접근하는 방법
+
   ```shell
       # msxpert-nipa의 deploy 상황이 아래와 같을때 각 instance에 접근하는 방법
       # Deployment 'msxpert-nipa'
@@ -780,6 +809,8 @@
   ```shell
       #상황 1, 2, 3 이 동시에 확인되는 경우에는 Traefik 이 다시 올라간 경우라고 보고 새로 API를 등록해주는 것으로 해결 가능함. API등록은 API관리나 마이크로서비스 편집에서 시도.
   ```
+
+
 
 ### MsXpert Reference
 
