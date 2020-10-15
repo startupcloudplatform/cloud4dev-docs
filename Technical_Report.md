@@ -625,7 +625,7 @@
 #### Trouble Shooting
  #### Contents
   >##### [MsXpert 의 DB에 접근하기](#msxpert의-db에-접근하기)
-  >##### [MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우](#msxpert-상에서-앱의-url-주소가-정상적으로-조회되지-않는-경우)
+  >##### [MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우](#msxpert-상에서-앱의-url-주소가-정상적으로-조회되지-않는경우)
   >##### [API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법](#api--등록시-restapi가-조회되지-않을때-restapi-확인방법)
   >##### [cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)](#cf에-deploy-되어있는-application의-env-확인-방법--application-접근-비밀번호-확인법)
   >##### [Spring-cloud-Eureka  에러](#spring-cloud-eureka-에러)
@@ -658,7 +658,7 @@
 
 
 
- #####  MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우
+ #####  MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는경우
 
   - backendApp은 보안을 위해서 url이 공개 되지 않는 것이 기본 Setting
     ![](./technicalReportImages/msxpert_url_check.png)
