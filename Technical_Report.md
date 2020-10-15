@@ -3,8 +3,8 @@
 
  #### [마이크로서비스 스튜디오 설치하기](#마이크로서비스-스튜디오-설치)
   >##### [IaaS 구성 ( Azure )](#iaas-구성-azure-)
-  >##### [Bosh 설치](bosh-설치)
-  >##### [CloudFoundry 설치](cloudfoundry-설치)
+  >##### [Bosh 설치](#bosh-설치)
+  >##### [CloudFoundry 설치](#cloudfoundry-설치)
   >##### [MsXpert 설치](#msxpert-설치)
  #### [MsXpert 운영](#msxpert-운영)
   >##### [Trouble Shooting](#trouble-shooting)
@@ -77,8 +77,6 @@
 
 
 #### Bosh 설치
-
-
 
 ##### 2-1 . bosh-cli 설치
   ```shell
