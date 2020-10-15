@@ -76,8 +76,10 @@
 
 
 
-
 #### Bosh 설치
+
+
+
 ##### 2-1 . bosh-cli 설치
   ```shell
     # 다운 받은 바이너리 파일을 /usr/local/bin폴더 아래에 위치시키는 것으로 설치 완료
@@ -388,7 +390,6 @@
        
   - network-toplogy ---------------------------------------------------------------------------------------------------------------
        ![](./technicalReportImages/network-toplogy.png)
-       
 
   < microservice-msxpert.yml  예시 >
   ```yaml

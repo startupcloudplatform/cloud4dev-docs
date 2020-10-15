@@ -1108,230 +1108,230 @@
 </li>
 <li><p>network-toplogy ---------------------------------------------------------------------------------------------------------------
    <img src="technicalReportImages/network-toplogy.png" alt=""></p>
+<p>&lt; microservice-msxpert.yml  &#xC608;&#xC2DC; &gt;</p>
+<pre><code class="lang-yaml"><span class="hljs-bullet">   -</span>--
+<span class="hljs-attr">   name:</span> msxpert-nipa
+
+<span class="hljs-attr">   releases:</span>
+<span class="hljs-attr">   - name:</span> msxpert-nipa
+<span class="hljs-attr">     version:</span> latest
+<span class="hljs-attr">   - name:</span> postgres
+<span class="hljs-attr">     version:</span> <span class="hljs-number">23</span>
+<span class="hljs-attr">     url:</span> https://bosh.io/d/github.com/cloudfoundry/postgres-release?v=<span class="hljs-number">23</span>
+<span class="hljs-attr">     sha1:</span> <span class="hljs-number">4</span>b5265bfd5f92cf14335a75658658a0db0bca927
+<span class="hljs-attr">   - name:</span> haproxy
+<span class="hljs-attr">     version:</span> <span class="hljs-number">9.3</span><span class="hljs-number">.0</span>
+<span class="hljs-attr">     url:</span> https://github.com/cloudfoundry-incubator/haproxy-boshrelease/releases/download/v9<span class="hljs-number">.3</span><span class="hljs-number">.0</span>/haproxy<span class="hljs-bullet">-9.3</span><span class="hljs-number">.0</span>.tgz
+<span class="hljs-attr">     sha1:</span> <span class="hljs-number">384</span>de4ad378b940641a34cda1c63fdc02c901b8f
+
+<span class="hljs-attr">   stemcells:</span>
+<span class="hljs-attr">   - alias:</span> trusty
+<span class="hljs-attr">     os:</span> ubuntu-trusty
+<span class="hljs-attr">     version:</span> latest
+
+<span class="hljs-attr">   instance_groups:</span>
+<span class="hljs-attr">   - name:</span> studio-nipa
+<span class="hljs-attr">     instances:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">     vm_type:</span> small
+<span class="hljs-attr">     vm_extensions:</span> []
+<span class="hljs-attr">     stemcell:</span> trusty
+<span class="hljs-attr">     azs:</span> [z1]
+<span class="hljs-attr">     networks:</span> [{name: default}]
+<span class="hljs-attr">     jobs:</span>
+<span class="hljs-attr">     - name:</span> studio
+<span class="hljs-attr">       release:</span> msxpert-nipa
+<span class="hljs-attr">       properties:</span>
+<span class="hljs-attr">         bind_ip:</span> <span class="hljs-number">0.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>
+<span class="hljs-attr">         bind_port:</span> <span class="hljs-number">8080</span>
+<span class="hljs-attr">         external_url:</span> ((external_url))
+<span class="hljs-attr">         postgresql:</span>
+<span class="hljs-attr">           database:</span> &amp;db_name microservice-nipa
+<span class="hljs-attr">           role:</span> <span class="hljs-meta">&amp;db_role</span>
+<span class="hljs-attr">             name:</span> microservice
+<span class="hljs-attr">             password:</span> dummy-postgres-password
+<span class="hljs-attr">         cf:</span>
+<span class="hljs-attr">           api_url:</span> ((cf_api_url))
+           uaa_url : ((uaa_url))
+<span class="hljs-attr">           username:</span> ((cf_username))
+<span class="hljs-attr">           password:</span> ((cf_password))
+<span class="hljs-attr">           skip_cert_check:</span> ((cf_skip_cert_check))
+<span class="hljs-attr">           client_id:</span> micro
+<span class="hljs-attr">           client_secret:</span> micro-secret
+<span class="hljs-attr">     - name:</span> microservice-broker
+<span class="hljs-attr">       release:</span> msxpert-nipa
+<span class="hljs-attr">       properties:</span>
+<span class="hljs-attr">         broker:</span>
+<span class="hljs-attr">           username:</span> admin
+<span class="hljs-attr">           password:</span> admin
+<span class="hljs-attr">           port:</span> <span class="hljs-number">3000</span>
+<span class="hljs-attr">         cf:</span>
+<span class="hljs-attr">           api:</span> ((cf_api_url))
+<span class="hljs-attr">           username:</span> ((cf_username))
+<span class="hljs-attr">           password:</span> ((cf_password))
+<span class="hljs-attr">           organization:</span> org-micro
+<span class="hljs-attr">           space:</span> space-micro
+<span class="hljs-attr">           skip_cert_check:</span> ((cf_skip_cert_check))
+
+<span class="hljs-attr">     - name:</span> haproxy
+<span class="hljs-attr">       release:</span> haproxy
+<span class="hljs-attr">       consumes:</span>
+<span class="hljs-attr">         http_backend:</span> {from: haproxy_traefik}
+<span class="hljs-attr">       properties:</span>
+<span class="hljs-attr">         ha_proxy:</span>
+<span class="hljs-attr">           backend_port:</span> ((haproxy_backend_port))
+
+<span class="hljs-attr">     - name:</span> nginx
+<span class="hljs-attr">       release:</span> msxpert-nipa
+
+<span class="hljs-attr">   - name:</span> db-nipa
+<span class="hljs-attr">     instances:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">     vm_type:</span> small
+<span class="hljs-attr">     stemcell:</span> trusty
+<span class="hljs-attr">     persistent_disk_type:</span> small <span class="hljs-comment">#5GB</span>
+<span class="hljs-attr">     azs:</span> [z1]
+<span class="hljs-attr">     networks:</span> [{name: default}]
+<span class="hljs-attr">     jobs:</span>
+<span class="hljs-attr">     - name:</span> postgres
+<span class="hljs-attr">       release:</span> postgres
+<span class="hljs-attr">       properties:</span>
+<span class="hljs-attr">         databases:</span>
+<span class="hljs-attr">           port:</span> <span class="hljs-number">5432</span>
+<span class="hljs-attr">           databases:</span>
+<span class="hljs-attr">           - name:</span> <span class="hljs-meta">*db_name</span>
+<span class="hljs-attr">           roles:</span>
+<span class="hljs-bullet">           -</span> <span class="hljs-meta">*db_role</span>
+
+<span class="hljs-attr">   - name:</span> broker-registrar-micro
+<span class="hljs-attr">     instances:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">     azs:</span> [z1]
+<span class="hljs-attr">     lifecycle:</span> errand
+<span class="hljs-attr">     vm_type:</span> small
+<span class="hljs-attr">     stemcell:</span> trusty
+<span class="hljs-attr">     networks:</span> [{name: default}]
+<span class="hljs-attr">     jobs:</span>
+<span class="hljs-attr">     - name:</span> broker-registrar
+<span class="hljs-attr">       release:</span> msxpert-nipa
+<span class="hljs-attr">       properties:</span>
+<span class="hljs-attr">         servicebroker:</span>
+<span class="hljs-attr">           name:</span> microservicebroker
+<span class="hljs-attr">           username:</span> admin
+<span class="hljs-attr">           password:</span> admin
+<span class="hljs-attr">         cf:</span>
+<span class="hljs-attr">           api_url:</span> ((cf_api_url))
+<span class="hljs-attr">           username:</span> ((cf_username))
+<span class="hljs-attr">           password:</span> ((cf_password))
+<span class="hljs-attr">           skip_ssl_validation:</span> ((cf_skip_cert_check))
+
+<span class="hljs-attr">   - name:</span> broker-deregistrar-micro
+<span class="hljs-attr">     instances:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">     azs:</span> [z1]
+<span class="hljs-attr">     lifecycle:</span> errand
+<span class="hljs-attr">     vm_type:</span> small
+<span class="hljs-attr">     stemcell:</span> trusty
+<span class="hljs-attr">     networks:</span> [{name: default}]
+<span class="hljs-attr">     jobs:</span>
+<span class="hljs-attr">     - name:</span> broker-deregistrar
+<span class="hljs-attr">       release:</span> msxpert-nipa
+<span class="hljs-attr">       properties:</span>
+<span class="hljs-attr">         servicebroker:</span>
+<span class="hljs-attr">           name:</span> microservicebroker
+<span class="hljs-attr">         cf:</span>
+<span class="hljs-attr">           api_url:</span> ((cf_api_url))
+<span class="hljs-attr">           username:</span> ((cf_username))
+<span class="hljs-attr">           password:</span> ((cf_password))
+<span class="hljs-attr">           skip_ssl_validation:</span> ((cf_skip_cert_check))
+
+<span class="hljs-attr">   - name:</span> traefik-nipa
+<span class="hljs-attr">     instances:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">     azs:</span> [z1]
+<span class="hljs-attr">     stemcell:</span> trusty
+<span class="hljs-attr">     vm_type:</span> small
+   <span class="hljs-comment">#  persistent_disk_type: small</span>
+<span class="hljs-attr">     env:</span>
+<span class="hljs-attr">       bosh:</span> { swap_size: <span class="hljs-number">0</span> }
+<span class="hljs-attr">     networks:</span> [{name: default}]
+<span class="hljs-attr">     jobs:</span>
+<span class="hljs-attr">       - name:</span> traefik
+<span class="hljs-attr">         release:</span> msxpert-nipa
+<span class="hljs-attr">         provides:</span>
+<span class="hljs-attr">           traefik:</span> {as: haproxy_traefik}
+<span class="hljs-attr">         properties:</span>
+<span class="hljs-attr">           traefik:</span>
+<span class="hljs-attr">             log_level:</span> DEBUG
+<span class="hljs-attr">             access_logs:</span> { enabled: <span class="hljs-literal">true</span> }
+<span class="hljs-attr">             http:</span> { enabled: <span class="hljs-literal">true</span>, port: ((haproxy_backend_port)) }
+<span class="hljs-attr">             web:</span>
+<span class="hljs-attr">               enabled:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">               basic_auth:</span>
+<span class="hljs-attr">                 username:</span> test
+<span class="hljs-attr">                 password:</span> test1234
+<span class="hljs-attr">             file:</span>
+<span class="hljs-attr">               enabled:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">               watch:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">               rules:</span> <span class="hljs-string">|
+                 [frontends]
+
+                   [frontends.frontend1]
+                   backend = &quot;backend1&quot;
+                     [frontends.frontend1.routes.test_1]
+                     rule = &quot;Path:/api/customers&quot;
+
+                 [backends]
+
+                   [backends.backend1]
+
+                       [backends.backend1.servers.server1]
+                         url = &quot;http://node.bosh-lite.com&quot;
+                         weight = 1
+
+</span><span class="hljs-attr">   - name:</span> grafana-nipa
+<span class="hljs-attr">     azs:</span> [z1]
+<span class="hljs-attr">     instances:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">     vm_type:</span> small
+   <span class="hljs-comment">#  persistent_disk_type: small</span>
+<span class="hljs-attr">     stemcell:</span> trusty
+<span class="hljs-attr">     networks:</span> [{name: default}]
+<span class="hljs-attr">     jobs:</span>
+<span class="hljs-attr">       - name:</span> grafana
+<span class="hljs-attr">         release:</span> msxpert-nipa
+<span class="hljs-attr">         properties:</span>
+<span class="hljs-attr">           grafana:</span>
+<span class="hljs-attr">             auth:</span>
+<span class="hljs-attr">               proxy:</span>
+<span class="hljs-attr">                 enabled:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">                 header_name:</span> X-MSXPERTAUTH-USER
+<span class="hljs-attr">                 auto_sign_up:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">             security:</span>
+<span class="hljs-attr">               admin_user:</span> admin
+<span class="hljs-attr">               admin_password:</span> ((grafana_admin_password))
+
+<span class="hljs-attr">     stemcell:</span> trusty
+<span class="hljs-attr">     vm_type:</span> small
+   <span class="hljs-comment">#  persistent_disk_type: small</span>
+<span class="hljs-attr">     env:</span>
+<span class="hljs-attr">       bosh:</span> { swap_size: <span class="hljs-number">0</span> }
+<span class="hljs-attr">     networks:</span> [{name: default}]
+
+<span class="hljs-attr">   update:</span>
+<span class="hljs-attr">     canaries:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">     max_in_flight:</span> <span class="hljs-number">1</span>
+<span class="hljs-attr">     serial:</span> <span class="hljs-literal">false</span>
+<span class="hljs-attr">     canary_watch_time:</span> <span class="hljs-number">1000</span><span class="hljs-bullet">-60000</span>
+<span class="hljs-attr">     update_watch_time:</span> <span class="hljs-number">1000</span><span class="hljs-bullet">-60000</span>
+</code></pre>
+<p>&lt; vars-file.yml &#xC608;&#xC2DC; &gt;</p>
+<pre><code class="lang-yaml"><span class="hljs-bullet">   -</span>--
+<span class="hljs-attr">   cf_api_url:</span> https://api.bosh-lite.com <span class="hljs-comment"># [cf api endpoint]</span>
+<span class="hljs-attr">   uaa_url:</span> https://uaa.bosh-lite.com
+<span class="hljs-attr">   cf_username:</span> admin
+<span class="hljs-attr">   cf_password:</span> <span class="hljs-comment"># [CF_Admin_Password]</span>
+<span class="hljs-attr">   cf_skip_cert_check:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">   external_url:</span> <span class="hljs-comment"># [studio-nipa VM&#xACFC; &#xC5F0;&#xACB0;&#xC2DC;&#xD0AC; Public IP]:8080</span>
+<span class="hljs-attr">   haproxy_backend_port:</span> <span class="hljs-number">8089</span>
+<span class="hljs-attr">   grafana_admin_password:</span> admin
+</code></pre>
 </li>
 </ul>
-<p>  &lt; microservice-msxpert.yml  &#xC608;&#xC2DC; &gt;</p>
-<pre><code class="lang-yaml"><span class="hljs-bullet">       -</span>--
-<span class="hljs-attr">       name:</span> msxpert-nipa
-
-<span class="hljs-attr">       releases:</span>
-<span class="hljs-attr">       - name:</span> msxpert-nipa
-<span class="hljs-attr">         version:</span> latest
-<span class="hljs-attr">       - name:</span> postgres
-<span class="hljs-attr">         version:</span> <span class="hljs-number">23</span>
-<span class="hljs-attr">         url:</span> https://bosh.io/d/github.com/cloudfoundry/postgres-release?v=<span class="hljs-number">23</span>
-<span class="hljs-attr">         sha1:</span> <span class="hljs-number">4</span>b5265bfd5f92cf14335a75658658a0db0bca927
-<span class="hljs-attr">       - name:</span> haproxy
-<span class="hljs-attr">         version:</span> <span class="hljs-number">9.3</span><span class="hljs-number">.0</span>
-<span class="hljs-attr">         url:</span> https://github.com/cloudfoundry-incubator/haproxy-boshrelease/releases/download/v9<span class="hljs-number">.3</span><span class="hljs-number">.0</span>/haproxy<span class="hljs-bullet">-9.3</span><span class="hljs-number">.0</span>.tgz
-<span class="hljs-attr">         sha1:</span> <span class="hljs-number">384</span>de4ad378b940641a34cda1c63fdc02c901b8f
-
-<span class="hljs-attr">       stemcells:</span>
-<span class="hljs-attr">       - alias:</span> trusty
-<span class="hljs-attr">         os:</span> ubuntu-trusty
-<span class="hljs-attr">         version:</span> latest
-
-<span class="hljs-attr">       instance_groups:</span>
-<span class="hljs-attr">       - name:</span> studio-nipa
-<span class="hljs-attr">         instances:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">         vm_type:</span> small
-<span class="hljs-attr">         vm_extensions:</span> []
-<span class="hljs-attr">         stemcell:</span> trusty
-<span class="hljs-attr">         azs:</span> [z1]
-<span class="hljs-attr">         networks:</span> [{name: default}]
-<span class="hljs-attr">         jobs:</span>
-<span class="hljs-attr">         - name:</span> studio
-<span class="hljs-attr">           release:</span> msxpert-nipa
-<span class="hljs-attr">           properties:</span>
-<span class="hljs-attr">             bind_ip:</span> <span class="hljs-number">0.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>
-<span class="hljs-attr">             bind_port:</span> <span class="hljs-number">8080</span>
-<span class="hljs-attr">             external_url:</span> ((external_url))
-<span class="hljs-attr">             postgresql:</span>
-<span class="hljs-attr">               database:</span> &amp;db_name microservice-nipa
-<span class="hljs-attr">               role:</span> <span class="hljs-meta">&amp;db_role</span>
-<span class="hljs-attr">                 name:</span> microservice
-<span class="hljs-attr">                 password:</span> dummy-postgres-password
-<span class="hljs-attr">             cf:</span>
-<span class="hljs-attr">               api_url:</span> ((cf_api_url))
-               uaa_url : ((uaa_url))
-<span class="hljs-attr">               username:</span> ((cf_username))
-<span class="hljs-attr">               password:</span> ((cf_password))
-<span class="hljs-attr">               skip_cert_check:</span> ((cf_skip_cert_check))
-<span class="hljs-attr">               client_id:</span> micro
-<span class="hljs-attr">               client_secret:</span> micro-secret
-<span class="hljs-attr">         - name:</span> microservice-broker
-<span class="hljs-attr">           release:</span> msxpert-nipa
-<span class="hljs-attr">           properties:</span>
-<span class="hljs-attr">             broker:</span>
-<span class="hljs-attr">               username:</span> admin
-<span class="hljs-attr">               password:</span> admin
-<span class="hljs-attr">               port:</span> <span class="hljs-number">3000</span>
-<span class="hljs-attr">             cf:</span>
-<span class="hljs-attr">               api:</span> ((cf_api_url))
-<span class="hljs-attr">               username:</span> ((cf_username))
-<span class="hljs-attr">               password:</span> ((cf_password))
-<span class="hljs-attr">               organization:</span> org-micro
-<span class="hljs-attr">               space:</span> space-micro
-<span class="hljs-attr">               skip_cert_check:</span> ((cf_skip_cert_check))
-
-<span class="hljs-attr">         - name:</span> haproxy
-<span class="hljs-attr">           release:</span> haproxy
-<span class="hljs-attr">           consumes:</span>
-<span class="hljs-attr">             http_backend:</span> {from: haproxy_traefik}
-<span class="hljs-attr">           properties:</span>
-<span class="hljs-attr">             ha_proxy:</span>
-<span class="hljs-attr">               backend_port:</span> ((haproxy_backend_port))
-
-<span class="hljs-attr">         - name:</span> nginx
-<span class="hljs-attr">           release:</span> msxpert-nipa
-
-<span class="hljs-attr">       - name:</span> db-nipa
-<span class="hljs-attr">         instances:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">         vm_type:</span> small
-<span class="hljs-attr">         stemcell:</span> trusty
-<span class="hljs-attr">         persistent_disk_type:</span> small <span class="hljs-comment">#5GB</span>
-<span class="hljs-attr">         azs:</span> [z1]
-<span class="hljs-attr">         networks:</span> [{name: default}]
-<span class="hljs-attr">         jobs:</span>
-<span class="hljs-attr">         - name:</span> postgres
-<span class="hljs-attr">           release:</span> postgres
-<span class="hljs-attr">           properties:</span>
-<span class="hljs-attr">             databases:</span>
-<span class="hljs-attr">               port:</span> <span class="hljs-number">5432</span>
-<span class="hljs-attr">               databases:</span>
-<span class="hljs-attr">               - name:</span> <span class="hljs-meta">*db_name</span>
-<span class="hljs-attr">               roles:</span>
-<span class="hljs-bullet">               -</span> <span class="hljs-meta">*db_role</span>
-
-<span class="hljs-attr">       - name:</span> broker-registrar-micro
-<span class="hljs-attr">         instances:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">         azs:</span> [z1]
-<span class="hljs-attr">         lifecycle:</span> errand
-<span class="hljs-attr">         vm_type:</span> small
-<span class="hljs-attr">         stemcell:</span> trusty
-<span class="hljs-attr">         networks:</span> [{name: default}]
-<span class="hljs-attr">         jobs:</span>
-<span class="hljs-attr">         - name:</span> broker-registrar
-<span class="hljs-attr">           release:</span> msxpert-nipa
-<span class="hljs-attr">           properties:</span>
-<span class="hljs-attr">             servicebroker:</span>
-<span class="hljs-attr">               name:</span> microservicebroker
-<span class="hljs-attr">               username:</span> admin
-<span class="hljs-attr">               password:</span> admin
-<span class="hljs-attr">             cf:</span>
-<span class="hljs-attr">               api_url:</span> ((cf_api_url))
-<span class="hljs-attr">               username:</span> ((cf_username))
-<span class="hljs-attr">               password:</span> ((cf_password))
-<span class="hljs-attr">               skip_ssl_validation:</span> ((cf_skip_cert_check))
-
-<span class="hljs-attr">       - name:</span> broker-deregistrar-micro
-<span class="hljs-attr">         instances:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">         azs:</span> [z1]
-<span class="hljs-attr">         lifecycle:</span> errand
-<span class="hljs-attr">         vm_type:</span> small
-<span class="hljs-attr">         stemcell:</span> trusty
-<span class="hljs-attr">         networks:</span> [{name: default}]
-<span class="hljs-attr">         jobs:</span>
-<span class="hljs-attr">         - name:</span> broker-deregistrar
-<span class="hljs-attr">           release:</span> msxpert-nipa
-<span class="hljs-attr">           properties:</span>
-<span class="hljs-attr">             servicebroker:</span>
-<span class="hljs-attr">               name:</span> microservicebroker
-<span class="hljs-attr">             cf:</span>
-<span class="hljs-attr">               api_url:</span> ((cf_api_url))
-<span class="hljs-attr">               username:</span> ((cf_username))
-<span class="hljs-attr">               password:</span> ((cf_password))
-<span class="hljs-attr">               skip_ssl_validation:</span> ((cf_skip_cert_check))
-
-<span class="hljs-attr">       - name:</span> traefik-nipa
-<span class="hljs-attr">         instances:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">         azs:</span> [z1]
-<span class="hljs-attr">         stemcell:</span> trusty
-<span class="hljs-attr">         vm_type:</span> small
-       <span class="hljs-comment">#  persistent_disk_type: small</span>
-<span class="hljs-attr">         env:</span>
-<span class="hljs-attr">           bosh:</span> { swap_size: <span class="hljs-number">0</span> }
-<span class="hljs-attr">         networks:</span> [{name: default}]
-<span class="hljs-attr">         jobs:</span>
-<span class="hljs-attr">           - name:</span> traefik
-<span class="hljs-attr">             release:</span> msxpert-nipa
-<span class="hljs-attr">             provides:</span>
-<span class="hljs-attr">               traefik:</span> {as: haproxy_traefik}
-<span class="hljs-attr">             properties:</span>
-<span class="hljs-attr">               traefik:</span>
-<span class="hljs-attr">                 log_level:</span> DEBUG
-<span class="hljs-attr">                 access_logs:</span> { enabled: <span class="hljs-literal">true</span> }
-<span class="hljs-attr">                 http:</span> { enabled: <span class="hljs-literal">true</span>, port: ((haproxy_backend_port)) }
-<span class="hljs-attr">                 web:</span>
-<span class="hljs-attr">                   enabled:</span> <span class="hljs-literal">true</span>
-<span class="hljs-attr">                   basic_auth:</span>
-<span class="hljs-attr">                     username:</span> test
-<span class="hljs-attr">                     password:</span> test1234
-<span class="hljs-attr">                 file:</span>
-<span class="hljs-attr">                   enabled:</span> <span class="hljs-literal">true</span>
-<span class="hljs-attr">                   watch:</span> <span class="hljs-literal">true</span>
-<span class="hljs-attr">                   rules:</span> <span class="hljs-string">|
-                     [frontends]
-
-                       [frontends.frontend1]
-                       backend = &quot;backend1&quot;
-                         [frontends.frontend1.routes.test_1]
-                         rule = &quot;Path:/api/customers&quot;
-
-                     [backends]
-
-                       [backends.backend1]
-
-                           [backends.backend1.servers.server1]
-                             url = &quot;http://node.bosh-lite.com&quot;
-                             weight = 1
-
-</span><span class="hljs-attr">       - name:</span> grafana-nipa
-<span class="hljs-attr">         azs:</span> [z1]
-<span class="hljs-attr">         instances:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">         vm_type:</span> small
-       <span class="hljs-comment">#  persistent_disk_type: small</span>
-<span class="hljs-attr">         stemcell:</span> trusty
-<span class="hljs-attr">         networks:</span> [{name: default}]
-<span class="hljs-attr">         jobs:</span>
-<span class="hljs-attr">           - name:</span> grafana
-<span class="hljs-attr">             release:</span> msxpert-nipa
-<span class="hljs-attr">             properties:</span>
-<span class="hljs-attr">               grafana:</span>
-<span class="hljs-attr">                 auth:</span>
-<span class="hljs-attr">                   proxy:</span>
-<span class="hljs-attr">                     enabled:</span> <span class="hljs-literal">true</span>
-<span class="hljs-attr">                     header_name:</span> X-MSXPERTAUTH-USER
-<span class="hljs-attr">                     auto_sign_up:</span> <span class="hljs-literal">true</span>
-<span class="hljs-attr">                 security:</span>
-<span class="hljs-attr">                   admin_user:</span> admin
-<span class="hljs-attr">                   admin_password:</span> ((grafana_admin_password))
-
-<span class="hljs-attr">         stemcell:</span> trusty
-<span class="hljs-attr">         vm_type:</span> small
-       <span class="hljs-comment">#  persistent_disk_type: small</span>
-<span class="hljs-attr">         env:</span>
-<span class="hljs-attr">           bosh:</span> { swap_size: <span class="hljs-number">0</span> }
-<span class="hljs-attr">         networks:</span> [{name: default}]
-
-<span class="hljs-attr">       update:</span>
-<span class="hljs-attr">         canaries:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">         max_in_flight:</span> <span class="hljs-number">1</span>
-<span class="hljs-attr">         serial:</span> <span class="hljs-literal">false</span>
-<span class="hljs-attr">         canary_watch_time:</span> <span class="hljs-number">1000</span><span class="hljs-bullet">-60000</span>
-<span class="hljs-attr">         update_watch_time:</span> <span class="hljs-number">1000</span><span class="hljs-bullet">-60000</span>
-</code></pre>
-<p>  &lt; vars-file.yml &#xC608;&#xC2DC; &gt;</p>
-<pre><code class="lang-yaml"><span class="hljs-bullet">       -</span>--
-<span class="hljs-attr">       cf_api_url:</span> https://api.bosh-lite.com <span class="hljs-comment"># [cf api endpoint]</span>
-<span class="hljs-attr">       uaa_url:</span> https://uaa.bosh-lite.com
-<span class="hljs-attr">       cf_username:</span> admin
-<span class="hljs-attr">       cf_password:</span> <span class="hljs-comment"># [CF_Admin_Password]</span>
-<span class="hljs-attr">       cf_skip_cert_check:</span> <span class="hljs-literal">true</span>
-<span class="hljs-attr">       external_url:</span> <span class="hljs-comment"># [studio-nipa VM&#xACFC; &#xC5F0;&#xACB0;&#xC2DC;&#xD0AC; Public IP]:8080</span>
-<span class="hljs-attr">       haproxy_backend_port:</span> <span class="hljs-number">8089</span>
-<span class="hljs-attr">       grafana_admin_password:</span> admin
-</code></pre>
 <h3 id="msxpert-&#xC6B4;&#xC601;">MsXpert &#xC6B4;&#xC601;</h3>
 <h4 id="trouble-shooting">Trouble Shooting</h4>
 <h4 id="contents">Contents</h4>
@@ -1572,7 +1572,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"MSA Technical Report","level":"5.1","depth":1,"previous":{"title":"오픈데이터API 제공처 메뉴얼","level":"4.3","depth":1,"path":"openapi_manager.md","ref":"openapi_manager.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Technical_Report.md","mtime":"2020-10-15T05:08:01.514Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-15T05:25:30.612Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"MSA Technical Report","level":"5.1","depth":1,"previous":{"title":"오픈데이터API 제공처 메뉴얼","level":"4.3","depth":1,"path":"openapi_manager.md","ref":"openapi_manager.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Technical_Report.md","mtime":"2020-10-15T07:01:15.109Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-15T07:01:56.283Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
