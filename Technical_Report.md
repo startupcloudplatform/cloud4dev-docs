@@ -629,8 +629,8 @@
   >##### [API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법](#api--등록시-restapi가-조회되지-않을때-restapi-확인방법)
   >##### [cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)](#cf에-deploy-되어있는-application의-env-확인-방법--application-접근-비밀번호-확인법)
   >##### [Spring-cloud-Eureka  에러](#spring-cloud-eureka-에러)
-  >##### [msxpert-nipa의 각 instance에 접근하는 방법](#sxpert-nipa의-각-instance-에-접근하는-방법)
-  >##### [등록된 API가 정상적으로 호출되지 않는 상황에서 대처법](#등록된-api가-정상적으로-호출되지-않는-상황에서-대처법)
+  >##### [msxpert-nipa의 각 instance에 접근하는 방법](#msxpert-nipa의-각-instance-에-접근하는-방법)
+  >##### [등록된 API가 정상적으로 호출되지 않는 상황에서 대처법](#등록된-api가-정상적으로-호출되지-않는-상황-대처법)
 
 
 
@@ -801,7 +801,7 @@
 
 
 
- ##### 등록된 API가 정상적으로 호출되지 않는 상황에서 대처법
+ ##### 등록된 API가 정상적으로 호출되지 않는 상황 대처법
 
  ![](./technicalReportImages/API_page_not_found.png)
 
