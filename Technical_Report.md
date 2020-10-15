@@ -1,7 +1,7 @@
 # Technical Report
 ## 
 
- #### [MsXpert 설치](#msxpert-설치)
+ #### [마이크로서비스 스튜디오 설치하기](#마이크로서비스-스튜디오-설치)
   >##### [IaaS 구성 ( Azure )](#iaas-구성-azure-)
   >##### [Bosh 설치](#bosh-설치)
   >##### [CloudFoundry 설치](#cloudfoundry-설치)
@@ -15,7 +15,7 @@
 
 
 
-### MsXpert 설치
+### 마이크로서비스 스튜디오 설치
 
 #### IaaS 구성( Azure )
 
@@ -168,7 +168,10 @@
         -o cf-deployment/operations/use-haproxy-public-network.yml
   ```
 
+
+
 #### MsXpert 설치
+
  ##### 4-1. angular/cli 설치
   ```shell
       $ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
