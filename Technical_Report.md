@@ -624,17 +624,17 @@
 
 #### Trouble Shooting
  #### Contents
-  >##### [MsXpert 의 DB에 접근하기](#msxpert-의-db에-접근하기)
+  >##### [MsXpert 의 DB에 접근하기](#msxpert의-db에-접근하기)
   >##### [MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우](#msxpert-상에서-앱의-url-주소가-정상적으로-조회되지-않는-경우)
-  >##### [API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법](#api--등록시-restapi가-조회되지-않을때-restapi-확인-방법)
-  >##### [cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)](#cf에-deploy-되어-있는-application의-env-확인-방법--application-접근-비밀번호-확인법)
-  >##### [Spring-cloud-Eureka  에러](#spring-cloud-eureka--에러)
-  >##### [msxpert-nipa의 각 instance에 접근하는 방법](#sxpert-nipa의-각-instance에-접근하는-방법)
-  >##### [등록해둔 API가 정상적으로 호출되지 않는 상황에서 대처법](#등록해둔-api가-정상적으로-호출되지-않는-상황에서-대처법)
+  >##### [API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법](#api--등록시-restapi가-조회되지-않을때-restapi-확인방법)
+  >##### [cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)](#cf에-deploy-되어있는-application의-env-확인-방법--application-접근-비밀번호-확인법)
+  >##### [Spring-cloud-Eureka  에러](#spring-cloud-eureka-에러)
+  >##### [msxpert-nipa의 각 instance에 접근하는 방법](#sxpert-nipa의-각-instance-에-접근하는-방법)
+  >##### [등록된 API가 정상적으로 호출되지 않는 상황에서 대처법](#등록된-api가-정상적으로-호출되지-않는-상황에서-대처법)
 
 
 
- #####  MsXpert 의 DB에 접근하기
+ #####  MsXpert의 DB에 접근하기
 
   ```shell
       # bosh Inception에서 아래의 과정을 실행
@@ -662,6 +662,7 @@
 
   - backendApp은 보안을 위해서 url이 공개 되지 않는 것이 기본 Setting
     ![](./technicalReportImages/msxpert_url_check.png)
+    
       ```shell
       # 예시 cf target 명령어를 통해 작업 공간을 설정해둔 상태에서 cf map-route 명령어 실행
       # api endpoint:   https://api.bosh-lite.com
@@ -674,10 +675,11 @@
 
 
 
- #####  API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인 방법 
+ #####  API  등록시 RestAPI가 조회되지 않을때 RestAPI 확인방법 
 
   - 우선적으로 swagger페이지가 정상 동작하는지 확인
     ![](./technicalReportImages/api_registry_NoAPI.png)
+    
       ```shell
       # 브라우저를 통해 http://[ 확인하고 싶은 Application URL ]/swagger-ui.html 접속 후 확인하고 싶은 컨트롤러 클릭
       # 사진 예시: http://crs-front-lkop.bosh-lite.com/swagger-ui.html
@@ -685,12 +687,12 @@
       # 이 부분에서 확인되지 않으면 코드를 확인
       # 'microservice-nipa' DB의 'micro_app' 테이블 항목에서 해당하는 데이터의 swagger 데이터에 ''(빈 값)을 넣어주어 DB에 정상적인 데이터가 채워지게 함.
       # 해당 작업 이후에도 문제가 발생한다면 Application 쪽에서 swagger부분 코드를 확인해야함.
-      ```
- ![](./technicalReportImages/swagger-api-check.png)
+  ```
+     ![](./technicalReportImages/swagger-api-check.png)
     
     
 
- #####  cf에 deploy 되어 있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)
+ #####  cf에 deploy 되어있는 application의 env 확인 방법 ( Application 접근 비밀번호 확인법)
   ```shell
       # cf env [ Application 이름 ]
       $ cf env configapp508a6971-870b-45a7-a4df-ac94f5d54987
@@ -740,7 +742,7 @@
   ```
 
 
- ##### Spring-cloud-Eureka  에러
+ ##### Spring-cloud-Eureka 에러
 
   ```shell
       # EMERGENCY! EUREKA MAY BE INCORRECTLY CLAIMING INSTANCES ARE UP WHEN THEY'RE NOT. RENEWALS ARE LESSER THAN THRESHOLD AND HENCE THE INSTANCES ARE NOT BEING EXPIRED JUST TO BE SAFE.
@@ -752,7 +754,7 @@
 
 
 
- ##### msxpert-nipa의 각 instance에 접근하는 방법
+ ##### msxpert-nipa의 각 instance 에 접근하는 방법
 
   ```shell
       # msxpert-nipa의 deploy 상황이 아래와 같을때 각 instance에 접근하는 방법
@@ -797,7 +799,10 @@
     < 접속 화면 >
     ![](./technicalReportImages/Traefik-haproxy.png)
 
- ##### 등록해둔 API가 정상적으로 호출되지 않는 상황에서 대처법
+
+
+ ##### 등록된 API가 정상적으로 호출되지 않는 상황에서 대처법
+
  ![](./technicalReportImages/API_page_not_found.png)
 
 
