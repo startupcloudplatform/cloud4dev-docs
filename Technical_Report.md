@@ -8,10 +8,10 @@
   >
   >##### [CloudFoundry 설치하기](#cloudfoundry-설치)
   >##### [MsXpert 설치하기](#msxpert-설치)
-#### [MsXPert 운영](#마이크로서비스-스튜디오-운영)
+#### [MsXpert 운영](#마이크로서비스-스튜디오-운영)
 
   >##### [Trouble Shooting](#trouble-shooting)
- #### [MsXpert Reference](#msxpert-reference)
+ #### [References](#msxpert-reference)
   >##### [Database 구조](#database-구조)
 
 ***

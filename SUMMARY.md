@@ -1,7 +1,7 @@
 # Summary
 
 ## 개요
-* [Introduction](README.md)
+* [개발지원플랫폼 소개](README.md)
 
 ## 오픈데이터API 활용 가이드
 * [회원가입](openapi_v2.md#회원가입)
