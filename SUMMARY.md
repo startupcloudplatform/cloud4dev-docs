@@ -25,6 +25,7 @@
 * 활용 사례
     * [사례1-서울시문화공간 통합검색](msacasestudy1.md)
     * [사례2-지도상에 공동주택공시가격 제공](msa_aptprice.md)
+    * [사례3-통합대기환경정보제공](msa_fdservice.md)
 
 ## 3. 마이크로서비스 기반 개발 가이드
 * [Microservice & Spring Cloud](msaspringcloud.md#스프링클라우드-적용-가이드)
