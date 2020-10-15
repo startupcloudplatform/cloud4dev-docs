@@ -1,0 +1,11 @@
+{
+    "plugins": ["ga"],
+    "pluginsConfig": {
+        "ga": {
+            "token": "GA 토큰값, 예시 : UA-123456-1"
+        }
+    },
+    "variables": {
+        "BASE_URL": "https://startupcloudplatform.github.io/cloud4dev-docs/"
+    }
+}
