@@ -1,7 +1,9 @@
 # Summary
 
-## 오픈데이터 API 활용 가이드
+## 개요
 * [Introduction](README.md)
+
+## 오픈데이터API 활용 가이드
 * [회원가입](openapi_v2.md#회원가입)
 * [오픈데이터 API 이용 방법](openapi_v2.md#오픈데이터-api-이용-방법)
 * [오픈데이터 API 사용해보기](openapi_v2.md#오픈데이터-api-사용해보기)
