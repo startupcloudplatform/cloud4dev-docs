@@ -22,7 +22,7 @@
 * [마이크로서비스 스튜디오 주요 기능](MicroserviceGuide.md#마이크로서비스-스튜디오-주요-기능)
 * [백엔드앱 개발](MicroserviceGuide.md#백엔드앱-개발)
 * [프론트엔드 앱 개발](MicroserviceGuide.md#프론트엔드-앱-개발)
-* [PaaS-TA에 앱 배포하기](MicroserviceGuide.md#paas-ta에-앱-배포하기)
+* [PaaS-TA에 앱 배포하기](paasta.md)
 * [마이크로서비스 앱 구성](MicroserviceGuide.md#마이크로서비스-앱-구성)
 * 활용 사례
     * [사례1-서울시문화공간 통합검색](msacasestudy1.md)
