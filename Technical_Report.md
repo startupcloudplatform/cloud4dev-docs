@@ -1,5 +1,5 @@
 # Technical Report
- 
+
 
  #### [마이크로서비스 스튜디오 설치하기](#마이크로서비스-스튜디오-설치)
   >##### [IaaS 구성 ( Azure )](##iaas-구성-azure-)
@@ -10,7 +10,7 @@
   >##### [MsXpert 설치하기](#msxpert-설치)
 #### [MsXpert 운영](#마이크로서비스-스튜디오-운영)
 
-  >##### [Trouble Shooting](#trouble-shooting)
+  >##### [문제해결 방법](#troubleshooting)
  #### [References](#msxpert-reference)
   >##### [Database 구조](#database-구조)
 
@@ -622,7 +622,7 @@
 
 ### 마이크로서비스 스튜디오 운영
 
-#### Trouble Shooting
+#### Troubleshooting
  #### Contents
   >##### [MsXpert 의 DB에 접근하기](#msxpert의-db에-접근하기)
   >##### [MsXpert 상에서 앱의 Url 주소가 정상적으로 조회되지 않는 경우](#msxpert-상에서-앱의-url-주소가-정상적으로-조회되지-않는경우)
@@ -687,6 +687,7 @@
       # 이 부분에서 확인되지 않으면 코드를 확인
       # 'microservice-nipa' DB의 'micro_app' 테이블 항목에서 해당하는 데이터의 swagger 데이터에 ''(빈 값)을 넣어주어 DB에 정상적인 데이터가 채워지게 함.
       # 해당 작업 이후에도 문제가 발생한다면 Application 쪽에서 swagger부분 코드를 확인해야함.
+      ```
   ```
      ![](./technicalReportImages/swagger-api-check.png)
     
