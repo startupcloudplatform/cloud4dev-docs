@@ -18,12 +18,12 @@
     * [서울시문화행사정보 API 결과](openapi_v2.md#서울시-문화행사정보-api-결과)
 
 ## 마이크로서비스 스튜디오 활용 가이드
-* [마이크로서비스 스튜디오 개요](microserviceguide.md#마이크로서비스-스튜디오-개요)
-* [마이크로서비스 스튜디오 주요 기능](microserviceguide.md#마이크로서비스-스튜디오-주요-기능)
-* [백엔드앱 개발](microserviceguide.md#백엔드앱-개발)
-* [프론트엔드 앱 개발](microserviceguide.md#프론트엔드-앱-개발)
-* [PaaS-TA에 앱 배포하기](microserviceguide.md#paas-ta에-앱-배포하기)
-* [마이크로서비스 앱 구성](microserviceguide.md#마이크로서비스-앱-구성)
+* [마이크로서비스 스튜디오 개요](MicroserviceGuide.md#마이크로서비스-스튜디오-개요)
+* [마이크로서비스 스튜디오 주요 기능](MicroserviceGuide.md#마이크로서비스-스튜디오-주요-기능)
+* [백엔드앱 개발](MicroserviceGuide.md#백엔드앱-개발)
+* [프론트엔드 앱 개발](MicroserviceGuide.md#프론트엔드-앱-개발)
+* [PaaS-TA에 앱 배포하기](MicroserviceGuide.md#paas-ta에-앱-배포하기)
+* [마이크로서비스 앱 구성](MicroserviceGuide.md#마이크로서비스-앱-구성)
 * 활용 사례
     * [사례1-서울시문화공간 통합검색](msacasestudy1.md)
     * [사례2-지도상에 공동주택공시가격 제공](msa_aptprice.md)
