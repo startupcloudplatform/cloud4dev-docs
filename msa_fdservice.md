@@ -209,25 +209,25 @@ PaaS-TA를 활용하려면 접속 계정이 있어야 한다. 접속 계정이 �
 
 3) 자신이 만든 API를 등록하려면 오른쪽 상단의 환경설정 아이콘 선택 시 서브 메뉴 중에서 ''마이크로서비스 API 관리'' 메뉴를 선택합니다.
 
-<img src="C:/cloud4dev/my_gitbook/images/msa1_apt15.png" width=650 height=130 >
+<img src="./images/msa1_apt15.png" width=650 height=130 >
 
 4) 자신이 이전에 등록한 API가 있다면 이 정보가 조회되고 신규 등록 시 등록 버튼을 선택합니다.
 
-<img src="C:/cloud4dev/my_gitbook/images/msa1_apt12.png" width=650 height=170 >
+<img src="./images/msa1_apt12.png" width=650 height=170 >
 
 5) API 등록 화면에 *표시는 필수값으로 반드시 입력해야 합니다. 모든 정보를 등록한 후 등록 버튼을 누릅니다.
 
-<img src="C:/cloud4dev/my_gitbook/images/msa1_apt13.png" width=650 height=270 >
+<img src="./images/msa1_apt13.png" width=650 height=270 >
 
-<img src="C:/cloud4dev/my_gitbook/images/msa1_apt14.png" width=650 height=370 >
+<img src="./images/msa1_apt14.png" width=650 height=370 >
 
 6) 등록이 완료되면 Top 메뉴에서 API 메뉴를 선택하면 등록된 API 목록이 조회됩니다.
 
-<img src="C:/cloud4dev/my_gitbook/images/msa1_apt16.png" width=650 height=430 >
+<img src="./images/msa1_apt16.png" width=650 height=430 >
 
 7) API 목록의 각 이름을 클릭하면 API 조회 페이지가 호출됩니다. swagger API 양식으로 상세 조회할 수 있습니다.
 
-<img src="C:/cloud4dev/my_gitbook/images/msa1_apt17.png" width=700 height=430 >
+<img src="./images/msa1_apt17.png" width=700 height=430 >
 
 
 
@@ -241,7 +241,7 @@ PaaS-TA를 활용하려면 접속 계정이 있어야 한다. 접속 계정이 �
 
 2) 마이크로서비스 API 모니터링 메뉴을 선택합니다.
 
-<img src="C:/cloud4dev/my_gitbook/images/msa1_apt18.png" width=700 height=430 >
+<img src="./images/msa1_apt18.png" width=700 height=430 >
 
 
 
