@@ -199,9 +199,57 @@ PaaS-TA를 활용하려면 접속 계정이 있어야 한다. 접속 계정이 �
 
 
 
+### 마이크로서비스 API 등록
+
+실시간 통합대기환경정보 제공 API를 외부에 다른 사용자에게 공개할 수 있는 기능을 제공하고 있습니다. 마이크로서비스 스튜디오에 API 등록/수정/삭제 및 모니터링이 가능하도록 구현되어 있어 자신이 개발한 API를 등록하여 API서버로 활용할 수 있습니다. 
+
+1) 개발한 API는 PaaS-TA에 앱이 등록되고 서비스가 되어야 합니다.
+
+2) 마이크로서비스 스튜디오의 메인 메뉴에 API 메뉴가 있습니다. 이 메뉴는 등록된 API 목록을 조회할 수 있습니다.
+
+3) 자신이 만든 API를 등록하려면 오른쪽 상단의 환경설정 아이콘 선택 시 서브 메뉴 중에서 ''마이크로서비스 API 관리'' 메뉴를 선택합니다.
+
+<img src="C:/cloud4dev/my_gitbook/images/msa1_apt15.png" width=650 height=130 >
+
+4) 자신이 이전에 등록한 API가 있다면 이 정보가 조회되고 신규 등록 시 등록 버튼을 선택합니다.
+
+<img src="C:/cloud4dev/my_gitbook/images/msa1_apt12.png" width=650 height=170 >
+
+5) API 등록 화면에 *표시는 필수값으로 반드시 입력해야 합니다. 모든 정보를 등록한 후 등록 버튼을 누릅니다.
+
+<img src="C:/cloud4dev/my_gitbook/images/msa1_apt13.png" width=650 height=270 >
+
+<img src="C:/cloud4dev/my_gitbook/images/msa1_apt14.png" width=650 height=370 >
+
+6) 등록이 완료되면 Top 메뉴에서 API 메뉴를 선택하면 등록된 API 목록이 조회됩니다.
+
+<img src="C:/cloud4dev/my_gitbook/images/msa1_apt16.png" width=650 height=430 >
+
+7) API 목록의 각 이름을 클릭하면 API 조회 페이지가 호출됩니다. swagger API 양식으로 상세 조회할 수 있습니다.
+
+<img src="C:/cloud4dev/my_gitbook/images/msa1_apt17.png" width=700 height=430 >
+
+
+
+
+
+### 마이크로서비스 API 관리
+
+등록된 마이크로서비스 API 관리를 위해 마이크로서비스 스튜디오에서 모니터링 기능을 제공합니다. 정상적인 경로로 접근하지 않았거나 트래픽 현황을 조회할 수 있습니다.
+
+1) 마이크로서비스 스튜디오 메인 메뉴의 오른쪽 상단의 환경설정 아이콘을 선택합니다.
+
+2) 마이크로서비스 API 모니터링 메뉴을 선택합니다.
+
+<img src="C:/cloud4dev/my_gitbook/images/msa1_apt18.png" width=700 height=430 >
+
+
+
+
+
 ### 통합대기환경 정보 제공 개발 결과 확인
 
-현재 샘플로 만들어진 사이트가 공개되어 있습니다.
+실시간 통합대기환경정보 API를 활용할 수 있도록 샘플로 만들어진 사이트가 공개되어 있습니다.
 
 - 접속 사이트 URL : http://fine-dust-map-fd-service.k-cloud.org
 
