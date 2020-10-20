@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>사례3-통합대기환경정보 제공 · GitBook</title>
+        <title>사례4-국토부 지도 좌표변환 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="msa_crschange.html" />
+    <link rel="next" href="msaspringcloud.html" />
     
     
-    <link rel="prev" href="msa_aptprice.html" />
+    <link rel="prev" href="msa_fdservice.html" />
     
 
     </head>
@@ -404,7 +404,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.7.3" data-path="msa_fdservice.html">
+        <li class="chapter " data-level="3.7.3" data-path="msa_fdservice.html">
             
                 <a href="msa_fdservice.html">
             
@@ -417,7 +417,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.7.4" data-path="msa_crschange.html">
+        <li class="chapter active" data-level="3.7.4" data-path="msa_crschange.html">
             
                 <a href="msa_crschange.html">
             
@@ -771,7 +771,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >사례3-통합대기환경정보 제공</a>
+        <a href="." >사례4-국토부 지도 좌표변환</a>
     </h1>
 </div>
 
@@ -786,9 +786,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4;-api-&#xD65C;&#xC6A9;&#xC0AC;&#xB840;-3-&#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD;&#xC815;&#xBCF4;-&#xC81C;&#xACF5;">&#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4; API &#xD65C;&#xC6A9;&#xC0AC;&#xB840; 3. &#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD;&#xC815;&#xBCF4; &#xC81C;&#xACF5;</h2>
-<p>&#xC774; &#xC7A5;&#xC5D0;&#xC11C;&#xB294; &#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4; &#xC544;&#xD0A4;&#xD14D;&#xCC98; &#xAE30;&#xBC18; &#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD;&#xC815;&#xBCF4; &#xAC1C;&#xBC1C; &#xC0AC;&#xB840;&#xB97C; &#xC18C;&#xAC1C;&#xD55C;&#xB2E4;. &#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD; &#xC815;&#xBCF4;&#xB294; &#xCD08;&#xBBF8;&#xC138;&#xBA3C;&#xC9C0; &#xD604;&#xD669; &#xBC0F; &#xB300;&#xAE30;&#xD658;&#xACBD; &#xC815;&#xBCF4;&#xB97C; &#xD55C;&#xAD6D;&#xD658;&#xACBD;&#xACF5;&#xB2E8;&#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xD558;&#xB294; OPEN API&#xB97C; &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xAC1C;&#xBC1C;&#xD55C; &#xC0AC;&#xB840;&#xC774;&#xB2E4;. &#xC77C;&#xBC18;&#xC801;&#xC778; &#xAC1C;&#xBC1C;&#xC758; &#xACBD;&#xC6B0; API&#xB97C; &#xACF5;&#xACF5;&#xB370;&#xC774;&#xD130;&#xD3EC;&#xD138;&#xC774;&#xB098; &#xD55C;&#xAD6D;&#xD658;&#xACBD;&#xACF5;&#xB2E8; &#xC81C;&#xACF5; API&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xC5EC; &#xC11C;&#xBE44;&#xC2A4;&#xB97C; &#xAC1C;&#xBC1C;&#xD560; &#xC218;&#xB3C4; &#xC788;&#xC9C0;&#xB9CC; &#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4; &#xC2A4;&#xD29C;&#xB514;&#xC624;&#xB97C; &#xD65C;&#xC6A9;&#xD558;&#xC5EC; &#xAC1C;&#xBC1C;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xACFC; &#xC2E4;&#xC81C; &#xAC1C;&#xBC1C;&#xD55C; &#xC0AC;&#xB840;&#xB97C; &#xC18C;&#xAC1C;&#xD55C;&#xB2E4;.</p>
-<h3 id="&#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD;&#xC815;&#xBCF4;-api-">&#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD;&#xC815;&#xBCF4; API ?</h3>
+                                <h2 id="&#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4;-api-&#xD65C;&#xC6A9;&#xC0AC;&#xB840;-4-&#xC88C;&#xD45C;&#xBCC0;&#xD658;&#xAE30;">&#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4; API &#xD65C;&#xC6A9;&#xC0AC;&#xB840; 4. &#xC88C;&#xD45C;&#xBCC0;&#xD658;&#xAE30;</h2>
+<p>&#xAD6D;&#xD1A0;&#xBD80;&#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xD558;&#xB294; OPEN API &#xC9C0;&#xB3C4;&#xC88C;&#xD45C;&#xB97C; &#xB2E4;&#xC74C;&#xC9C0;&#xB3C4; &#xB610;&#xB294; &#xB124;&#xC774;&#xBC84; &#xC9C0;&#xB3C4;&#xB85C; &#xC27D;&#xAC8C; &#xBCC0;&#xD658;&#xD560; &#xC218; &#xC788;&#xB294; &#xC88C;&#xD45C;&#xBCC0;&#xD658;&#xC54C;&#xACE0;&#xB9AC;&#xC998;&#xC744; &#xC801;&#xC6A9;&#xD55C; API&#xB97C; &#xC18C;&#xAC1C;&#xD55C;&#xB2E4;. &#xC88C;&#xD45C;&#xACC4; &#xC885;&#xB958; &#xC911;&#xC5D0;&#xC11C; 3&#xCC28;&#xC6D0; &#xBC0F; 2&#xCC28;&#xC6D0; &#xC88C;&#xD45C;&#xACC4;&#xB97C; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xC704;&#xACBD;&#xB3C4; &#xC88C;&#xD45C;&#xB85C; &#xBCC0;&#xD658;&#xD574;&#xC8FC;&#xB294; &#xBD80;&#xBD84;&#xC774; &#xD575;&#xC2EC;&#xC774;&#xB2E4;. </p>
+<h3 id="&#xC88C;&#xD45C;&#xBCC0;&#xD658;-api-">&#xC88C;&#xD45C;&#xBCC0;&#xD658; API ?</h3>
 <h4 id="1-&#xAE30;&#xBCF8;-&#xAE30;&#xB2A5;">1. &#xAE30;&#xBCF8; &#xAE30;&#xB2A5;</h4>
 <table>
 <thead>
@@ -800,49 +800,53 @@
 </thead>
 <tbody>
 <tr>
-<td>&#xD589;&#xC815;&#xAD6C;&#xC5ED;&#xC9C0;&#xB3C4;</td>
-<td>&#xAD6D;&#xD1A0;&#xC9C0;&#xB9AC;&#xC815;&#xBCF4;&#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xD558;&#xB294; &#xD589;&#xC815;&#xAD6C;&#xC5ED;&#xC774; &#xD45C;&#xC2DC;&#xB41C; &#xC9C0;&#xB3C4; &#xD30C;&#xC77C;&#xC744; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xD589;&#xC815;&#xAD6C;&#xC5ED;&#xBCC4; &#xC815;&#xBCF4; &#xC81C;&#xACF5;</td>
-<td>&#xD589;&#xC815;&#xAD6C;&#xC5ED; &#xC9C0;&#xB3C4; &#xC81C;&#xACF5;&#xCC98; : GIS&#xAC1C;&#xBC1C;&#xC790; &#xC0AC;&#xC774;&#xD2B8;, &#xC8FC;&#xC18C;&#xC815;&#xBCF4;&#xC81C;&#xACF5; &#xC2DC;&#xC2A4;&#xD15C; &#xB4F1;<br>- SHP &#xD30C;&#xC77C;&#xB85C; &#xC81C;&#xACF5;&#xB428;</td>
+<td>2&#xCC28;&#xC6D0;, 3&#xCC28;&#xC6D0; &#xC88C;&#xD45C;</td>
+<td>- &#xC88C;&#xD45C;&#xACC4;&#xB294; &#xAE30;&#xD558;&#xD559;&#xC5D0;&#xC11C; &#xC22B;&#xC790;&#xB098; &#xAE30;&#xD638;&#xB97C; &#xC368;&#xC11C; &#xC704;&#xCE58;&#xB97C; &#xD45C;&#xAE30;&#xD558;&#xB294; &#xBC29;&#xC2DD;&#xC744; &#xB73B;&#xD568;</td>
+<td></td>
 </tr>
 <tr>
-<td>&#xC2E4;&#xC2DC;&#xAC04;&#xBBF8;&#xC138;&#xBA3C;&#xC9C0;</td>
-<td>&#xC2E4;&#xC2DC;&#xAC04; &#xCD08;&#xBBF8;&#xC138;&#xBA3C;&#xC9C0; &#xBC0F; &#xBBF8;&#xC138;&#xBA3C;&#xC9C0; &#xB4F1; &#xB300;&#xAE30;&#xD658;&#xACBD; &#xC815;&#xBCF4; &#xC81C;&#xACF5;</td>
-<td>&#xD55C;&#xAD6D;&#xD658;&#xACBD;&#xACF5;&#xB2E8; &#xC815;&#xBCF4; &#xC774;&#xC6A9;<br>&#xC2E4;&#xC2DC;&#xAC04; &#xCD08;&#xBBF8;&#xC138;&#xBA3C;&#xC9C0; &#xC815;&#xBCF4; API &#xD638;&#xCD9C;</td>
-</tr>
-<tr>
-<td>&#xB300;&#xAE30;&#xD658;&#xACBD;&#xC815;&#xBCF4;</td>
-<td>&#xC2E4;&#xC2DC;&#xAC04; &#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD; &#xC815;&#xBCF4; &#xC81C;&#xACF5;</td>
-<td>- &#xD55C;&#xAD6D;&#xD658;&#xACBD;&#xACF5;&#xB2E8; &#xC815;&#xBCF4; &#xC774;&#xC6A9;<br>- &#xC2E4;&#xC2DC;&#xAC04; &#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD;&#xC815;&#xBCF4; API &#xD638;&#xCD9C;</td>
+<td>&#xC88C;&#xD45C;&#xBCC0;&#xD658;</td>
+<td>&#xC120;&#xD0DD;&#xD55C; &#xC9C0;&#xB3C4; &#xC720;&#xD615;&#xC5D0; &#xB9DE;&#xB294; &#xC704;&#xACBD;&#xB3C4; &#xC88C;&#xD45C;&#xACC4; &#xAC12;&#xC73C;&#xB85C; &#xBCC0;&#xD658;</td>
 </tr>
 </tbody>
 </table>
 <h4 id="2-&#xC0C1;&#xC138;-&#xAE30;&#xB2A5;-&#xC124;&#xBA85;">2. &#xC0C1;&#xC138; &#xAE30;&#xB2A5; &#xC124;&#xBA85;</h4>
-<p>1) &#xD589;&#xC815;&#xAD6C;&#xC5ED; &#xC9C0;&#xB3C4; : &#xD589;&#xC815;&#xAD6C;&#xC5ED; &#xD45C;&#xC2DC; &#xC9C0;&#xB3C4;&#xB97C; &#xC6F9;&#xC0AC;&#xC774;&#xD2B8;&#xC5D0;&#xC11C; &#xC81C;&#xACF5;&#xD568;. SHP &#xCD5C;&#xC2E0;&#xD654;</p>
-<p>2) &#xC2E4;&#xC2DC;&#xAC04; &#xCD08;&#xBBF8;&#xC138;&#xBA3C;&#xC9C0; &#xBC0F; &#xBBF8;&#xC138;&#xBA3C;&#xC9C0; &#xC815;&#xBCF4; : &#xD589;&#xC815;&#xAD6C;&#xC5ED;&#xBCC4; &#xCD08;&#xBBF8;&#xC138;&#xBA3C;&#xC9C0; &#xD604;&#xD669;&#xC744; &#xD658;&#xACBD;&#xC624;&#xC5FC; &#xB18D;&#xB3C4;&#xBCC4; &#xC0C9;&#xC0C1;&#xC73C;&#xB85C; &#xD45C;&#xC2DC;&#xD574;&#xC90C;</p>
-<p>3) &#xC2E4;&#xC2DC;&#xAC04; &#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD; : &#xD589;&#xC815;&#xAD6C;&#xC5ED;&#xBCC4; &#xC0C1;&#xC138; &#xC9C0;&#xC5ED;&#xBCC4; &#xD1B5;&#xD569; &#xB300;&#xAE30;&#xD658;&#xACBD;&#xC815;&#xBCF4; &#xC81C;&#xACF5;, &#xC77C;&#xC0B0;&#xD654;&#xD0C4;&#xC18C; &#xB4F1; &#xADF8;&#xB798;&#xD504;&#xB85C; &#xB18D;&#xB3C4; &#xD45C;&#xC2DC;</p>
-<p>4) &#xB300;&#xAE30;&#xD658;&#xACBD; &#xC810;&#xC218;&#xB97C; &#xC9C0;&#xC18C;&#xB85C; &#xD658;&#xC0B0;&#xD55C; &#xC815;&#xBCF4; &#xC81C;&#xACF5;, &#xC9C0;&#xC218;&#xAC12;&#xC744; &#xADF8;&#xB798;&#xD504;&#xB85C; &#xC81C;&#xACF5;</p>
-<h3 id="&#xB2E8;&#xC704;-&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;-&#xBD84;&#xD560;-&#xBC29;&#xBC95;">&#xB2E8;&#xC704; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xBD84;&#xD560; &#xBC29;&#xBC95;</h3>
-<p>&#xD589;&#xC815;&#xAD6C;&#xC5ED;&#xBCC4; &#xC2E4;&#xC2DC;&#xAC04; &#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD; &#xC815;&#xBCF4; &#xC81C;&#xACF5;&#xC744; &#xC704;&#xD55C; &#xCD08;&#xBBF8;&#xC138;&#xBA3C;&#xC9C0;&#xC640; &#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD; &#xC815;&#xBCF4;&#xB97C; &#xB098;&#xB20C; &#xC218; &#xC788;&#xB2E4;.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">&#xC11C;&#xBE44;&#xC2A4; &#xB2E8;&#xC704;&#xBCC4; &#xBD84;&#xD560;</th>
-<th style="text-align:center">&#xAE30;&#xB2A5;&#xBCC4; &#xBD84;&#xD560;</th>
+<th style="text-align:left">&#xC9C0;&#xB9AC;&#xC88C;&#xD45C;&#xACC4;(3&#xCC28;&#xC6D0;)</th>
+<th>2&#xCC28;&#xC6D0; &#xC88C;&#xD45C;&#xACC4;-&#xD22C;&#xC601;&#xBCCD;</th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><img src="images/msa3_fd01.png" width="400" height="300"></td>
-<td style="text-align:center"><img src="images/msa3_fd02.png" width="320" height="300"></td>
+<td style="text-align:left">&#xD0C0;&#xC6D0;&#xCCB4;(&#xC7A5;,&#xB2E8;&#xBC18;&#xACBD;, &#xD3B8;&#xD3C9;&#xB960;)&#xC5D0; &#xC9D1;&#xC911;<br> &#xD574;&#xB2F9; &#xD0C0;&#xC6D0;&#xCCB4; &#xAE30;&#xC900; &#xC704;&#xACBD;&#xB3C4; &#xC88C;&#xD45C;</td>
+<td>bessel&#xD0C0;&#xC6D0;&#xCCB4;&#xC5D0;&#xC11C; wgs84 &#xD0C0;&#xC6D0;&#xCCB4;&#xB85C; &#xBCC0;&#xACBD;&#xD574;&#xC11C; &#xC88C;&#xD45C;&#xB97C; &#xACC4;&#xC0B0;&#xD558;&#xB824;&#xBA74;, 7&#xAC1C;&#xC5D0;&#xC11C; 10&#xAC1C;&#xC758; parameter&#xAC12;&#xC774; &#xD544;&#xC694;&#xD568;</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td></td>
 </tr>
 </tbody>
 </table>
+<ul>
+<li><p>&#xC9C0;&#xB9AC; &#xC88C;&#xD45C;&#xACC4;(3&#xCC28;&#xC6D0;) &#xC608;&#xC2DC;</p>
+<p><img src="images/msa4_crs01.png" width="500" height="200"></p>
+</li>
+</ul>
+<ul>
+<li>2&#xCC28;&#xC6D0; &#xC88C;&#xD45C;&#xACC4;(&#xD22C;&#xC601;&#xBC95;)</li>
+</ul>
+<p><img src="images/msa4_crs02.png" width="600" height="400"></p>
+<h3 id=""> </h3>
 <h3 id="&#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4;-&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;-&#xC124;&#xACC4;">&#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xC124;&#xACC4;</h3>
 <h4 id="1-&#xC11C;&#xBE44;&#xC2A4;-&#xC815;&#xC758;">1. &#xC11C;&#xBE44;&#xC2A4; &#xC815;&#xC758;</h4>
 <p>&#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4; &#xB2E8;&#xC704;&#xC758; &#xBD84;&#xD560;&#xC774; &#xD655;&#xC815;&#xB418;&#xBA74;, &#xC11C;&#xBE44;&#xC2A4;&#xC640; &#xC11C;&#xBE44;&#xC2A4;&#xAC04;&#xC758; &#xD1B5;&#xC2E0; &#xBC29;&#xBC95;(&#xADDC;&#xC57D;)&#xC744; &#xC815;&#xD558;&#xACE0; FRONTEND&#xC640; BACKEND&#xB85C; &#xAD6C;&#xBD84;&#xD55C;&#xB2E4;. &#xC11C;&#xBE44;&#xC2A4;&#xAC04;&#xC758; &#xD1B5;&#xC2E0; &#xADDC;&#xC57D;&#xC740; &#xC5EC;&#xB7EC;&#xAC00;&#xC9C0;&#xAC00; &#xC788;&#xC73C;&#xB098; &#xC5EC;&#xAE30;&#xC5D0;&#xC11C;&#xB294; REST API &#xBC29;&#xC2DD;&#xC744; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;. </p>
 <p><img src="images/msa1_apt04.png" width="350" height="230"></p>
 <h4 id="2-api-&#xC124;&#xACC4;">2. API &#xC124;&#xACC4;</h4>
-<p>&#xCD08;&#xBBF8;&#xC138;&#xBA3C;&#xC9C0; &#xBC0F; &#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD; &#xC815;&#xBCF4;&#xB97C; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xC720;&#xC6A9;&#xD55C; API&#xB97C; &#xB3C4;&#xCD9C;&#xD558;&#xC5EC; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; &#xC815;&#xC758;&#xD55C;&#xB2E4;.</p>
+<p>&#xC88C;&#xD45C;&#xBCC0;&#xD658; API &#xC804;&#xCCB4; &#xBAA9;&#xB85D;</p>
 <table>
 <thead>
 <tr>
@@ -856,124 +860,107 @@
 </thead>
 <tbody>
 <tr>
-<td>/api/dust/measure/list?sidoName=&amp;pageNo=&amp;numOfRows=</td>
+<td>/api/crs/epsg/list/all</td>
 <td>GET</td>
-<td>sidoName</td>
+<td>none</td>
+<td>-</td>
+<td>LIST</td>
+<td>200(OK)</td>
+</tr>
+<tr>
+<td>/api/crs/ellipsoid/list/all</td>
+<td>GET</td>
+<td>none</td>
+<td>-</td>
+<td>LIST</td>
+<td>200(OK)</td>
+</tr>
+<tr>
+<td>/api/crs/epsg/spec?code=</td>
+<td>GET</td>
+<td>code</td>
+<td>string</td>
+<td>LIST</td>
+<td>200(OK)</td>
+</tr>
+<tr>
+<td>/api/crs/ellipsoid/spec?name=</td>
+<td>GET</td>
+<td>name</td>
 <td>String</td>
 <td>LIST</td>
 <td>200(OK)</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>pageNo</td>
-<td>long</td>
-<td>LIST</td>
-<td>200(OK)</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>numOfRows</td>
-<td>long</td>
-<td>LIST</td>
-<td>200(OK)</td>
-</tr>
-<tr>
-<td>/api/dust/measure/list/all?sidoName=</td>
+<td>/api/crs/transform/xy?inputEllipsoid= &amp;outputEpsg= &amp;lat= &amp;lng=</td>
 <td>GET</td>
-<td>sidoName</td>
+<td>input Ellipsoid</td>
 <td>String</td>
-<td>LIST</td>
-<td>200(OK)</td>
-</tr>
-<tr>
-<td>/api/dust/cai/list?sidoName=&amp;pageNo=&amp;numOfRows=</td>
-<td>GET</td>
-<td>sidoName</td>
-<td>String</td>
-<td>LIST</td>
+<td>TwoDimCrs</td>
 <td>200(OK)</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
-<td>pageNo</td>
-<td>long</td>
-<td>LIST</td>
+<td>outputEpsg</td>
+<td>String</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>lat</td>
+<td>Double</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>lng</td>
+<td>Double</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>/api/crs/transform/latlng?inputEpsg= &amp;outputEllipsoid= &amp;x= &amp;y=</td>
+<td>GET</td>
+<td>inputEpsg</td>
+<td>String</td>
+<td>ThreeDimCrs</td>
 <td>200(OK)</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
-<td>numOfRows</td>
-<td>long</td>
-<td>LIST</td>
-<td>200(OK)</td>
-</tr>
-<tr>
-<td>/api/dust/cai/list/all?sidoName=</td>
-<td>GET</td>
-<td>sidoName</td>
+<td>outputEllipsoid</td>
 <td>String</td>
-<td>LIST</td>
-<td>200(OK)</td>
-</tr>
-<tr>
-<td>/api/dust/cai?pollutant=&amp;stationName=</td>
-<td>GET</td>
-<td>pollutant</td>
-<td>String</td>
-<td>Object</td>
-<td>200(OK)</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td></td>
-<td>GET</td>
-<td>stationName</td>
-<td>String</td>
-<td>Object</td>
-<td>200(OK)</td>
-</tr>
-<tr>
-<td>/api/dust/measure/avg/sido?pollutant=</td>
-<td>GET</td>
-<td>pollutant</td>
-<td>String</td>
-<td>Object</td>
-<td>200(OK)</td>
-</tr>
-<tr>
-<td>/api/dust/measure/avg/time/sigungu?sidoName=&amp;hour=</td>
-<td>GET</td>
-<td>sidoName</td>
-<td>String</td>
-<td>LIST</td>
-<td>200(OK)</td>
+<td></td>
+<td>x</td>
+<td>Double</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td></td>
-<td>GET</td>
-<td>hour</td>
-<td>String</td>
-<td>LIST</td>
-<td>200(OK)</td>
-</tr>
-<tr>
-<td>/api/dust/measure/avg/sigungu?sidoName=</td>
-<td>GET</td>
-<td>sidoName</td>
-<td>String</td>
-<td>LIST</td>
-<td>200(OK)</td>
+<td></td>
+<td>y</td>
+<td>Double</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Parameters &#xC815;&#xBCF4;</strong></p>
+<p><strong>&#xC785;&#xB825; Parameters &#xC815;&#xBCF4;</strong></p>
 <table>
 <thead>
 <tr>
-<th>&#xCD9C;&#xB825;&#xBCC0;&#xC218;&#xBA85;</th>
+<th>&#xC785;&#xB825;&#xBCC0;&#xC218;&#xBA85;</th>
 <th>Type</th>
 <th>&#xC608;&#xC81C;</th>
 <th>&#xC124;&#xBA85;</th>
@@ -981,44 +968,68 @@
 </thead>
 <tbody>
 <tr>
-<td>sidoName</td>
+<td>code</td>
 <td>String</td>
-<td>&#xC11C;&#xC6B8;</td>
-<td>&#xC870;&#xD68C;&#xD560; &#xB3C4; &#xC774;&#xB984;</td>
+<td>epsg5174</td>
+<td>&#xC88C;&#xD45C;&#xACC4; &#xCF54;&#xB4DC;&#xBA85;{epsg5174, epsg5179, epsg5181}</td>
 </tr>
 <tr>
-<td>stationName</td>
+<td>name</td>
 <td>String</td>
-<td>&#xAC15;&#xB0A8;&#xAD6C;</td>
-<td>&#xC870;&#xD68C;&#xD560; &#xCE21;&#xC815;&#xC18C;&#xBA85;</td>
+<td>wgs84</td>
+<td>&#xD0C0;&#xC6D0;&#xCCB4; &#xC774;&#xB984; {wgs84, grs80, bessel}</td>
 </tr>
 <tr>
-<td>pageNo</td>
-<td>Long</td>
-<td>2</td>
-<td>&#xC870;&#xD68C;&#xD560; &#xD398;&#xC774;&#xC9C0; &#xBC88;&#xD638;</td>
-</tr>
-<tr>
-<td>numOfRows</td>
-<td>Long</td>
-<td>20</td>
-<td>&#xC870;&#xD68C;&#xD560; &#xB370;&#xC774;&#xD130;&#xC758; &#xC591;</td>
-</tr>
-<tr>
-<td>hour</td>
+<td>inputEllipsoid</td>
 <td>String</td>
-<td>15:00</td>
-<td>&#xC870;&#xD68C;&#xD560; &#xC2DC;&#xAC04;</td>
+<td>wgs84</td>
+<td>&#xC785;&#xB825; &#xC88C;&#xD45C; &#xD0C0;&#xC6D0;&#xCCB4; &#xC774;&#xB984;</td>
 </tr>
 <tr>
-<td>pollutant</td>
+<td>outputEpsg</td>
 <td>String</td>
-<td>pm10</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xBA85;</td>
+<td>epsg5174</td>
+<td>&#xCD9C;&#xB825; &#xC88C;&#xD45C; &#xC88C;&#xD45C;&#xACC4; &#xCF54;&#xB4DC;&#xBA85;</td>
+</tr>
+<tr>
+<td>lat</td>
+<td>Double</td>
+<td>37.538831</td>
+<td>&#xC704;&#xB3C4;(latitude)</td>
+</tr>
+<tr>
+<td>lng</td>
+<td>Double</td>
+<td>126.891382</td>
+<td>&#xACBD;&#xB3C4;(longitude)</td>
+</tr>
+<tr>
+<td>inputEpsg</td>
+<td>String</td>
+<td>epsg5174</td>
+<td>&#xC785;&#xB825; &#xC88C;&#xD45C; &#xC88C;&#xD45C;&#xACC4; &#xCF54;&#xB4DC;&#xBA85;</td>
+</tr>
+<tr>
+<td>outputEllipsoid</td>
+<td>String</td>
+<td>wgs84</td>
+<td>&#xCD9C;&#xB825; &#xC88C;&#xD45C; &#xD0C0;&#xC6D0;&#xCCB4; &#xC774;&#xB984;</td>
+</tr>
+<tr>
+<td>x</td>
+<td>Double</td>
+<td>190330.62812120165</td>
+<td>2&#xCC28;&#xC6D0; &#xC88C;&#xD45C;&#xACC4;&#xC758; x&#xAC12;</td>
+</tr>
+<tr>
+<td>y</td>
+<td>Double</td>
+<td>448514.24844640953</td>
+<td>2&#xCC28;&#xC6D0; &#xC88C;&#xD45C;&#xACC4;&#xC758; y&#xAC12;</td>
 </tr>
 </tbody>
 </table>
-<p><strong>&#xBBF8;&#xC138;&#xBA3C;&#xC9C0; API &#xC870;&#xD68C; &#xCD9C;&#xB825; &#xACB0;&#xACFC;</strong></p>
+<p><strong>&#xCD9C;&#xB825; &#xBCC0;&#xC218; &#xC815;&#xBCF4;</strong></p>
 <table>
 <thead>
 <tr>
@@ -1029,233 +1040,71 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">stationName</td>
+<td style="text-align:center">epsg</td>
 <td>String</td>
 <td>&#xCE21;&#xC815;&#xC7A5;&#xC18C; &#xC774;&#xB984;</td>
 </tr>
 <tr>
-<td style="text-align:center">cityName</td>
-<td>String</td>
+<td style="text-align:center">x</td>
+<td>Double</td>
 <td>&#xC2DC;&#xAD70;&#xAD6C; &#xC774;&#xB984;</td>
 </tr>
 <tr>
-<td style="text-align:center">dataTime</td>
-<td>String</td>
+<td style="text-align:center">y</td>
+<td>Double</td>
 <td>&#xB0A0;&#xC9DC;</td>
 </tr>
 <tr>
-<td style="text-align:center">so2Value</td>
+<td style="text-align:center">ellipsoid</td>
 <td>String</td>
 <td>&#xC544;&#xD669;&#xC0B0;&#xAC00;&#xC2A4; &#xCE21;&#xC815; &#xB18D;&#xB3C4;</td>
 </tr>
 <tr>
-<td style="text-align:center">coValue</td>
-<td>String</td>
+<td style="text-align:center">lat</td>
+<td>Double</td>
 <td>&#xC77C;&#xC0B0;&#xD654;&#xD0C4;&#xC18C; &#xCE21;&#xC815; &#xB18D;&#xB3C4;</td>
 </tr>
 <tr>
-<td style="text-align:center">no2Value</td>
-<td>String</td>
+<td style="text-align:center">lng</td>
+<td>Double</td>
 <td>&#xC624;&#xC874; &#xCE21;&#xC815; &#xB18D;&#xB3C4;</td>
 </tr>
 <tr>
-<td style="text-align:center">o3Value</td>
-<td>String</td>
+<td style="text-align:center">a</td>
+<td>Double</td>
 <td>&#xC774;&#xC0B0;&#xD654;&#xC9C8;&#xC18C; &#xCE21;&#xC815; &#xB18D;&#xB3C4;</td>
 </tr>
 <tr>
-<td style="text-align:center">pm10Value</td>
-<td>String</td>
+<td style="text-align:center">f</td>
+<td>Double</td>
 <td>&#xBBF8;&#xC138;&#xBA3C;&#xC9C0;(pm10) &#xCE21;&#xC815;&#xB18D;&#xB3C4;</td>
 </tr>
 <tr>
-<td style="text-align:center">pm25Value</td>
-<td>String</td>
-<td>&#xCD08;&#xBBF8;&#xC138;&#xBA3C;&#xC9C0;(pm25) &#xCE21;&#xC815;&#xB18D;&#xB3C4;</td>
-</tr>
-<tr>
-<td style="text-align:center">pm10Value24</td>
-<td>String</td>
-<td>&#xBBF8;&#xC138;&#xBA3C;&#xC9C0;(pm10) 24&#xC2DC;&#xAC04; &#xC608;&#xCE21; &#xD3C9;&#xADE0; &#xB18D;&#xB3C4;</td>
-</tr>
-<tr>
-<td style="text-align:center">pm25Value24</td>
-<td>String</td>
-<td>&#xCD08;&#xBBF8;&#xC138;&#xBA3C;&#xC9C0;(pm26) 24&#xC2DC;&#xAC04; &#xC608;&#xCE21; &#xD3C9;&#xADE0; &#xB18D;&#xB3C4;</td>
-</tr>
-<tr>
-<td style="text-align:center">ovSo2</td>
+<td style="text-align:center"></td>
 <td>String</td>
 <td>&#xC544;&#xD669;&#xC0B0;&#xAC00;&#xC2A4; &#xC9C0;&#xC218;&#xAC12;</td>
-</tr>
-<tr>
-<td style="text-align:center">cvCo</td>
-<td>String</td>
-<td>&#xC77C;&#xC0B0;&#xD654;&#xD0C4;&#xC18C; &#xC9C0;&#xC218;&#xAC12;</td>
-</tr>
-<tr>
-<td style="text-align:center">cvNo2</td>
-<td>String</td>
-<td>&#xC624;&#xC874; &#xC9C0;&#xC218;&#xAC12;</td>
-</tr>
-<tr>
-<td style="text-align:center">cvO3</td>
-<td>String</td>
-<td>&#xC774;&#xC0B0;&#xD654;&#xC9C8;&#xC18C; &#xC9C0;&#xC218;&#xAC12;</td>
-</tr>
-<tr>
-<td style="text-align:center">cvPm10</td>
-<td>String</td>
-<td>&#xBBF8;&#xC138;&#xBA3C;&#xC9C0;(pm10) &#xC9C0;&#xC218;&#xAC12;</td>
-</tr>
-<tr>
-<td style="text-align:center">cvPm25</td>
-<td>String</td>
-<td>&#xCD08;&#xBBF8;&#xC138;&#xBA3C;&#xC9C0;(pm25) &#xC9C0;&#xC218;&#xAC12;</td>
-</tr>
-<tr>
-<td style="text-align:center">khaiValue</td>
-<td>String</td>
-<td>&#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD;&#xC9C0;&#xC218;</td>
-</tr>
-<tr>
-<td style="text-align:center">grades</td>
-<td>List</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xBCC4; &#xB4F1;&#xAE09; &#xB9AC;&#xC2A4;&#xD2B8;</td>
-</tr>
-<tr>
-<td style="text-align:center">name</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xBA85;</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>&#xCD9C;&#xB825;&#xBCC0;&#xC218;&#xBA85;</th>
-<th>Type</th>
-<th>&#xC124;&#xBA85;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>value</td>
-<td>String</td>
-<td>&#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD;&#xC9C0;&#xC218;</td>
-</tr>
-<tr>
-<td>grade</td>
-<td>String</td>
-<td>&#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD;&#xC9C0;&#xC218; &#xB4F1;&#xAE09;</td>
-</tr>
-<tr>
-<td>seoul</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xC11C;&#xC6B8; &#xD3C9;&#xADE0;</td>
-</tr>
-<tr>
-<td>busan</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xBD80;&#xC0B0; &#xD3C9;&#xADE0;</td>
-</tr>
-<tr>
-<td>daegu</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xB300;&#xAD6C; &#xD3C9;&#xADE0;</td>
-</tr>
-<tr>
-<td>incheon</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xC778;&#xCC9C; &#xD3C9;&#xADE0;</td>
-</tr>
-<tr>
-<td>gwangju</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xAD11;&#xC8FC; &#xD3C9;&#xADE0;</td>
-</tr>
-<tr>
-<td>daejeon</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xB300;&#xC804; &#xD3C9;&#xADE0;</td>
-</tr>
-<tr>
-<td>ulsan</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xC6B8;&#xC0B0; &#xD3C9;&#xADE0;</td>
-</tr>
-<tr>
-<td>gyeonggi</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xACBD;&#xAE30; &#xD3C9;&#xADE0;</td>
-</tr>
-<tr>
-<td>gangwon</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xAC15;&#xC6D0; &#xD3C9;&#xADE0;</td>
-</tr>
-<tr>
-<td>chungbuk</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xCDA9;&#xBD81; &#xD3C9;&#xADE0;</td>
-</tr>
-<tr>
-<td>chungnam</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xCDA9;&#xB0A8; &#xD3C9;&#xADE0;</td>
-</tr>
-<tr>
-<td>jeonbuk</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xC804;&#xBD81; &#xD3C9;&#xADE0;</td>
-</tr>
-<tr>
-<td>jeonnam</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xC804;&#xB0A8; &#xD3C9;&#xADE0;</td>
-</tr>
-<tr>
-<td>gyeongbuk</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xACBD;&#xBD81; &#xD3C9;&#xADE0;</td>
-</tr>
-<tr>
-<td>gyeongnam</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xACBD;&#xB0A8; &#xD3C9;&#xADE0;</td>
-</tr>
-<tr>
-<td>jeju</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xC81C;&#xC8FC; &#xD3C9;&#xADE0;</td>
-</tr>
-<tr>
-<td>sejong</td>
-<td>String</td>
-<td>&#xC624;&#xC5FC;&#xBB3C;&#xC9C8; &#xC138;&#xC885; &#xD3C9;&#xADE0;</td>
 </tr>
 </tbody>
 </table>
 <h4 id="3-api-&#xD638;&#xCD9C;-&#xBC29;&#xBC95;">3. API &#xD638;&#xCD9C; &#xBC29;&#xBC95;</h4>
 <p>BACKEND&#xC5D0; &#xC815;&#xC758;&#xD55C; API&#xC5D0;&#xC11C; &#xD638;&#xCD9C;&#xD558;&#xC5EC; &#xACB0;&#xACFC;&#xAC12;&#xC744; &#xBCF4;&#xC5EC;&#xC90C;</p>
-<p><img src="images/msa3_fd03.png" width="700" height="300"></p>
+<p><img src="images/msa4_crs03.png" width="600" height="370"></p>
 <h5 id="api-&#xD638;&#xCD9C;">API &#xD638;&#xCD9C;</h5>
-<pre><code>@RestController
-@RefreshScope
-@RequestMapping(value=&quot;/api/dust&quot;)
-public class DustMeasureController 
-{
+<pre><code>@RestController@RefreshScope@RequestMapping(value=&quot;/api/dust&quot;)public class TransformController {
     @Autowired
-    DustMeasureService dustMeasureService;
-    @ApiOperation(&quot;&#xD574;&#xB2F9; &#xB3C4;&#xC758; &#xBBF8;&#xC138;&#xBA3C;&#xC9C0; &#xC2E4;&#xC2DC;&#xAC04; &#xCE21;&#xC815; &#xB370;&#xC774;&#xD130; &#xC870;&#xD68C; API - &#xD398;&#xC774;&#xC9D5;&quot;)
-    @RequestMapping(value=&quot;/measure/list&quot;, method = RequestMethod.GET)
+    private TransformService transformService;
+
+    @ApiOperation(&quot;&#xC81C;&#xACF5;&#xD558;&#xB294; &#xC88C;&#xD45C;&#xACC4; &#xBAA9;&#xB85D; &#xBC18;&#xD658;&quot;)
+    @GetMapping(&quot;/epsg/list/all&quot;)
     @ResponseStatus(HttpStatus.OK)
+    public List&lt;String&gt; epsgListAll() {
+        System.out.println(&quot;request /api/crs/epsg/list/all -- Controller --&quot;);
+        return transformService.epsgListAll();
  }
 </code></pre><h3 id="&#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4;-&#xC544;&#xD0A4;&#xD14D;&#xCC98;-&#xAC1C;&#xBC1C;&#xD558;&#xAE30;">&#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4; &#xC544;&#xD0A4;&#xD14D;&#xCC98; &#xAC1C;&#xBC1C;&#xD558;&#xAE30;</h3>
 <p>&#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4; &#xC544;&#xD0A4;&#xD14D;&#xCC98; &#xAE30;&#xBC18; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xAC1C;&#xBC1C;&#xC740; &#xB2E8;&#xC77C; &#xC11C;&#xBE44;&#xC2A4;&#xB85C; &#xAC1C;&#xBC1C;&#xD558;&#xACE0; REST API&#xB97C; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xB2E4;&#xB978; &#xC11C;&#xBE44;&#xC2A4;&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xB294; &#xBC29;&#xC2DD;&#xC73C;&#xB85C; &#xC544;&#xC8FC; &#xB9CE;&#xC740; &#xC11C;&#xBE44;&#xC2A4;&#xC640; &#xD1B5;&#xC2E0;&#xD560; &#xC218; &#xC788;&#xB2E4;. &#xD504;&#xB860;&#xD2B8;&#xC5D4;&#xB4DC;&#xB294; &#xBAA8;&#xBC14;&#xC77C;, &#xC6F9;&#xACFC; &#xAC19;&#xC774; &#xD558;&#xB098;&#xC758; &#xC571;&#xC73C;&#xB85C; &#xAC1C;&#xBC1C;&#xD558;&#xACE0; &#xBC31;&#xC5D4;&#xB4DC; &#xC601;&#xC5ED;&#xC740; &#xC11C;&#xBE44;&#xC2A4; &#xB2E8;&#xC704;&#xB85C; &#xBD84;&#xD560;&#xD558;&#xC5EC; &#xC11C;&#xBE44;&#xC2A4;&#xB97C; &#xC81C;&#xACF5;&#xD558;&#xB3C4;&#xB85D; &#xAC1C;&#xBC1C;&#xD574;&#xC57C; &#xD55C;&#xB2E4;. &#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4; &#xC544;&#xD0A4;&#xD14D;&#xCC98;&#xC758; &#xC7A5;&#xC810;&#xC778; &#xD3F4;&#xB9AC;&#xADF8;&#xB78F;&#xC744; &#xC801;&#xC6A9;&#xD558;&#xB294; &#xACBD;&#xC6B0; &#xC5EC;&#xB7EC; &#xC5B8;&#xC5B4;&#xB85C; &#xAC01;&#xAC01; &#xAC1C;&#xBC1C;&#xD588;&#xB354;&#xB77C;&#xACE0; &#xAC01; &#xC11C;&#xBE44;&#xC2A4; &#xD638;&#xCD9C; &#xC2DC; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xADDC;&#xC57D;&#xC744; &#xC815;&#xD558;&#xAC8C; &#xB418;&#xBA74; &#xC5BC;&#xB9C8;&#xB4E0;&#xC9C0; &#xD655;&#xC7A5;&#xC774; &#xAC00;&#xB2A5;&#xD558;&#xB2E4;. </p>
 <p>&#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4; &#xC544;&#xD0A4;&#xD14D;&#xCC98; &#xAC1C;&#xBC1C;&#xC744; &#xC704;&#xD574; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC744; &#xBD84;&#xD560;&#xACFC; &#xB354;&#xBD88;&#xC5B4; &#xC5EC;&#xB7EC; &#xC11C;&#xBE44;&#xC2A4;&#xB85C; &#xAD6C;&#xC131;&#xB418;&#xC5B4; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; Service Discovery&#xC640; Gateway(&#xB124;&#xD2B8;&#xC6CC;&#xD06C;) &#xC815;&#xBCF4;&#xB97C; &#xAD00;&#xB9AC;&#xD560; &#xC218; &#xC788;&#xB294; &#xC11C;&#xBC84;&#xB3C4; &#xAD6C;&#xC131;&#xD574;&#xC57C; &#xD55C;&#xB2E4;. &#xAC1C;&#xBCC4;&#xC801;&#xC73C;&#xB85C; &#xC774;&#xB97C; &#xAD6C;&#xC131;&#xD558;&#xB824;&#xBA74; Spring Cloud&#xC640; &#xAC19;&#xC740; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xB97C; &#xAD6C;&#xC131;&#xD558;&#xAC70;&#xB098; &#xC720;&#xC0AC;&#xD55C; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xC640; &#xC544;&#xD0A4;&#xD14D;&#xCC98;&#xB97C; &#xAD6C;&#xC131;&#xD574;&#xC57C; &#xD558;&#xC9C0;&#xB9CC;, &#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4; &#xC2A4;&#xD29C;&#xB514;&#xC624;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xD544;&#xC694;&#xD55C; &#xBAA8;&#xB4E0; &#xC11C;&#xBE44;&#xC2A4;&#xB97C; &#xC81C;&#xACF5;&#xD558;&#xACE0; &#xC788;&#xC5B4; &#xAC1C;&#xBC1C;&#xC5D0;&#xB9CC; &#xC9D1;&#xC911;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
 <p>&#xAC01;&#xAC01; &#xB2E8;&#xC77C; &#xC11C;&#xBE44;&#xC2A4;&#xB85C; &#xAC1C;&#xBC1C;&#xD558;&#xACE0; REST API&#xB97C; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xB2E4;&#xB978; &#xC11C;&#xBE44;&#xC2A4; &#xC801;&#xC6A9;</p>
-<p><img src="images/msa3_fd04.png" width="700" height="400"></p>
 <h4 id="1-&#xAD6C;&#xD604;-&#xC900;&#xBE44;">1. &#xAD6C;&#xD604; &#xC900;&#xBE44;</h4>
 <p>eclipse &#xB610;&#xB294; IntelliJ&#xC640; &#xAC19;&#xC740; IDE &#xD658;&#xACBD;&#xC744; &#xAD6C;&#xC131;&#xD55C;&#xB2E4;. &#xAE30;&#xBCF8; &#xC900;&#xBE44;&#xC0AC;&#xD56D;&#xC740; &#xC544;&#xB798;&#xC640; &#xAC19;&#xB2E4;.</p>
 <table>
@@ -1312,14 +1161,14 @@ public class DustMeasureController
 <p>1) &#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4; &#xC2A4;&#xD29C;&#xB514;&#xC624; &#xBA54;&#xC778; &#xBA54;&#xB274;&#xC758; &#xC624;&#xB978;&#xCABD; &#xC0C1;&#xB2E8;&#xC758; &#xD658;&#xACBD;&#xC124;&#xC815; &#xC544;&#xC774;&#xCF58;&#xC744; &#xC120;&#xD0DD;&#xD569;&#xB2C8;&#xB2E4;.</p>
 <p>2) &#xB9C8;&#xC774;&#xD06C;&#xB85C;&#xC11C;&#xBE44;&#xC2A4; API &#xBAA8;&#xB2C8;&#xD130;&#xB9C1; &#xBA54;&#xB274;&#xC744; &#xC120;&#xD0DD;&#xD569;&#xB2C8;&#xB2E4;.</p>
 <p><img src="images/msa1_apt18.png" width="700" height="430"></p>
-<h3 id="&#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD;-&#xC815;&#xBCF4;-&#xC81C;&#xACF5;-&#xAC1C;&#xBC1C;-&#xACB0;&#xACFC;-&#xD655;&#xC778;">&#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD; &#xC815;&#xBCF4; &#xC81C;&#xACF5; &#xAC1C;&#xBC1C; &#xACB0;&#xACFC; &#xD655;&#xC778;</h3>
-<p>&#xC2E4;&#xC2DC;&#xAC04; &#xD1B5;&#xD569;&#xB300;&#xAE30;&#xD658;&#xACBD;&#xC815;&#xBCF4; API&#xB97C; &#xD65C;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xC0D8;&#xD50C;&#xB85C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC9C4; &#xC0AC;&#xC774;&#xD2B8;&#xAC00; &#xACF5;&#xAC1C;&#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xC88C;&#xD45C;&#xBCC0;&#xD658;api-&#xC81C;&#xACF5;-&#xAC1C;&#xBC1C;-&#xACB0;&#xACFC;-&#xD655;&#xC778;">&#xC88C;&#xD45C;&#xBCC0;&#xD658;API &#xC81C;&#xACF5; &#xAC1C;&#xBC1C; &#xACB0;&#xACFC; &#xD655;&#xC778;</h3>
+<p>&#xAD6D;&#xD1A0;&#xBD80; &#xC88C;&#xD45C; OPEN API&#xB97C; &#xD65C;&#xC6A9;&#xD558;&#xC5EC; &#xB2E4;&#xC74C;, &#xB124;&#xC774;&#xBC84; &#xC9C0;&#xB3C4;&#xC5D0;&#xC11C; &#xD65C;&#xC6A9; &#xAC00;&#xB2A5;&#xD55C; API&#xB97C; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xC0D8;&#xD50C;&#xB85C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC9C4; &#xC0AC;&#xC774;&#xD2B8;&#xAC00; &#xACF5;&#xAC1C;&#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <ul>
-<li>&#xC811;&#xC18D; &#xC0AC;&#xC774;&#xD2B8; URL : <a href="http://fine-dust-map-fd-service.k-cloud.org" target="_blank">http://fine-dust-map-fd-service.k-cloud.org</a></li>
+<li>&#xC811;&#xC18D; &#xC0AC;&#xC774;&#xD2B8; URL : <a href="http://transform-crs-front-CRSchange.k-cloud.org" target="_blank">http://transform-crs-front-CRSchange.k-cloud.org</a></li>
 </ul>
 <p>&#xBCF8; &#xAC1C;&#xBC1C; &#xACB0;&#xACFC;&#xB294; Github&#xC5D0; &#xC18C;&#xC2A4;&#xCF54;&#xB4DC;&#xAC00; &#xACF5;&#xAC1C;&#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <ul>
-<li>Github &#xACF5;&#xAC1C; &#xC18C;&#xC2A4;&#xCF54;&#xB4DC; : <a href="https://github.com/startupcloudplatform/fine-dust" target="_blank">https://github.com/startupcloudplatform/fine-dust</a></li>
+<li>Github &#xACF5;&#xAC1C; &#xC18C;&#xC2A4;&#xCF54;&#xB4DC; : <a href="https://github.com/startupcloudplatform/transform-crs" target="_blank">https://github.com/startupcloudplatform/transform-crs</a></li>
 </ul>
 
                                 
@@ -1348,12 +1197,12 @@ public class DustMeasureController
 
             
                 
-                <a href="msa_aptprice.html" class="navigation navigation-prev " aria-label="Previous page: 사례2-지도상에 공동주택공시가격 제공">
+                <a href="msa_fdservice.html" class="navigation navigation-prev " aria-label="Previous page: 사례3-통합대기환경정보 제공">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="msa_crschange.html" class="navigation navigation-next " aria-label="Next page: 사례4-국토부 지도 좌표변환">
+                <a href="msaspringcloud.html#스프링클라우드-적용-가이드" class="navigation navigation-next " aria-label="Next page: Microservice & Spring Cloud">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1364,7 +1213,7 @@ public class DustMeasureController
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"사례3-통합대기환경정보 제공","level":"3.7.3","depth":2,"next":{"title":"사례4-국토부 지도 좌표변환","level":"3.7.4","depth":2,"path":"msa_crschange.md","ref":"msa_crschange.md","articles":[]},"previous":{"title":"사례2-지도상에 공동주택공시가격 제공","level":"3.7.2","depth":2,"path":"msa_aptprice.md","ref":"msa_aptprice.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"BASE_URL":"https://startupcloudplatform.github.io/cloud4dev-docs/"},"plugins":["ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"GA 토큰값, 예시 : UA-123456-1"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"msa_fdservice.md","mtime":"2020-10-19T05:11:55.733Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-20T06:01:12.422Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"사례4-국토부 지도 좌표변환","level":"3.7.4","depth":2,"next":{"title":"Microservice & Spring Cloud","level":"4.1","depth":1,"anchor":"#스프링클라우드-적용-가이드","path":"msaspringcloud.md","ref":"msaspringcloud.md#스프링클라우드-적용-가이드","articles":[{"title":"개요","level":"4.1.1","depth":2,"anchor":"#마이크로서비스-아키텍처-기반-개발-개요","path":"swprocess.md","ref":"swprocess.md#마이크로서비스-아키텍처-기반-개발-개요","articles":[]},{"title":"마이크로서비스 아키텍처 설계 지침","level":"4.1.2","depth":2,"anchor":"#마이크로서비스-아키텍처-설계-지침","path":"swprocess.md","ref":"swprocess.md#마이크로서비스-아키텍처-설계-지침","articles":[]},{"title":"마이크로서비스 아키텍처 패턴","level":"4.1.3","depth":2,"anchor":"#마이크로서비스-아키텍처-패턴","path":"swprocess.md","ref":"swprocess.md#마이크로서비스-아키텍처-패턴","articles":[]},{"title":"데이터 분산을 위한 데이터베이스 패턴","level":"4.1.4","depth":2,"anchor":"#데이터-분산을-위한-데이터베이스-패턴","path":"swprocess.md","ref":"swprocess.md#데이터-분산을-위한-데이터베이스-패턴","articles":[]},{"title":"구현 방법","level":"4.1.5","depth":2,"anchor":"#마이크로서비스-아키텍처-구현-방법","path":"swprocess.md","ref":"swprocess.md#마이크로서비스-아키텍처-구현-방법","articles":[]},{"title":"12 Factor 방법","level":"4.1.6","depth":2,"anchor":"#12-factor-방법","path":"swprocess.md","ref":"swprocess.md#12-factor-방법","articles":[]},{"title":"Microservice & Spring Cloud","level":"4.1.7","depth":2,"anchor":"#스프링클라우드-적용-가이드","path":"msaspringcloud.md","ref":"msaspringcloud.md#스프링클라우드-적용-가이드","articles":[]},{"title":"Spring Cloud Config Server","level":"4.1.8","depth":2,"anchor":"#spring-cloud-config-server","path":"msaspringcloud.md","ref":"msaspringcloud.md#spring-cloud-config-server","articles":[]},{"title":"Service Discovery and Registry","level":"4.1.9","depth":2,"anchor":"#service-discovery-and-registry","path":"msaspringcloud.md","ref":"msaspringcloud.md#service-discovery-and-registry","articles":[]},{"title":"API Gateway","level":"4.1.10","depth":2,"anchor":"#api-gateway","path":"msaspringcloud.md","ref":"msaspringcloud.md#api-gateway","articles":[]}]},"previous":{"title":"사례3-통합대기환경정보 제공","level":"3.7.3","depth":2,"path":"msa_fdservice.md","ref":"msa_fdservice.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"BASE_URL":"https://startupcloudplatform.github.io/cloud4dev-docs/"},"plugins":["ga"],"pluginsConfig":{"ga":{"configuration":"auto","token":"GA 토큰값, 예시 : UA-123456-1"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"msa_crschange.md","mtime":"2020-10-20T04:53:49.480Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-20T06:01:12.422Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
