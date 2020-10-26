@@ -28,7 +28,7 @@
 
 클라우드 네이티브 애플리케이션은 클라우드 환경에 친화적인 애플리케이션, 아키텍처, 인프라 환경을 뜻한다. 비지니스 환경 변화에 빈첩하고 능동적으로 대응하기 위해 클라우드 네이티브 환경에서 SaaS나 FaaS(Function as a Service) 형태로 서비스되는 애플리케이션을 의미한다. 클라우드 환경에 최적화되어 서비스되도록 개발된 애플리케이션으로 핵심은 '서비스'이다. 이 서비스들을 어떻게 구성하고 어떻게 연결하고 관리하느냐가 관건이며 '서비스'를 묶어서 하나의 통합된 '비지니스 서비스'를 할 수 있도록 하기 위한 다양한 기능과 기술이 필요한다.
 
-<img src="./images/cloudnative.png" width=500 height=250>
+<img src="./images/cloudnative.png" width=600 height=250>
 
 
 
@@ -40,7 +40,7 @@
 
 - 클라우드 네이티브 소프트웨어 개발 및 배포를 위한 모범 사례
 
-  <img src="./images/a12factor.png" width=600 height=300 >
+  <img src="./images/a12factor.png" width=700 height=300 >
 
   
 
@@ -94,7 +94,7 @@ Spring Cloud는 유명한 오픈 소스 Netflix 기능인 유레카(Eureka), 히
 
 클래스 상수를 이용한 환경 변수
 
-<img src="./images/javaconfig.png" width=400 height=250>
+<img src="./images/javaconfig.png" width=500 height=300>
 
 - java의 static final 키워드를 사용
 - 변수 변경 때마다 참조하고 있는 클래스를 재 컴파일
@@ -209,7 +209,7 @@ spring.cloud.config.uri=http://localhost:${PORT:8080}
 
 그러나, 수많은 마이크로서비스들은 각 마이크로서비스가 상대방의 네트워크 주소 정보를 유지해야 하고 애플리케이션이 재시작된 후에 주소가 동적으로 변경되면 관리자체가 어렵게 된다. 
 
-<img src="./images/serviceregistry.png" width=700 height=400>
+<img src="./images/serviceregistry.png" width=720 height=450>
 
 
 
@@ -219,7 +219,7 @@ spring.cloud.config.uri=http://localhost:${PORT:8080}
 - 등록된 서버가 종료되면 자동으로 목록에서 삭제
 - API를 호출하는 쪽에서 상대방 주소를 알 필요없이 이름만으로 호출
 
-<img src="./images/dynamic.png" width=500 height=200>
+<img src="./images/dynamic.png" width=600 height=200>
 
 
 
@@ -234,7 +234,7 @@ Eureka 같은 서버를 사용하지 않는다면 개발자는 수동으로 등�
 
 #### Eureka 구성
 
-<img src="./images/eureka.png" width=700 height=250>
+<img src="./images/eureka.png" width=700 height=300>
 
 
 
@@ -305,7 +305,7 @@ security.password=secret
 
 5) 애플리케이션 실행
 
-<img src="./images/eurekaapp.png" width=600 height=500>
+<img src="./images/eurekaapp.png" width=700 height=500>
 
 
 
@@ -348,7 +348,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 API Gateway 및 각각의 백엔드 애플리케이션을 등록하고, API Gateway는 Eureka에 해당 백엔드 애플리케이션을 조회환다. 외부 클라이언트인 프론트엔드 애플리케이션은 해당 API Gateway 주소만 인지하여 백엔드 애플리케이션을 호출할 수 있다. 
 
-<img src="./images/springapigateway.png" width=700 height=400>
+<img src="./images/springapigateway.png" width=800 height=450>
 
 
 
