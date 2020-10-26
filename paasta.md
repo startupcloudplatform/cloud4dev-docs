@@ -11,9 +11,9 @@
 
 PaaS-TA 3.0과 창업 플랫폼을 같이 운영하는 지원 센터를 통해서 신청이 가능하다. 현재는 K-ICT 클라우드혁신센터를 통해 무료로 제공하고 있지만 사용자 제한을 두고 있으니 웹사이트를 통해서 사용 가능 여부를 확인한다.
 
-K-ICT 클라우드 혁신 센터 [https://www.cloud.or.kr](https://www.cloud.or.kr/)
+K-ICT 클라우드 혁신 센터 [https://www.cloud.or.kr](https://www.cloud.or.kr/) 에서 운영중인 PaaS-TA 계정 신청
 
-LX정보공사 공간드림센터 (예정)
+[PaaS-TA 계정신청](#https://docs.google.com/forms/d/e/1FAIpQLSed2qnPQEJ_nR3GM0i5lazjj2Lpa5Ctlf83lsV1-rbbqzaB1Q/viewform)   // 2020년 11월 30일 이후에는 신청 경로가 변경될 수 있습니다.
 
 
 
@@ -27,11 +27,13 @@ LX정보공사 공간드림센터 (예정)
 
 접속가능한 URL을 통해 PaaS-TA 사용자 포털에 접속하면 메인 페이지가 호출되고 우측 상단의 로그인을 통해 접속한다.
 
-![1557732833817](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/paastalogin.png)
+<img src="./images/paastalogin.png" width=500 height=350 >
 
 포털 메인 페이지 Dashboard가 보인다. 배포된 앱과 서비스를 기본으로 보여준다. 
 
-![1557733186964](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/paastadashboard.png)
+
+
+<img src="./images/paastadashboard.png" width=800 height=450 >
 
 #### CF CLI 로그인
 
@@ -84,7 +86,7 @@ PaaS-TA에서는 다양한 언어 빌드팩을 포함한 개발 환경을 제공
 
   3. 앱 개발환경 목록에서 JAVA8 오프라인 앱 개발환경을 선택한다.
 
-     ![1557735237482](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/java8offline.png)
+     <img src="./images/java8offline.png" width=850 height=450 >
 
   4. 조직(org)와 영역(space)을 선택한다. 
 
@@ -96,19 +98,17 @@ PaaS-TA에서는 다양한 언어 빌드팩을 포함한 개발 환경을 제공
 
   8. 생성 버튼을 누른다.
 
-  ![1557736134914](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/pushapp.png)
+  <img src="./images/pushapp.png" width=800 height=450 >
 
 - 앱 푸시 결과 확인
 
   앱 푸시가 정상적으로 완료되었다면 Dashbord를 통해 앱 푸시 결과를 확인할 수 있다.
 
-  ![1557736673576](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/pushresult.png)
+  <img src="./images/pushresult.png" width=800 height=450 >
 
   앱 이름을 클릭하면 앱 상세 정보가 조회된다. 
 
-  ![1557736807614](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/appdetail.png)
-
-  
+  <img src="./images/appdetail.png" width=800 height=450 >
 
 #### CF CLI을 이용하여 앱 푸시
 
@@ -128,29 +128,27 @@ eclipse IDE Plugin을 설치하여 ecclipse IDE와 연동하여 환경을 구성
 
 설치가 완료되면 서버 등록 과정에 따라 Open PaaS 개발 환경이 등록되었을 것이다.  서버 등록이 완료되면 View 화면에서 Server 탭을 누른다. 등록된 Server 목록을 확인할 수 있으며 서버를 클릭하면 등록된 개요 정보를 볼 수 있다.
 
-![1557817470703](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/eclipseserver.png)
+<img src="./images/eclipseserver.png" width=800 height=500 >
 
 서버에 프로젝트 Add and Remove... 메뉴을 통해서 배포할 앱이 있는 프로젝트를 추가한다. Open PaaS 서버에서 마우스 우클릭 후 Add and Remove...을 선택하거나 서버 개요 페이지의 애플리케이션/서비스 탭을 통해 화면상에 드래그앤 드롭으로 프로젝트를 추가한다.  Add > 버튼을 누르면 오른쪽 화면으로 이동된다. 정상적으로 잘되었다면 Finish 버튼을 클릭한다. 
 
-![1557817836725](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/addproject.png)
+<img src="./images/addproject.png" width=600 height=450 >
 
 주의 사항 : 서버에 프로젝트 추가 시 Open PaaS에 이미 배포된 앱 목록이 보인다. Open PaaS 서버는 동기화되고 있어 기존 앱 목록을 Remove 시키지 않도록 주의해야 한다.
 
 manifest.yml 파일에 있는 내용을 읽어서 화면에 표시되고 만약 수정이 했다면 "매니페스트 파일 저장" 체크박스를 체크한다. 앱 이름과 빌드팩 명칭을 등록한다. 
 
-![1557818133443](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/app_buildpack.png)
+<img src="./images/app_buildpack.png" width=600 height=450 >
 
 Next 버튼을 누르면 서비도메인, 도메인, 접속URL, 메모리을 등록하는 화면이 나온다. manifest.yml의 기본정보를 가져와서 화면에 정의되고 도메인은 앱 이름을 기본으로 할당한다. Finish 버튼을 누르면 선택한 Open PaaS 환경 서버에 앱 배포를 시작한다. 
 
 배포가 완료되면 콘솔에 아래와 같이 정상적으로 동작되었음을 확인할 수 있다.
 
-![1557818416957](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/console.png)
+<img src="./images/console.png" width=600 height=250 >
 
 eclipse에서 배포가 완료되었다면 PaaS-TA 포털을 통해서 확인할 수 있다. PaaS-TA 사용자 포털 로그인 후 Dashboard에 배포한 startup 앱이 보이는지 확인한다.
 
-![1557818544604](https://github.com/startupcloudplatform/Sample-App-Tutorial/blob/master/images/paasta_startup.png)
-
-
+<img src="./images/paasta_startup.png" width=700 height=350 >
 
 * 참고 : eclipse 에서 Java project로 생성한 프로젝트는 기본으로 Open PaaS 서버에서 배포가 가능한 앱으로 인식하지만 다른 프로젝트로 생성했다면 Project > Properties > Project Facets 에서 Cloud Foundry Application 항목을 체크한다. 
 
