@@ -18,19 +18,23 @@
     * [서울시문화행사정보 API 결과](openapi_v2.md#서울시-문화행사정보-api-결과)
 
 ## 3.마이크로서비스 스튜디오 활용 가이드
+* [활용 가이드 구성](msa_devguide.md#가이드-구성)
+* [공동주택 공시가격 제공 API](msa_devguide.md#공동주택-공시가격-애플리케이션)
+    * [마이크로서비스 애플리케이션 설계](msa_devguide.md#마이크로서비스-아키텍처-애플리케이션-설계)
+    * [API 설계](msa_devguide.md#2.api-설계)
+    * [API 호출](msa_devguide.md#3.API-호출-방법)
+* [마이크로서비스 개발 가이드](msa_devguide.md#마이크로서비스-개발-가이드)
+* [PaaS-TA 활용 방법](msa_devguide.md#paas-ta-활용-방법)
+* [마이크로서비스 스튜디오 활용](msamanual_v2.md)
 * [마이크로서비스 스튜디오 개요](MicroserviceGuide.md#마이크로서비스-스튜디오-개요)
 * [마이크로서비스 스튜디오 주요 기능](MicroserviceGuide.md#마이크로서비스-스튜디오-주요-기능)
-* [백엔드앱 개발](MicroserviceGuide.md#백엔드앱-개발)
-* [프론트엔드 앱 개발](MicroserviceGuide.md#프론트엔드-앱-개발)
-* [PaaS-TA에 앱 배포하기](paasta.md)
-* [마이크로서비스 앱 구성](MicroserviceGuide.md#마이크로서비스-앱-구성)
 * 활용 사례
     * [사례1-서울시문화공간 통합검색](msacasestudy1.md)
     * [사례2-지도상에 공동주택공시가격 제공](msa_aptprice.md)
     * [사례3-통합대기환경정보 제공](msa_fdservice.md)
     * [사례4-국토부 지도 좌표변환](msa_crschange.md)
 
-## 4.마이크로서비스 기반 개발 가이드
+## 4.마이크로서비스 기반 개발 활용 가이드
 * [Microservice & Spring Cloud](msaspringcloud.md#스프링클라우드-적용-가이드)
     * [개요](swprocess.md#마이크로서비스-아키텍처-기반-개발-개요)
     * [마이크로서비스 아키텍처 설계 지침](swprocess.md#마이크로서비스-아키텍처-설계-지침)
