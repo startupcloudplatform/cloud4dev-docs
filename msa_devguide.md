@@ -331,7 +331,7 @@ git clone을 통해 경로를 로컬에 생성했기 때문에 eclipse을 통해
 
 #### manifest 정의
 
-github에서 다운받은 소스폴더 안에 manifest.yml 파일이 있다. 이 파일에서 마이크로서비스 애플리케이션을 위한 사용자 환경 변수를 정의해야 한다.
+paas-ta을 통해 앱을 푸시하려면 manifest.yml파일을 정의해야 한다. github에서 다운받은 소스폴더 안에 manifest.yml 파일이 있다. 이 파일에서 마이크로서비스 애플리케이션을 위한 사용자 환경 변수를 정의해야 한다.
 
 <manifest.yml>
 
