@@ -14,7 +14,9 @@
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-comment,
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-title,
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-title {
-  color: #8e908c;
+  /* color: #8e908c;  */
+  color: #1d1f1c;
+  
 }
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-variable,
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-variable,
