@@ -46,7 +46,6 @@
 * [데이터 분산을 위한 데이터베이스 패턴](swprocess.md#데이터-분산을-위한-데이터베이스-패턴)
 * [구현 방법](swprocess.md#마이크로서비스-아키텍처-구현-방법)
 * [Microservice & Spring Cloud](msaspringcloud.md#스프링클라우드-적용-가이드)
-    * [Microservice & Spring Cloud](msaspringcloud.md#스프링클라우드-적용-가이드)
     * [Spring Cloud Config Server](msaspringcloud.md#spring-cloud-config-server)
     * [Service Discovery and Registry](msaspringcloud.md#service-discovery-and-registry)
     * [API Gateway](msaspringcloud.md#api-gateway)
