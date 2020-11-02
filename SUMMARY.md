@@ -39,14 +39,14 @@
     * [사례3-통합대기환경정보 제공](msa_fdservice.md)
     * [사례4-국토부 지도 좌표변환](msa_crschange.md)
 
-## 4.마이크로서비스 기반 개발 활용 가이드
+## 4.마이크로서비스 기반 개발 프로세스
+* [개요](swprocess.md#마이크로서비스-아키텍처-기반-개발-개요)
+* [마이크로서비스 아키텍처 설계 지침](swprocess.md#마이크로서비스-아키텍처-설계-지침)
+* [마이크로서비스 아키텍처 패턴](swprocess.md#마이크로서비스-아키텍처-패턴)
+* [데이터 분산을 위한 데이터베이스 패턴](swprocess.md#데이터-분산을-위한-데이터베이스-패턴)
+* [구현 방법](swprocess.md#마이크로서비스-아키텍처-구현-방법)
+* [12 Factor 방법](swprocess.md#12-factor-방법)
 * [Microservice & Spring Cloud](msaspringcloud.md#스프링클라우드-적용-가이드)
-    * [개요](swprocess.md#마이크로서비스-아키텍처-기반-개발-개요)
-    * [마이크로서비스 아키텍처 설계 지침](swprocess.md#마이크로서비스-아키텍처-설계-지침)
-    * [마이크로서비스 아키텍처 패턴](swprocess.md#마이크로서비스-아키텍처-패턴)
-    * [데이터 분산을 위한 데이터베이스 패턴](swprocess.md#데이터-분산을-위한-데이터베이스-패턴)
-    * [구현 방법](swprocess.md#마이크로서비스-아키텍처-구현-방법)
-    * [12 Factor 방법](swprocess.md#12-factor-방법)
     * [Microservice & Spring Cloud](msaspringcloud.md#스프링클라우드-적용-가이드)
     * [Spring Cloud Config Server](msaspringcloud.md#spring-cloud-config-server)
     * [Service Discovery and Registry](msaspringcloud.md#service-discovery-and-registry)
