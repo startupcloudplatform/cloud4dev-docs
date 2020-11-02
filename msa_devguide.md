@@ -136,7 +136,7 @@ BACKEND에 정의한 API를 FRONTEND에서 호출하여 결과값을 보여준�
 
 ### 마이크로서비스 개발 가이드
 
-#### 1. 개발 준비
+#### 개발 준비
 
 eclipse 또는 IntelliJ와 같은 IDE 환경을 구성한다. 기본 준비사항은 아래와 같다.
 
@@ -154,7 +154,7 @@ eclipse 또는 IntelliJ와 같은 IDE 환경을 구성한다. 기본 준비사�
 
 
 
-#### 2. PaaS-TA 활용 시
+#### PaaS-TA 활용 시
 
 여기에서는 PaaS-TA를 활용하여 개발된 애플리케이션을 클라우드 상에 배포하는 경우를 가정하고 설명한다. 현재는 '클라우드혁신센터' 에서 운영하는 PaaS-TA 서버를 활용할 수 있다.
 
@@ -166,7 +166,7 @@ PaaS-TA를 활용하려면 접속 계정이 있어야 한다. 접속 계정이 �
 
 
 
-#### 3. Github 소스 코드 이용
+#### Github 소스 코드 이용
 
 마이크로서비스 애플리케이션 개발 시 활용 가능한 샘플 애플리케이션을 Github을 통해 공개하고 있다. 애플리케이션은 프론트엔드와 백엔드로 분류하여 폴더로 구성되어 있다.
 
@@ -216,7 +216,7 @@ git clone을 통해 경로를 로컬에 생성했기 때문에 eclipse을 통해
 
 
 
-#### 5. JAVA 필수 체크 항목
+#### JAVA 필수 체크 항목
 
 - **pom.xml**
 
@@ -329,7 +329,7 @@ git clone을 통해 경로를 로컬에 생성했기 때문에 eclipse을 통해
 
 
 
-#### 6. manifest.yml 정의
+#### manifest.yml 정의
 
 github에서 다운받은 소스폴더 안에 manifest.yml 파일이 있다. 이 파일에서 마이크로서비스 애플리케이션을 위한 사용자 환경 변수를 정의해야 한다.
 
@@ -472,16 +472,6 @@ cf apps
 
 
 
-### 공동주택 공시가격 API 샘플 웹사이트
-
-공동주택 공시가격 제공 API를 개발하면서 사례로 참고할 수 있도록 샘플 사이트가 공개되어 있습니다.
-
-- 접속 사이트 URL : http://plv-front-publicLandValue.k-cloud.org
-
-본 개발 결과는 Github에 소스코드가 공개되어 있습니다.
-
-- Github 공개 소스코드 : https://github.com/startupcloudplatform/public-land-value
-
 
 
 ### 마이크로서비스 API 등록
@@ -530,5 +520,13 @@ cf apps
 
 
 
+### 공동주택 공시가격 API 샘플 웹사이트
 
+공동주택 공시가격 제공 API를 개발하면서 사례로 참고할 수 있도록 샘플 사이트가 공개되어 있습니다.
+
+- 접속 사이트 URL : http://plv-front-publicLandValue.k-cloud.org
+
+본 개발 결과는 Github에 소스코드가 공개되어 있습니다.
+
+- Github 공개 소스코드 : https://github.com/startupcloudplatform/public-land-value
 
