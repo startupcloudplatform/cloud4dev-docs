@@ -595,7 +595,11 @@ cf apps
 
 7) 아래 하단에 로그 창이 보인다.
 
+<img src="./images/msa_applog.png" >
 
+
+
+<img src="./images/msa_applog2.png" >
 
 ### 마이크로서비스 API 등록
 
