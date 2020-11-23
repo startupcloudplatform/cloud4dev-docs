@@ -35,6 +35,7 @@
     * [공동주택 공시가격 구성](msa_devguide.md#공동주택-공시가격-마이크로서비스-아키텍처-구성)
     * [Routing 정보](msa_devguide.md#routing-정보-입력)
     * [앱 실행 확인](msa_devguide.md#앱-실행-확인)
+    * [앱 로그 확인](msa_devguide.md#앱-로그-확인)
 * [마이크로서비스 스튜디오 개요](MicroserviceGuide.md#마이크로서비스-스튜디오-개요)
 * [마이크로서비스 스튜디오 주요 기능](MicroserviceGuide.md#마이크로서비스-스튜디오-주요-기능)
 * 활용 사례
