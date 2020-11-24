@@ -11,7 +11,7 @@
 * [활용실습-오픈데이터마켓 활용 실습](openapi_v2.md#오픈데이터-api-이용-방법)
     * [GoogleMap API 권한](openapi_v2.md#googlemap-api-권한)
     * [오픈데이터 API 주소 얻기](openapi_v2.md#오픈데이터-api-주소-얻기)
-    * [개별주택가격WFS](openapi_v2.md#1.-개별주택가격wfs조회)
+    * [개별주택가격WFS](openapi_v2.md#1.개별주택가격wfs조회)
     * [최종결과물](openapi_v2.md#실습-최종-결과물)
 * [활용실습.서울시 문화행사 API 호출 실습](openapi_v2.md#두번째-실습-자료)
     * [Postman 실행](openapi_v2.md#두번째-실습-자료)

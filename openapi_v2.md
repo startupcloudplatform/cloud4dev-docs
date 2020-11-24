@@ -378,12 +378,11 @@ run 버튼을 눌러 예제를 실행합니다.
 
    - API를 사용하기 위해 사용자 인증 정보 생성을 위해 'API 및 서비스의 사용자 인증 정보' 클릭
 
-   
    <img src="./images/googleAPI_4.png" >
-
-   - 사용자 인증 정보 만들기 클릭
-
    
+- 사용자 인증 정보 만들기 클릭
+   
+
 
   <img src="./images/googleAPI_5.png" >
 
