@@ -3,7 +3,7 @@
 ## 1.개요
 * [개발지원플랫폼 소개](README.md)
 
-## 2.오픈데이터API 활용 가이드
+## [2.오픈데이터API 활용 가이드](openapi_v2.md)
 * [회원가입](openapi_v2.md#회원가입)
 * [오픈데이터 API 이용 방법](openapi_v2.md#오픈데이터-api-이용-방법)
 * [오픈데이터 API 사용해보기](openapi_v2.md#오픈데이터-api-사용해보기)
@@ -18,7 +18,7 @@
     * [서울시문화행사정보 API신청](openapi_v2.md#서울시-문화행사-정보-api-신청)
     * [서울시문화행사정보 API 결과](openapi_v2.md#서울시-문화행사정보-api-결과)
 
-## 3.마이크로서비스 스튜디오 활용 가이드
+## [3.마이크로서비스 스튜디오 활용 가이드](msa_devguide.md)
 * [활용 가이드 구성](msa_devguide.md#가이드-구성)
 * [공동주택 공시가격 제공 API](msa_devguide.md#공동주택-공시가격-애플리케이션)
     * [마이크로서비스 애플리케이션 설계](msa_devguide.md#마이크로서비스-아키텍처-애플리케이션-설계)
@@ -44,7 +44,7 @@
     * [사례3-통합대기환경정보 제공](msa_fdservice.md)
     * [사례4-국토부 지도 좌표변환](msa_crschange.md)
 
-## 4.마이크로서비스 기반 개발 프로세스
+## [4.마이크로서비스 기반 개발 프로세스](swprocess.md)
 * [개요](swprocess.md#마이크로서비스-아키텍처-기반-개발-개요)
 * [마이크로서비스 아키텍처 설계 지침](swprocess.md#마이크로서비스-아키텍처-설계-지침)
 * [마이크로서비스 아키텍처 패턴](swprocess.md#마이크로서비스-아키텍처-패턴)
@@ -65,7 +65,4 @@
     * [API 관리](msamanual_v2.md#api-관리)
 * [오픈데이터API 사용자 메뉴얼](openapi.md)
 * [오픈데이터API 제공처 메뉴얼](openapi_manager.md)
-
-## 6.마이크로서비스 스튜디오 기술문서
-* [MSA Technical Report](Technical_Report.md)
 
